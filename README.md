@@ -1,3 +1,3 @@
 # markaj_gazetesi
 
-A new Flutter project.
+Istinye University Student Projects.
