@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("lib/assets/image/Samanyolu.webp"),
+                              child: Image.asset("lib/assets/image/mbappe.webp"),
                             ),
                             const Padding(
                               padding: EdgeInsets.only(
@@ -94,7 +94,7 @@ class HomeScreen extends StatelessWidget {
                                 right: 10,
                                 top: 5,
                               ),
-                              child: Text("Samanyolu dışındaki bir yıldızın ilk yakın çekim fotoğrafı elde edildi",
+                              child: Text("Mbappe hakkında olay sözler! 'Sıradan bir oyuncu'",
                                 style:TextStyle(
                                     color: Colors.black,
                                     fontSize: 14,
