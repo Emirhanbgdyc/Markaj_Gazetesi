@@ -7,8 +7,12 @@ environment:
   sdk: ^3.5.4
 
 dependencies:
+  cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_secure_storage: ^9.2.2
+  go_router: ^14.6.1
+  shared_preferences: ^2.3.3
 
 dev_dependencies:
   flutter_test:
@@ -18,5 +22,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - lib/assets/image/
+    - assets/image/
+    - assets/icons/
+    - assets/languages/
+    - assets/motions/
 

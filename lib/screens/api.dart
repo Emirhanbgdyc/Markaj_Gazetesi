@@ -1,0 +1,1 @@
+//sunucuya baglanıp veri alıp veri göndermek burada gerçekleşecek
