@@ -17,7 +17,6 @@ class HomeScreen extends StatelessWidget {
               color: Color.fromRGBO(146, 35, 42, 1)
           ),
         ),
-
         centerTitle: true,
       ),
       body:ListView(
@@ -362,6 +361,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       drawerScrimColor: Colors.transparent,
+
       bottomNavigationBar: Container(
           height: 70,
           decoration: const BoxDecoration(
