@@ -1,8 +1,13 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
+import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Container(
-                                    child: Image.asset("lib/assets/image/rodri.jpg")
+                                    child: Image.asset("assets/image/rodri.jpg")
                                 ),
                               ),
                               const Padding(
@@ -85,7 +90,7 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("lib/assets/image/mbappe.webp"),
+                              child: Image.asset("assets/image/Samanyolu.webp"),
                             ),
                             const Padding(
                               padding: EdgeInsets.only(
@@ -127,7 +132,7 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("lib/assets/image/mars-uydu.jpg"),
+                              child: Image.asset("assets/image/mars-uydu.jpg"),
                             ),
                             const Padding(
                               padding: EdgeInsets.only(
@@ -164,7 +169,7 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("lib/assets/image/manzara.webp"),
+                              child: Image.asset("assets/image/manzara.webp"),
                             ),
                             const Padding(
                               padding: EdgeInsets.only(
@@ -194,15 +199,14 @@ class HomeScreen extends StatelessWidget {
       ),
 
 
-      drawer: Drawer(
-        backgroundColor:const Color.fromRGBO(21, 23, 26, 1),
+      drawer:Drawer(
+        backgroundColor: const Color.fromRGBO(21, 23, 26, 1),
         width: 250,
         child: Column(
           children: [
             const SizedBox(
               height: 20,
             ),
-
             Center(
               child: Container(
                 child: const Text(
@@ -219,114 +223,79 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        padding:const EdgeInsets.only(left: 10, right: 6),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon:const Icon(Icons.newspaper, size: 30,color: Color.fromRGBO(80, 82, 86, 1),),
-                        ),
+                  ListTile(
+                    leading: const Icon(CupertinoIcons.news, color: Color.fromRGBO(80, 82, 86, 1)),
+                    title: const Text(
+                      'GÜNDEM',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 13,
                       ),
-                      Container(
-                        child: const Text(
-                          "GÜNDEM",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                 const Divider(),
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.only(left: 10, right: 6),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: const Icon(Icons.sports_soccer, size: 30 ,color: Color.fromRGBO(80, 82, 86, 1),),
-                        ),
-                      ),
-                      Container(
-                        child: const Text(
-                          "FUTBOL",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                 const Divider(),
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.only(left: 10, right: 6),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: const Icon(Icons.sports_basketball, size: 30,color: Color.fromRGBO(80, 82, 86, 1),),
-                        ),
-                      ),
-                      Container(
-                        child: const Text(
-                          "BASKETBOL",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                 const Divider(),
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.only(left: 10, right: 6),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: const Icon(Icons.sports_volleyball, size: 30,color: Color.fromRGBO(80, 82, 86, 1),),
-                        ),
-                      ),
-                      Container(
-                        child: const Text(
-                          "VOLEYBOL",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
-                        ),
-                      ),
-                    ],
+                    ),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
                   ),
                   const Divider(),
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.only(left: 10, right: 6),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: const Icon(Icons.sports_tennis, size: 30,color: Color.fromRGBO(80, 82, 86, 1),),
-                        ),
+                  ListTile(
+                    leading: const Icon(Icons.sports_soccer,color: Color.fromRGBO(80, 82, 86, 1)),
+                    title: const Text(
+                      'FUTBOL',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 13,
                       ),
-                      Container(
-                        child: const Text(
-                          "TENİS",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 13,
-                          ),
-                        ),
+                    ),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  const Divider(),
+                  ListTile(
+                    leading: const Icon(Icons.sports_basketball, color: Color.fromRGBO(80, 82, 86, 1)),
+                    title: const Text(
+                      'BASKETBOL',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 13,
                       ),
-                    ],
+                    ),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  const Divider(),
+                  ListTile(
+                    leading: const Icon(Icons.sports_volleyball, color: Color.fromRGBO(80, 82, 86, 1)),
+                    title: const Text(
+                      'VOLEYBOL',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 13,
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  const Divider(),
+                  ListTile(
+                    leading: const Icon(Icons.sports_tennis, color: Color.fromRGBO(80, 82, 86, 1)),
+                    title: const Text(
+                      'TENİS',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 13,
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
                   ),
                   const SizedBox(
                     height: 30,
@@ -353,40 +322,17 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-
                 ],
               ),
             ),
           ],
         ),
       ),
+
       drawerScrimColor: Colors.transparent,
 
-      bottomNavigationBar: Container(
-          height: 70,
-          decoration: const BoxDecoration(
-            color: Color.fromRGBO(21, 23, 26, 1),
 
-          ),
-          child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Container(
-                  child:IconButton(onPressed: (){}, icon:const Icon(Icons.home,color: Colors.white,)),
-                ),
-                Container(
-                  child:IconButton(onPressed: (){}, icon:const Icon(Icons.search,color: Colors.white)),
-                ),
-
-                Container(
-                  child:IconButton(onPressed: (){}, icon:const Icon(Icons.notifications,color: Colors.white)),
-                ),
-                Container(
-                  child:IconButton(onPressed: (){}, icon:const Icon(Icons.person,color: Colors.white)),
-                ),
-              ],
-              ),
-          ),
+      bottomNavigationBar: BottomMenu(),
     );
   }
 }
