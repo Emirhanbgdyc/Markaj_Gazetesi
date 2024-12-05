@@ -18,7 +18,7 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 ## Ekibimiz
 
 -  **Danışman:**    
-   [https://github.com/keyvanarasteh](Keyvan Arasteh)
+   [https://github.com/keyvanarasteh] (Keyvan Arasteh)
 
 
 -  **Takım Üyeleri:**
