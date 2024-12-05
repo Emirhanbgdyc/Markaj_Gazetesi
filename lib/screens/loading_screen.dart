@@ -31,6 +31,7 @@ class LoadingScreen extends StatelessWidget {
             // Yükleniyor yazısı
            // CircularProgressIndicator(),
 
+
             InkWell(
               onTap: () => context.go("/home"),
               child: SizedBox(

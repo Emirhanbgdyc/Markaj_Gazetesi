@@ -5,6 +5,8 @@ import '../screens/loading_screen.dart';
 import '../screens/home_screen.dart';
 import '../screens/search_screen.dart';
 
+
+
 // Router yapılandırması
 final router = GoRouter(
   initialLocation: '/',  // Başlangıç rotası

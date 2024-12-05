@@ -7,6 +7,7 @@ import '../widgets/BottomMenu.dart';
 class NewsDetailScreen extends StatelessWidget {
   const NewsDetailScreen({super.key});
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
