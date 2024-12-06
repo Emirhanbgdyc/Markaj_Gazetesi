@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-
 import '../widgets/BottomMenu.dart';
 
 class NewsDetailScreen extends StatelessWidget {
@@ -143,7 +141,7 @@ class NewsDetailScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ListTile(
-                    leading: const Icon(CupertinoIcons.news, color: Color.fromRGBO(80, 82, 86, 1)),
+                    leading: const Icon(Icons.newspaper, color: Color.fromRGBO(80, 82, 86, 1)),
                     title: const Text(
                       'GÜNDEM',
                       style: TextStyle(
