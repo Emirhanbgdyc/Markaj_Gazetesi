@@ -144,7 +144,7 @@ class NewsDetailTwoScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ListTile(
-                    leading: const Icon(CupertinoIcons.news, color: Color.fromRGBO(80, 82, 86, 1)),
+                    leading: const Icon(Icons.newspaper, color: Color.fromRGBO(80, 82, 86, 1)),
                     title: const Text(
                       'GÜNDEM',
                       style: TextStyle(

@@ -31,11 +31,11 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 ## Özellikler
 
-- [Ana özellik 1]
+- [Yükleme Sayfası]
 
-- [Ana özellik 2]
+- [Sıde Bar]
 
-- [Ana özellik 3]
+- [Haber Arama Sayfası]
 
 
 
@@ -56,11 +56,11 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 ### Gereksinimler
 
-- Flutter SDK (82.1.2)
+- Flutter SDK (3.24.4)
 
-- Dart SDK (241.18808)
+- Dart SDK (3.5.4)
 
-
+- DevTools (2.37.3)
 
 
 
@@ -70,7 +70,7 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 ```bash  
   
-git  clone [proje-adresi]  
+git  clone [https://github.com/Emirhanbgdyc/Markaj_Gazetesi.git]  
   
 ```  
 
@@ -80,7 +80,7 @@ git  clone [proje-adresi]
 
 ```bash  
   
-cd [proje-adı]  
+cd [markaj_gazetesi]  
   
 ```  
 
@@ -127,9 +127,11 @@ lib/
 
 ## Ekran Görüntüleri
 
-[Uygulama ekran görüntüleri buraya eklenecek]
 
 ![Loading_ekrani](assets/image/loading.png)
+![Drawer](assets/image/drawer.png)
+![Home_Screen](assets/image/home.png)
+![News_Detail](assets/image/News_detail.png)
 
 ## Projeye Katkı Sağlama
 
@@ -147,7 +149,8 @@ lib/
 
 ## Lisans
 
-[Lisans türü] kapsamında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
+Bu proje [MIT Lisansı](./LICENSE) altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.
+
 
 
 
@@ -163,7 +166,7 @@ lib/
 
 - İstinye Üniversitesi'ne destekleri için teşekkür ederiz
 
-- [Diğer teşekkürler]  
+
   
   
   

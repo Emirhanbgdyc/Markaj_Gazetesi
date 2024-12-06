@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../widgets/BottomMenu.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -22,6 +20,213 @@ class SearchScreen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
+      body:ListView(
+
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Haber Spor Veya Takım Ara...',
+                    prefixIcon: const Icon(Icons.search),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+
+             Row(
+               children: [
+                 Container(
+                   margin: EdgeInsets.only(
+                     left: 25,
+                   ),
+                   width: 200,  // Resmin genişliği
+                   height: 150, // Resmin yüksekliği
+                   decoration: BoxDecoration(
+                     borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                     image: DecorationImage(
+                       image: AssetImage('assets/image/futbolcategory.jpg'),  // Resmin yolu
+                       fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                     ),
+                   ),
+                   child: Stack(
+                     children: [
+                       Positioned(
+                         top: 110,
+                         left:10,
+                         child: Text("FUTBOL",style: TextStyle(
+                           color: Colors.white,
+                           fontWeight: FontWeight.bold,
+                           fontSize: 20,
+                         ),),
+                       ),
+                     ],
+                   ),
+                 ),
+                 Container(
+                   margin: EdgeInsets.only(
+                     left: 25,
+                   ),
+                   width: 200,  // Resmin genişliği
+                   height: 150, // Resmin yüksekliği
+                   decoration: BoxDecoration(
+                     borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                     image: DecorationImage(
+                       image: AssetImage('assets/image/basketbolcategory.jpg'),  // Resmin yolu
+                       fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                     ),
+                   ),
+                   child: Stack(
+                     children: [
+                       Positioned(
+                         top: 110,
+                         left:10,
+                         child: Text("BASKETBOL",style: TextStyle(
+                           color: Colors.white,
+                           fontWeight: FontWeight.bold,
+                           fontSize: 20,
+                         ),),
+                       ),
+                     ],
+                   ),
+                 ),
+               ],
+             ),
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                        top: 10,
+                      ),
+                      width: 200,  // Resmin genişliği
+                      height: 150, // Resmin yüksekliği
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/voleybolcategory.jpg'),  // Resmin yolu
+                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("VOLEYBOL",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                        top: 10,
+                      ),
+                      width: 200,  // Resmin genişliği
+                      height: 150, // Resmin yüksekliği
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/teniscategory.jpg'),  // Resmin yolu
+                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("TENIS",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                        top: 10,
+                      ),
+                      width: 200,  // Resmin genişliği
+                      height: 150, // Resmin yüksekliği
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/formulacategory.jpg'),  // Resmin yolu
+                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("FORMULA",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                        top: 10,
+                      ),
+                      width: 200,  // Resmin genişliği
+                      height: 150, // Resmin yüksekliği
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/naimcategory.jpg'),  // Resmin yolu
+                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("OLIMPIYAT",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+
+
+
+
+              ],
+            ),
+          ),
+        ],
+      ),
+
 
 
 
@@ -35,14 +240,7 @@ class SearchScreen extends StatelessWidget {
             ),
             Center(
               child: Container(
-                child: const Text(
-                  "MARKAJ",
-                  style: TextStyle(
-                    color: Color.fromRGBO(146, 35, 42, 1),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 30,
-                  ),
-                ),
+                  child: Image.asset("assets/image/markajblack.jpg")
               ),
             ),
             Expanded(
@@ -50,7 +248,7 @@ class SearchScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ListTile(
-                    leading: const Icon(CupertinoIcons.news, color: Color.fromRGBO(80, 82, 86, 1)),
+                    leading: const Icon(Icons.newspaper, color: Color.fromRGBO(80, 82, 86, 1)),
                     title: const Text(
                       'GÜNDEM',
                       style: TextStyle(
@@ -155,8 +353,8 @@ class SearchScreen extends StatelessWidget {
         ),
       ),
       drawerScrimColor: Colors.transparent,
-      bottomNavigationBar: BottomMenu(),
+      bottomNavigationBar: const BottomMenu(),
     );
-
   }
 }
+

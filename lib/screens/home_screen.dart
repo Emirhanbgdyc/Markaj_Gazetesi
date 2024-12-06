@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_three.dart';
@@ -298,7 +297,7 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ListTile(
-                    leading: const Icon(CupertinoIcons.news, color: Color.fromRGBO(80, 82, 86, 1)),
+                    leading: const Icon(Icons.newspaper, color: Color.fromRGBO(80, 82, 86, 1)),
                     title: const Text(
                       'GÜNDEM',
                       style: TextStyle(
@@ -402,11 +401,8 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-
       drawerScrimColor: Colors.transparent,
-
-
-      bottomNavigationBar: BottomMenu(),
+      bottomNavigationBar: const BottomMenu(),
     );
   }
 }
