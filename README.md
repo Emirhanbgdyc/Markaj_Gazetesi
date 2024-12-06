@@ -45,6 +45,10 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 - Dart
 
+- Visual Studio Code
+
+- Android Studio Code 
+
 
 ## Başlangıç
 
@@ -125,7 +129,7 @@ lib/
 
 [Uygulama ekran görüntüleri buraya eklenecek]
 
-
+![Loading_ekrani](assets/image/loading.png)
 
 ## Projeye Katkı Sağlama
 
