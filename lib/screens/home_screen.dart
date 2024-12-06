@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
+import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
+import 'package:markaj_gazetesi/screens/News_screens/News_detail_three.dart';
+import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -37,21 +40,27 @@ class HomeScreen extends StatelessWidget {
                         top: 10,
                       ),
                       child: GestureDetector(
-                          onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => const NewsDetailScreen(),));
-                          },
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const NewsDetailScreen(),
+                            ),
+                          );
+                        },
                         child: Container(
-                          height: 250,
+                          height: 275,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start, // Sola yaslamak için
                             children: [
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Container(
-                                    child: Image.asset("assets/image/rodri.jpg")
+                                  child: Image.asset("assets/image/rodri.jpg"),
                                 ),
                               ),
                               const Padding(
@@ -60,12 +69,27 @@ class HomeScreen extends StatelessWidget {
                                   right: 10,
                                   top: 5,
                                 ),
-                                child: Text("Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
-                                  style:TextStyle(
+                                child: Text(
+                                  "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
+                                  style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 14,
-                                    fontWeight: FontWeight.bold
-                                  ) ,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              const Padding(
+                                padding: EdgeInsets.only(
+                                  left: 20,
+                                  top: 5,
+                                ),
+                                child: Text(
+                                  "Haber Kaynaği : Star Spor",
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontSize: 12,
+                                  ),
                                 ),
                               ),
                             ],
@@ -80,33 +104,53 @@ class HomeScreen extends StatelessWidget {
                         left: 10,
                         top: 10,
                       ),
-                      child: Container(
-                       height: 250,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("assets/image/Samanyolu.webp"),
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(
-                                left: 20,
-                                right: 10,
-                                top: 5,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const NewsDetailOneScreen(),));
+                        },
+                        child: Container(
+                         height: 275,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image.asset("assets/image/newsone.webp"),
                               ),
-                              child: Text("Mbappe hakkında olay sözler! 'Sıradan bir oyuncu'",
-                                style:TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.bold
-                                ) ,
+                              const Padding(
+                                padding: EdgeInsets.only(
+                                  left: 20,
+                                  right: 10,
+                                  top: 5,
+                                ),
+                                child: Text("Beşiktaş'ta stoper krizi",
+                                  style:TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold
+                                  ) ,
+                                ),
                               ),
-                            ),
-                          ],
+                              const Padding(
+                                padding: EdgeInsets.only(
+                                  left: 20,
+                                  top: 5,
+                                ),
+                                child: Text(
+                                  "Haber Kaynaği : Star Spor",
+                                  textAlign: TextAlign.left,
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -114,7 +158,6 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               Row(
-
                 children: [
                   Expanded(
                     child: Padding(
@@ -122,33 +165,52 @@ class HomeScreen extends StatelessWidget {
                         left: 10,
                         top: 10,
                       ),
-                      child: Container(
-                        height: 250,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("assets/image/mars-uydu.jpg"),
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(
-                                left: 20,
-                                right: 10,
-                                top: 5,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const NewsDetailTwoScreen(),));
+                        },
+                        child: Container(
+                          height: 275,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image.asset("assets/image/newstwo.webp"),
                               ),
-                              child: Text("İşte Mars Uydularının Nasıl Oluştuğuna Dair Yeni Teori",
-                                style:TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.bold
-                                ) ,
+                              const Padding(
+                                padding: EdgeInsets.only(
+                                  left: 20,
+                                  right: 10,
+                                  top: 5,
+                                ),
+                                child: Text("Şenol Güneş galibiyete odaklandı",
+                                  style:TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold
+                                  ) ,
+                                ),
                               ),
-                            ),
-                          ],
+                              const Padding(
+                                padding: EdgeInsets.only(
+                                  left: 20,
+                                  top: 5,
+                                ),
+                                child: Text(
+                                  "Haber Kaynaği : Star Spor",
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -159,33 +221,52 @@ class HomeScreen extends StatelessWidget {
                         left: 10,
                         top: 10,
                       ),
-                      child: Container(
-                        height: 250,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("assets/image/manzara.webp"),
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.only(
-                                left: 20,
-                                right: 10,
-                                top: 5,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const NewsDetailThreeScreen(),));
+                        },
+                        child: Container(
+                          height: 275,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image.asset("assets/image/newsthree.webp"),
                               ),
-                              child: Text("2011 Depreminde Hasar Gören Fukuşima Nükleer Santralinde Biriken Suyun Ne Olacağı Sorunsalı",
-                                style:TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.bold
-                                ) ,
+                              const Padding(
+                                padding: EdgeInsets.only(
+                                  left: 20,
+                                  right: 10,
+                                  top: 5,
+                                ),
+                                child: Text("FENERBAHÇE HABERİ - Mourinho'dan Beşiktaş derbisi öncesi Galatasaray uyarısı!",
+                                  style:TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold
+                                  ) ,
+                                ),
                               ),
-                            ),
-                          ],
+                              const Padding(
+                                padding: EdgeInsets.only(
+                                  left: 20,
+                                  top: 5,
+                                ),
+                                child: Text(
+                                  "Haber Kaynaği : Star Spor",
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -209,14 +290,7 @@ class HomeScreen extends StatelessWidget {
             ),
             Center(
               child: Container(
-                child: const Text(
-                  "MARKAJ",
-                  style: TextStyle(
-                    color: Color.fromRGBO(146, 35, 42, 1),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 30,
-                  ),
-                ),
+                child: Image.asset("assets/image/markajblack.jpg")
               ),
             ),
             Expanded(
