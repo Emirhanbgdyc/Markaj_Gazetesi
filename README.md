@@ -132,6 +132,7 @@ lib/
 ![Drawer](assets/image/drawer.png)
 ![Home_Screen](assets/image/home.png)
 ![News_Detail](assets/image/News_detail.png)
+![Search](assets/image/search.png)
 
 ## Projeye Katkı Sağlama
 
