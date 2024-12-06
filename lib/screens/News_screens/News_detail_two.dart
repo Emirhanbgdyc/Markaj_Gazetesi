@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 
 
-import '../widgets/BottomMenu.dart';
 
-class NewsDetailScreen extends StatelessWidget {
-  const NewsDetailScreen({super.key});
+
+class NewsDetailTwoScreen extends StatelessWidget {
+  const NewsDetailTwoScreen({super.key});
 
 
   @override
@@ -50,7 +51,7 @@ class NewsDetailScreen extends StatelessWidget {
                   const SizedBox(height: 16.0), // Boşluk ekleme
                   Center(
                     child: Image.asset(
-                      "assets/image/rodri.jpg", // Resim dosyasını ekleyin
+                      "assets/image/newstwo.webp", // Resim dosyasını ekleyin
                       height: 300, // Resim yüksekliği
                       fit: BoxFit.cover, // Resmi sığdırma
                     ),
@@ -70,7 +71,7 @@ class NewsDetailScreen extends StatelessWidget {
                           textAlign: TextAlign.left, // Sola hizalama
                         ),
                         SizedBox(height: 8.0), // Kaynak ve başlık arasında boşluk
-                        Text("Real Madrid Başkanı Florentino Perez, Ballon d'Or ödülünü kazanan Rodri hakkında konuştu",style: TextStyle(
+                        Text("Şenol Güneş galibiyete odaklandı",style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold
                         ),),
@@ -80,13 +81,13 @@ class NewsDetailScreen extends StatelessWidget {
                   const SizedBox(height: 15.0), // Başlık ile haber arasında boşluk
                   const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("Ödülü Real Madridli bir oyuncunun alması gerektiğini söyleyen Perez, Rodri, Ballon d'Or'u Manchester City ile Şampiyonlar Ligi'ni kazandığı zaman almalıydı. Geçtiğimiz sezonun ödülünü kesinlikle bir Real Madrid oyuncusu kazanmalıydı.dedi",style:TextStyle(
+                      child: Text("Süper Lig'e kötü bir başlangıç yapan Trabzonspor, bugün konuk edeceği Kasımpaşa karşısında galibiyetten başka bir şey düşünmüyor.Sabah'ta yer alan habere göre kadro dışı bırakılan Bardhi, Denswil, Umut Bozok ve Orsic'in yanı sıra sakatlıkları bulunan Savic, Okay ve Arif Boşluk'un forma giymesi beklenmiyor. Son idmana katılmayan Eren Elmalı dün kendini iyi hissedince takımla çalıştı.Teknik direktör Şenol Güneş, oyuncularına özellikle bulundukları konumdan bir an önce kurtulmak için sadece galibiyete ve plana odaklanmaları yönünde konuşmalar yaptı. Tecrübeli teknik adamın, hataları ekibiyle birlikte detaylı şekilde analiz ettiği, oyun içerisinde yaşanan kopmalar, basit top kayıpları ve yakalanan pozisyonları değerlendirme üzerine özel çalışmalar yaptığı öğrenildi.",style:TextStyle(
                           fontSize: 19
                       ) ,)
                   ),
                   const Padding(
                     padding: EdgeInsets.all(17.5),
-                    child: Text("NE OLMUŞTU? ",style: TextStyle(
+                    child: Text("",style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.bold
                     ),),
@@ -96,7 +97,7 @@ class NewsDetailScreen extends StatelessWidget {
                       left:17.5,
 
                     ),
-                    child: Text("Real Madrid yönetimi, Ballon d'Or ödülünü kendi takımlarından bir oyuncunun kazanmadığını öğrendiklerinde ödül törenini protesto etmiş ve hiçbir ferdinin törene katılmayacağını açıklamıştı.",style: TextStyle(
+                    child: Text("",style: TextStyle(
                       fontSize: 20,
 
                     ),),
@@ -248,7 +249,7 @@ class NewsDetailScreen extends StatelessWidget {
         ),
       ),
       drawerScrimColor: Colors.transparent,
-      bottomNavigationBar: const BottomMenu(),
+      bottomNavigationBar: BottomMenu(),
 
     );
   }

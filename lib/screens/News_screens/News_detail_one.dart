@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 
 
-import '../widgets/BottomMenu.dart';
 
-class NewsDetailScreen extends StatelessWidget {
-  const NewsDetailScreen({super.key});
+class NewsDetailOneScreen extends StatelessWidget {
+  const NewsDetailOneScreen({super.key});
 
 
   @override
@@ -50,7 +50,7 @@ class NewsDetailScreen extends StatelessWidget {
                   const SizedBox(height: 16.0), // Boşluk ekleme
                   Center(
                     child: Image.asset(
-                      "assets/image/rodri.jpg", // Resim dosyasını ekleyin
+                      "assets/image/newsone.webp", // Resim dosyasını ekleyin
                       height: 300, // Resim yüksekliği
                       fit: BoxFit.cover, // Resmi sığdırma
                     ),
@@ -70,7 +70,7 @@ class NewsDetailScreen extends StatelessWidget {
                           textAlign: TextAlign.left, // Sola hizalama
                         ),
                         SizedBox(height: 8.0), // Kaynak ve başlık arasında boşluk
-                        Text("Real Madrid Başkanı Florentino Perez, Ballon d'Or ödülünü kazanan Rodri hakkında konuştu",style: TextStyle(
+                        Text("Beşiktaş'ta stoper krizi baslik",style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold
                         ),),
@@ -80,13 +80,13 @@ class NewsDetailScreen extends StatelessWidget {
                   const SizedBox(height: 15.0), // Başlık ile haber arasında boşluk
                   const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("Ödülü Real Madridli bir oyuncunun alması gerektiğini söyleyen Perez, Rodri, Ballon d'Or'u Manchester City ile Şampiyonlar Ligi'ni kazandığı zaman almalıydı. Geçtiğimiz sezonun ödülünü kesinlikle bir Real Madrid oyuncusu kazanmalıydı.dedi",style:TextStyle(
+                      child: Text("Son 7 maçında sadece 1 galibiyet alabilen Beşiktaş, yarın Dolmabahçe'de Fenerbahçe ile oynayacağı derbiyi kazanıp hem moral bulmak hem de camiadaki kara bulutları bir nebze olsun dağıtmak istiyor.Ancak takımdaki eksikler zorlu karşılaşma öncesi can sıkıyor. Daha önce Necip Uysal'ın çapraz bağ sakatlığı sonrası sezonu kapatmasıyla eksilen savunma hattı, tendonundan operasyonu geçiren Gabriel Paulista'nın 3 ay sahalardan uzak kalacak olması büyük bir probleme dönüştü. Bunların üzerine Felix Uduokhai'nin sakatlığının gelmesi keyifleri iyice kaçırdı.Sabah'ın haberine göre geçen haftaki Hatayspor maçına Tayip Talha Sanuç ve Emirhan Topçu ikilisiyle çıkan siyah-beyazlılarda gözler Uduokhai'ye çevrildi.Dün idmana çıkmayan Nijerya asıllı Alman futbolcunun, bugün de antrenmana katılmaması durumunda derbide oynaması mümkün gözükmüyor. Teknik heyet, hafta boyunca yapılan idmanlarda Tayyip Talha ve Emirhan'la özel olarak ilgilendi.",style:TextStyle(
                           fontSize: 19
                       ) ,)
                   ),
                   const Padding(
                     padding: EdgeInsets.all(17.5),
-                    child: Text("NE OLMUŞTU? ",style: TextStyle(
+                    child: Text("",style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.bold
                     ),),
@@ -96,7 +96,7 @@ class NewsDetailScreen extends StatelessWidget {
                       left:17.5,
 
                     ),
-                    child: Text("Real Madrid yönetimi, Ballon d'Or ödülünü kendi takımlarından bir oyuncunun kazanmadığını öğrendiklerinde ödül törenini protesto etmiş ve hiçbir ferdinin törene katılmayacağını açıklamıştı.",style: TextStyle(
+                    child: Text("",style: TextStyle(
                       fontSize: 20,
 
                     ),),
@@ -248,7 +248,7 @@ class NewsDetailScreen extends StatelessWidget {
         ),
       ),
       drawerScrimColor: Colors.transparent,
-      bottomNavigationBar: const BottomMenu(),
+      bottomNavigationBar:BottomMenu(),
 
     );
   }

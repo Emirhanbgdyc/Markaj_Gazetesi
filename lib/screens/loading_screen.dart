@@ -18,10 +18,10 @@ class LoadingScreen extends StatelessWidget {
             // Logo bölümü
             Expanded(
               child: Container(
-                width: 150,
-                height: 150,
+                width: 250,
+                height: 250,
                 child: Image.asset(
-                  'assets/image/kayakMerkezi.webp',
+                  'assets/image/markaj.jpg',
                   fit: BoxFit.contain,
                 ),
               ),
@@ -48,7 +48,7 @@ class LoadingScreen extends StatelessWidget {
             ),
 
             //Birazcık boşluk lazım
-            SizedBox(height: 20,)
+            const SizedBox(height: 20,)
 
           ],
         ),

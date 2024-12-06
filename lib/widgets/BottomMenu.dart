@@ -32,7 +32,7 @@ class BottomMenu extends StatelessWidget {
 
           Container(
             child:
-            IconButton(onPressed: (){}, icon:const Icon(CupertinoIcons.bell_fill,color: Colors.white)),
+            IconButton(onPressed: (){}, icon:const Icon(Icons.leaderboard_outlined,color: Colors.white)),
           ),
           Container(
             child:

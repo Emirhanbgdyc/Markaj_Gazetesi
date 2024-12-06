@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 
 
-import '../widgets/BottomMenu.dart';
 
-class NewsDetailScreen extends StatelessWidget {
-  const NewsDetailScreen({super.key});
+
+class NewsDetailThreeScreen extends StatelessWidget {
+  const NewsDetailThreeScreen({super.key});
 
 
   @override
@@ -50,7 +51,7 @@ class NewsDetailScreen extends StatelessWidget {
                   const SizedBox(height: 16.0), // Boşluk ekleme
                   Center(
                     child: Image.asset(
-                      "assets/image/rodri.jpg", // Resim dosyasını ekleyin
+                      "assets/image/newsthree.webp", // Resim dosyasını ekleyin
                       height: 300, // Resim yüksekliği
                       fit: BoxFit.cover, // Resmi sığdırma
                     ),
@@ -70,7 +71,7 @@ class NewsDetailScreen extends StatelessWidget {
                           textAlign: TextAlign.left, // Sola hizalama
                         ),
                         SizedBox(height: 8.0), // Kaynak ve başlık arasında boşluk
-                        Text("Real Madrid Başkanı Florentino Perez, Ballon d'Or ödülünü kazanan Rodri hakkında konuştu",style: TextStyle(
+                        Text("FENERBAHÇE HABERİ - Mourinho'dan Beşiktaş derbisi öncesi Galatasaray uyarısı!",style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold
                         ),),
@@ -80,13 +81,14 @@ class NewsDetailScreen extends StatelessWidget {
                   const SizedBox(height: 15.0), // Başlık ile haber arasında boşluk
                   const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("Ödülü Real Madridli bir oyuncunun alması gerektiğini söyleyen Perez, Rodri, Ballon d'Or'u Manchester City ile Şampiyonlar Ligi'ni kazandığı zaman almalıydı. Geçtiğimiz sezonun ödülünü kesinlikle bir Real Madrid oyuncusu kazanmalıydı.dedi",style:TextStyle(
+                      child: Text("""
+Mourinho'dan Beşiktaş derbisi öncesi Galatasaray uyarısı! Son dakika Fenerbahçe haberleri: Trendyol Süper Lig'in 15. haftasında Tüpraş Stadyumu'nda Beşiktaş'a konuk olacak Fenerbahçe'de karşılaşmanın hazırlıkları sürüyor. Sarı-lacivertli takımın teknik direktör Jose Mourinho, perşembe günkü antrenmanda öğrencilerine bir konuşma yaptı. İşte o sözler... (Star Spor Haberi ) Jose de öğrencilerini bu yönde motive etmeyi sürdürüyor. HATA İSTEMİYORUM Oyuncularına nakış gibi planlarını işleyen Portekizlinin perşembe günkü idmanda, "Sizden derbide iyi bir sonuç bekliyorum ve liderliği istiyorum" diyerek seslendiği öğrenildi. Beşiktaş'ın durumunun kendilerini ilgilendirmediğinin altını çizen Mourinho, rehavet uyarısında da bulundu. Galatasaray derbisinin kendilerine ders olması gerektiğini de vurgulayan Jose'nin, "Galatasaray'a karşı yaptığınız hataları bu maçta görmek istemiyorum" diyerek de sert bir uyarı yaptığı belirtildi.""",style:TextStyle(
                           fontSize: 19
                       ) ,)
                   ),
                   const Padding(
                     padding: EdgeInsets.all(17.5),
-                    child: Text("NE OLMUŞTU? ",style: TextStyle(
+                    child: Text(" ",style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.bold
                     ),),
@@ -96,7 +98,7 @@ class NewsDetailScreen extends StatelessWidget {
                       left:17.5,
 
                     ),
-                    child: Text("Real Madrid yönetimi, Ballon d'Or ödülünü kendi takımlarından bir oyuncunun kazanmadığını öğrendiklerinde ödül törenini protesto etmiş ve hiçbir ferdinin törene katılmayacağını açıklamıştı.",style: TextStyle(
+                    child: Text("",style: TextStyle(
                       fontSize: 20,
 
                     ),),
@@ -248,7 +250,7 @@ class NewsDetailScreen extends StatelessWidget {
         ),
       ),
       drawerScrimColor: Colors.transparent,
-      bottomNavigationBar: const BottomMenu(),
+      bottomNavigationBar: BottomMenu(),
 
     );
   }
