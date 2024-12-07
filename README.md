@@ -4,7 +4,7 @@
 
 
 
-![İstinye Üniversitesi](https://www.unitededucation.com/linklogoch/istinye-university-logo.png)
+![Markaj Gazatesı](assets/image/markajblack.jpg)
 
 
 
