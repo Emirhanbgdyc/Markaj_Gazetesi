@@ -1,1 +1,9 @@
-// buraya renk temaları eklencek.
+
+
+final lightTheme ={
+
+};
+
+final darkTheme ={
+
+};
