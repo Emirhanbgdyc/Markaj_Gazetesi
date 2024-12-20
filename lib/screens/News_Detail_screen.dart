@@ -19,13 +19,9 @@ class NewsDetailScreen extends StatelessWidget {
           )
         ],
         backgroundColor: Colors.white,
-        title: const Text(
+        title: Text(
           "MARKAJ",
-          style: TextStyle(
-            fontWeight: FontWeight.w900,
-            fontSize: 24,
-            color: Color.fromRGBO(146, 35, 42, 1),
-          ),
+          style: Theme.of(context).textTheme.headlineSmall,
         ),
         centerTitle: true,
       ),

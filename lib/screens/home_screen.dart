@@ -16,18 +16,15 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: colors["primary"],
       appBar: AppBar(
-      backgroundColor: Colors.white,
-        title:const Text("MARKAJ",
-          style: TextStyle(
-              fontWeight: FontWeight.w900,
-              fontSize: 24,
-              color: Color.fromRGBO(146, 35, 42, 1)
-          ),
+        backgroundColor: Colors.white,
+        title: Text(
+          "MARKAJ",
+          style: Theme.of(context).textTheme.headlineSmall,
         ),
         centerTitle: true,
       ),
+
       body:ListView(
         children: [
           Column(
@@ -282,7 +279,7 @@ class HomeScreen extends StatelessWidget {
 
 
       drawer:Drawer(
-        backgroundColor: colors["onDrawer"],
+        backgroundColor: colors["blackColor"],
         width: 250,
         child: Column(
           children: [
