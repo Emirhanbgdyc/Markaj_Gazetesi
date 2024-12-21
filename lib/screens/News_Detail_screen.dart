@@ -41,15 +41,15 @@ class NewsDetailScreen extends StatelessWidget {
                       textAlign: TextAlign.left,
                     ),
                   ),
-                  const SizedBox(height: 16.0), // Boşluk ekleme
+                  const SizedBox(height: 16.0),
                   Center(
                     child: Image.asset(
-                      "assets/image/rodri.jpg", // Resim dosyasını ekleyin
-                      height: 300, // Resim yüksekliği
-                      fit: BoxFit.cover, // Resmi sığdırma
+                      "assets/image/rodri.jpg",
+                      height: 300,
+                      fit: BoxFit.cover,
                     ),
                   ),
-                  const SizedBox(height: 14.0), // Resim ve metin arasında boşluk
+                  const SizedBox(height: 14.0),
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 16.0),
                     child: Column(
@@ -71,7 +71,7 @@ class NewsDetailScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 15.0), // Başlık ile haber arasında boşluk
+                  const SizedBox(height: 15.0),
                   const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
                       child: Text("Ödülü Real Madridli bir oyuncunun alması gerektiğini söyleyen Perez, Rodri, Ballon d'Or'u Manchester City ile Şampiyonlar Ligi'ni kazandığı zaman almalıydı. Geçtiğimiz sezonun ödülünü kesinlikle bir Real Madrid oyuncusu kazanmalıydı.dedi",style:TextStyle(

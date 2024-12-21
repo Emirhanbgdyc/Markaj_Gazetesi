@@ -11,36 +11,7 @@ final lightTheme =ThemeData(
   visualDensity: VisualDensity.adaptivePlatformDensity,
   scaffoldBackgroundColor: colors['primary'], // Bizlere bodyi saglar
   textTheme: GoogleFonts.latoTextTheme().copyWith(
-    titleSmall: GoogleFonts.lato(
-        textStyle: TextStyle(
-          color: darkColors["titleColor"],
-        )
-    ),
-    titleMedium: GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: darkColors["titleColor"],
-      ),
-    ),
-    titleLarge: GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: darkColors["titleColor"],
-      ),
-    ),
-    bodySmall: GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: darkColors["titleColor"],
-      ),
-    ),
-    bodyMedium: GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: darkColors["titleColor"],
-      ),
-    ),
-    bodyLarge: GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: darkColors["titleColor"],
-      ),
-    ),
+
     headlineSmall:GoogleFonts.lato(
       textStyle: TextStyle(
         color: darkColors["titleColor"],
@@ -55,58 +26,57 @@ final lightTheme =ThemeData(
       textStyle: TextStyle(
         color: darkColors["titleColor"],
       ),
-    ),
   ),
-
+  ),
 );
 
 final darkTheme =ThemeData(
   brightness: Brightness.dark,
   primaryColor: Colors.blue,
   scaffoldBackgroundColor: colors['blackColor'],
-  textTheme: GoogleFonts.latoTextTheme().copyWith(
-    titleSmall: GoogleFonts.lato(
+  textTheme: GoogleFonts.bebasNeueTextTheme().copyWith(
+    titleSmall: GoogleFonts.bebasNeue(
       textStyle: TextStyle(
         color: darkColors["titleColor"],
       )
     ),
-    titleMedium: GoogleFonts.lato(
+    titleMedium: GoogleFonts.bebasNeue(
       textStyle: TextStyle(
           color: darkColors["titleColor"],
       ),
     ),
-    titleLarge: GoogleFonts.lato(
+    titleLarge: GoogleFonts.bebasNeue(
       textStyle: TextStyle(
           color: darkColors["titleColor"],
       ),
     ),
 
-    bodySmall: GoogleFonts.lato(
+    bodySmall: GoogleFonts.aBeeZee(
+      textStyle: TextStyle(
+        color: darkColors["primary"],
+      ),
+    ),
+    bodyMedium: GoogleFonts.aBeeZee(
+      textStyle: TextStyle(
+        color: darkColors["primary"],
+      ),
+    ),
+    bodyLarge: GoogleFonts.abel(
+      textStyle: TextStyle(
+        color: darkColors["primary"],
+      ),
+    ),
+    headlineSmall:GoogleFonts.bebasNeue(
       textStyle: TextStyle(
         color: darkColors["titleColor"],
       ),
     ),
-    bodyMedium: GoogleFonts.lato(
+    headlineMedium: GoogleFonts.bebasNeue(
       textStyle: TextStyle(
         color: darkColors["titleColor"],
       ),
     ),
-    bodyLarge: GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: darkColors["titleColor"],
-      ),
-    ),
-    headlineSmall:GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: darkColors["titleColor"],
-      ),
-    ),
-    headlineMedium: GoogleFonts.lato(
-      textStyle: TextStyle(
-        color: darkColors["titleColor"],
-      ),
-    ),
-    headlineLarge: GoogleFonts.lato(
+    headlineLarge: GoogleFonts.bebasNeue(
       textStyle: TextStyle(
         color: darkColors["titleColor"],
       ),
