@@ -6,6 +6,8 @@ import 'package:markaj_gazetesi/screens/News_screens/News_detail_three.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 
+import '../core/constants.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -14,18 +16,15 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(235, 236, 237, 1),
       appBar: AppBar(
-      backgroundColor: Colors.white,
-        title:const Text("MARKAJ",
-          style: TextStyle(
-              fontWeight: FontWeight.w900,
-              fontSize: 24,
-              color: Color.fromRGBO(146, 35, 42, 1)
-          ),
+        backgroundColor: Colors.white,
+        title: Text(
+          "MARKAJ",
+          style: Theme.of(context).textTheme.headlineSmall,
         ),
         centerTitle: true,
       ),
+
       body:ListView(
         children: [
           Column(
@@ -277,10 +276,8 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-
-
       drawer:Drawer(
-        backgroundColor: const Color.fromRGBO(21, 23, 26, 1),
+        backgroundColor: colors["blackColor"],
         width: 250,
         child: Column(
           children: [

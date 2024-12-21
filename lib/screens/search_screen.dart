@@ -45,6 +45,13 @@ class SearchScreen extends StatelessWidget {
                    margin: EdgeInsets.only(
                      left: 25,
                    ),
+                   width: 200,
+                   height: 150,
+                   decoration: BoxDecoration(
+                     borderRadius: BorderRadius.circular(20),
+                     image: DecorationImage(
+                       image: AssetImage('assets/image/futbolcategory.jpg'),
+                       fit: BoxFit.cover,
                    width: 200, 
                    height: 150,
                    decoration: BoxDecoration(
@@ -164,6 +171,13 @@ class SearchScreen extends StatelessWidget {
                         left: 25,
                         top: 10,
                       ),
+                      width: 200,
+                      height: 150,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/formulacategory.jpg'),
+                          fit: BoxFit.cover,
                       width: 200, 
                       height: 150, 
                       decoration: BoxDecoration(
@@ -192,6 +206,13 @@ class SearchScreen extends StatelessWidget {
                         left: 25,
                         top: 10,
                       ),
+                      width: 200,
+                      height: 150,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/naimcategory.jpg'),
+                          fit: BoxFit.cover,
                       width: 200,  
                       height: 150,
                       decoration: BoxDecoration(

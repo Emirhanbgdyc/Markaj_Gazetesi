@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:markaj_gazetesi/core/themes.dart';
 import 'core/routes.dart';
 
 
@@ -14,10 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Markaj Gazetesi',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
+      themeMode:ThemeMode.light,
+      theme: lightTheme,
+      darkTheme: darkTheme,
       routerConfig: router,  // go_router yapılandırmamızı kullan
       debugShowCheckedModeBanner: false,  // Debug bandını kaldır
     );

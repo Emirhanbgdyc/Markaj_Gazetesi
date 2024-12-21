@@ -19,13 +19,9 @@ class NewsDetailScreen extends StatelessWidget {
           )
         ],
         backgroundColor: Colors.white,
-        title: const Text(
+        title: Text(
           "MARKAJ",
-          style: TextStyle(
-            fontWeight: FontWeight.w900,
-            fontSize: 24,
-            color: Color.fromRGBO(146, 35, 42, 1),
-          ),
+          style: Theme.of(context).textTheme.headlineSmall,
         ),
         centerTitle: true,
       ),
@@ -50,6 +46,7 @@ class NewsDetailScreen extends StatelessWidget {
                     child: Image.asset(
                       "assets/image/rodri.jpg",
                       height: 300,
+                      fit: BoxFit.cover,
                       fit: BoxFit.cover, 
                     ),
                   ),
@@ -75,6 +72,8 @@ class NewsDetailScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+
+                  const SizedBox(height: 15.0),
                   const SizedBox(height: 15.0), 
                   const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
