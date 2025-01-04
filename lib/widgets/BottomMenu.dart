@@ -29,7 +29,6 @@ class BottomMenu extends StatelessWidget {
               context.go("/search");
             }, icon:const Icon(CupertinoIcons.search,color: Colors.white)),
           ),
-
           Container(
             child:
             IconButton(onPressed: (){}, icon:const Icon(Icons.leaderboard_outlined,color: Colors.white)),

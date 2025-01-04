@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
-import '../core/constants.dart';
+
 
 class LoadingScreen extends StatelessWidget {
   const LoadingScreen({super.key});
@@ -10,7 +10,7 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: colors["white"],
+      backgroundColor:Theme.of(context).colorScheme.onError,
       body: Column(
         children: [
           Expanded(
@@ -36,11 +36,10 @@ class LoadingScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("MARKAJ",style:
-                          TextStyle(
-                            color: colors["white"],
-                            fontWeight: FontWeight.bold,
-                            fontSize: 40,
-                          ),
+                          Theme.of(context).textTheme.displayMedium!.copyWith(
+                          color: Theme.of(context).colorScheme.onPrimary,
+                        ),
+
                         ),
                       ],
                     ),
@@ -59,32 +58,31 @@ class LoadingScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Container(
-                  padding:EdgeInsets.only(
-                  top: 14,
-                  bottom: 14,
-                  left: 12,
-                  right: 12
-                  ),
-                  margin: EdgeInsets.only(
-                    bottom: 10,
-                    right: 8,
-                    left: 8,
-                  ),
-                  decoration: BoxDecoration(
-                    color: colors["blackColor"]
-                  ),
-                  width: double.infinity,
-                  child: Center(
-                      child: InkWell(
-                        onTap: () => context.go("/home"),
+                InkWell(
+                  onTap: () => context.go("/home"),
+                  child: Container(
+                    padding:EdgeInsets.only(
+                    top: 14,
+                    bottom: 14,
+                    left: 12,
+                    right: 12
+                    ),
+                    margin: EdgeInsets.only(
+                      bottom: 10,
+                      right: 8,
+                      left: 8,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.black
+                    ),
+                    width: double.infinity,
+                    child: Center(
                         child: Text("GET STARTED...",
-                        style: TextStyle(
-                          color: colors["white"],
-                          fontWeight: FontWeight.bold,
+                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                          color: Theme.of(context).colorScheme.onPrimary,
                         ),
                         ),
-                      ),
+                    ),
                   ),
                 ),
               ],

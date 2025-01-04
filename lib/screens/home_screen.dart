@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_three.dart';
+// import 'package:markaj_gazetesi/screens/News_screens/News_detail_three.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 
-import '../core/constants.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -25,259 +25,243 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
       ),
 
-      body:ListView(
+      body: ListView(
         children: [
-          Column(
+          Stack(
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                        left: 10,
-                        top: 10,
-                      ),
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const NewsDetailScreen(),
-                            ),
-                          );
-                        },
-                        child: Container(
-                          height: 275,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  child: Image.asset("assets/image/rodri.jpg"),
-                                ),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(
-                                  left: 20,
-                                  right: 10,
-                                  top: 5,
-                                ),
-                                child: Text(
-                                  "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(
-                                  left: 20,
-                                  top: 5,
-                                ),
-                                child: Text(
-                                  "Haber Kaynaği : Star Spor",
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Colors.black87,
-                                    fontSize: 12,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const NewsDetailScreen(),
                     ),
+                  );
+                },
+                child: Container(
+                  width: double.infinity,
+                  child: Image.asset(
+                    "assets/image/futbolcategory.jpg",
+                    fit: BoxFit.cover,
+                    height: 400,
                   ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                        left: 10,
-                        top: 10,
-                      ),
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => const NewsDetailOneScreen(),));
-                        },
-                        child: Container(
-                         height: 275,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Image.asset("assets/image/newsone.webp"),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(
-                                  left: 20,
-                                  right: 10,
-                                  top: 5,
-                                ),
-                                child: Text("Beşiktaş'ta stoper krizi",
-                                  style:TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.bold
-                                  ) ,
-                                ),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(
-                                  left: 20,
-                                  top: 5,
-                                ),
-                                child: Text(
-                                  "Haber Kaynaği : Star Spor",
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    color: Colors.black87,
-                                    fontSize: 12,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
-              Row(
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                        left: 10,
-                        top: 10,
-                      ),
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => const NewsDetailTwoScreen(),));
-                        },
-                        child: Container(
-                          height: 275,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Image.asset("assets/image/newstwo.webp"),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(
-                                  left: 20,
-                                  right: 10,
-                                  top: 5,
-                                ),
-                                child: Text("Şenol Güneş galibiyete odaklandı",
-                                  style:TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.bold
-                                  ) ,
-                                ),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(
-                                  left: 20,
-                                  top: 5,
-                                ),
-                                child: Text(
-                                  "Haber Kaynaği : Star Spor",
-                                  style: TextStyle(
-                                    color: Colors.black87,
-                                    fontSize: 12,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
+              Positioned(
+                bottom: 20,
+                left: 10,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                  width: 350,
+                  child: Text(
+                    "Fenerbahçe'nin ara transfer döneminde en büyük planı: Kevin De Bruyne.",
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.only(
-                        left: 10,
-                        top: 10,
-                      ),
-                      child: GestureDetector(
-                        onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => const NewsDetailThreeScreen(),));
-                        },
-                        child: Container(
-                          height: 275,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(4),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Image.asset("assets/image/newsthree.webp"),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(
-                                  left: 20,
-                                  right: 10,
-                                  top: 5,
-                                ),
-                                child: Text("FENERBAHÇE HABERİ - Mourinho'dan Beşiktaş derbisi öncesi Galatasaray uyarısı!",
-                                  style:TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.bold
-                                  ) ,
-                                ),
-                              ),
-                              const Padding(
-                                padding: EdgeInsets.only(
-                                  left: 20,
-                                  top: 5,
-                                ),
-                                child: Text(
-                                  "Haber Kaynaği : Star Spor",
-                                  style: TextStyle(
-                                    color: Colors.black87,
-                                    fontSize: 12,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
-
             ],
           ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const NewsDetailOneScreen(),
+                      ),
+                    );
+                  },
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.all(8.0),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          image: DecorationImage(
+                            image: AssetImage('assets/image/newsgsone.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        height: 190,
+                        width: double.infinity,
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(
+                          left: 10,
+                        ),
+                        child: Text(
+                          "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const NewsDetailTwoScreen(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        margin: EdgeInsets.all(8.0),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          image: DecorationImage(
+                            image: AssetImage('assets/image/futbolcategory.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        height: 160,
+                        width: double.infinity,
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 20,
+                      ),
+                      width: 250,
+                      child: Text(
+                        "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.all(8.0),
+                width: 150,
+                height: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6),
+                  image: DecorationImage(
+                    image: AssetImage("assets/image/rodri.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.all(8.0),
+                  alignment: Alignment.center,
+                  height: 100,
+                  child: Text(
+                    "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Divider(),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.all(8.0),
+                width: 150,
+                height: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  image: DecorationImage(
+                    image: AssetImage("assets/image/rodri.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.all(8.0),
+                  alignment: Alignment.center,
+                  height: 100,
+                  child: Text(
+                    "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Divider(),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: EdgeInsets.all(8.0),
+                width: 150,
+                height: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  image: DecorationImage(
+                    image: AssetImage("assets/image/rodri.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.all(8.0),
+                  alignment: Alignment.center,
+                  height: 100,
+                  child: Text(
+                    "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+
+                  ),
+                ),
+              ),
+            ],
+          ),
+
+
         ],
       ),
+
       drawer:Drawer(
-        backgroundColor: colors["blackColor"],
+        backgroundColor: Theme.of(context).colorScheme.secondary,
         width: 250,
         child: Column(
           children: [
@@ -286,7 +270,7 @@ class HomeScreen extends StatelessWidget {
             ),
             Center(
               child: Container(
-                child: Image.asset("assets/image/markajblack.jpg")
+                  child: Image.asset("assets/image/markajblack.jpg")
               ),
             ),
             Expanded(
@@ -294,28 +278,24 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ListTile(
-                    leading: const Icon(Icons.newspaper, color: Color.fromRGBO(80, 82, 86, 1)),
-                    title: const Text(
+                    leading: Icon(
+                      Icons.newspaper,
+                      color: Theme.of(context).colorScheme.onSecondary,
+                    ),
+                    title: Text(
                       'GÜNDEM',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 13,
+                      style:Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.onPrimary,
                       ),
                     ),
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
                   ),
                   const Divider(),
                   ListTile(
-                    leading: const Icon(Icons.sports_soccer,color: Color.fromRGBO(80, 82, 86, 1)),
-                    title: const Text(
+                    leading: Icon(Icons.sports_soccer,color: Theme.of(context).colorScheme.onSecondary,),
+                    title:  Text(
                       'FUTBOL',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 13,
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.onPrimary,
                       ),
                     ),
                     onTap: () {
@@ -324,13 +304,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const Divider(),
                   ListTile(
-                    leading: const Icon(Icons.sports_basketball, color: Color.fromRGBO(80, 82, 86, 1)),
-                    title: const Text(
+                    leading: Icon(Icons.sports_basketball, color: Theme.of(context).colorScheme.onSecondary,),
+                    title:  Text(
                       'BASKETBOL',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 13,
+                      style:Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.onPrimary,
                       ),
                     ),
                     onTap: () {
@@ -339,13 +317,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const Divider(),
                   ListTile(
-                    leading: const Icon(Icons.sports_volleyball, color: Color.fromRGBO(80, 82, 86, 1)),
-                    title: const Text(
+                    leading:  Icon(Icons.sports_volleyball, color:Theme.of(context).colorScheme.onSecondary,),
+                    title:  Text(
                       'VOLEYBOL',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 13,
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.onPrimary,
                       ),
                     ),
                     onTap: () {
@@ -354,13 +330,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const Divider(),
                   ListTile(
-                    leading: const Icon(Icons.sports_tennis, color: Color.fromRGBO(80, 82, 86, 1)),
-                    title: const Text(
+                    leading:  Icon(Icons.sports_tennis, color: Theme.of(context).colorScheme.onSecondary),
+                    title:  Text(
                       'TENİS',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 13,
+                      style:Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.onPrimary,
                       ),
                     ),
                     onTap: () {
@@ -375,11 +349,10 @@ class HomeScreen extends StatelessWidget {
                     children: [
                       Container(
                         padding: const EdgeInsets.only(left: 20),
-                        child: const Text(
+                        child:  Text(
                           "Ayarlar & Destek",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                          style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                            color: Theme.of(context).colorScheme.onPrimary,
                           ),
                         ),
                       ),
