@@ -47,6 +47,7 @@ class NewsDetailScreen extends StatelessWidget {
                       "assets/image/rodri.jpg",
                       height: 300,
                       fit: BoxFit.cover,
+                      fit: BoxFit.cover, 
                     ),
                   ),
                   const SizedBox(height: 14.0),
@@ -55,15 +56,15 @@ class NewsDetailScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "Haber Kaynağı: Star Spor", // Kaynağınızı buraya yazın
+                          "Haber Kaynağı: Star Spor",
                           style: TextStyle(
                             fontSize: 14,
-                            fontStyle: FontStyle.italic, // İtalik stil
-                            color: Colors.grey, // Gri renk
+                            fontStyle: FontStyle.italic, 
+                            color: Colors.grey, 
                           ),
-                          textAlign: TextAlign.left, // Sola hizalama
+                          textAlign: TextAlign.left, 
                         ),
-                        SizedBox(height: 8.0), // Kaynak ve başlık arasında boşluk
+                        SizedBox(height: 8.0), 
                         Text("Real Madrid Başkanı Florentino Perez, Ballon d'Or ödülünü kazanan Rodri hakkında konuştu",style: TextStyle(
                             fontSize: 25,
                             fontWeight: FontWeight.bold
@@ -71,7 +72,9 @@ class NewsDetailScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+
                   const SizedBox(height: 15.0),
+                  const SizedBox(height: 15.0), 
                   const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
                       child: Text("Ödülü Real Madridli bir oyuncunun alması gerektiğini söyleyen Perez, Rodri, Ballon d'Or'u Manchester City ile Şampiyonlar Ligi'ni kazandığı zaman almalıydı. Geçtiğimiz sezonun ödülünü kesinlikle bir Real Madrid oyuncusu kazanmalıydı.dedi",style:TextStyle(
@@ -100,13 +103,13 @@ class NewsDetailScreen extends StatelessWidget {
                     child: ElevatedButton.icon(
                       onPressed: () {
                       },
-                      icon: const Icon(Icons.share, color: Colors.white), // Paylaş simgesi
+                      icon: const Icon(Icons.share, color: Colors.white), 
                       label: const Text(
                         "Paylaş",
                         style: TextStyle(color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color.fromRGBO(21, 23, 26, 1), // Arka plan rengi
+                        backgroundColor: const Color.fromRGBO(21, 23, 26, 1), 
                         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                       ),
                     ),
