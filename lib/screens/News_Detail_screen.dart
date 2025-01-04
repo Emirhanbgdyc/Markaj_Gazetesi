@@ -47,7 +47,7 @@ class NewsDetailScreen extends StatelessWidget {
                       "assets/image/rodri.jpg",
                       height: 300,
                       fit: BoxFit.cover,
-                      fit: BoxFit.cover, 
+
                     ),
                   ),
                   const SizedBox(height: 14.0),
