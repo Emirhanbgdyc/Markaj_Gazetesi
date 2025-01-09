@@ -1,9 +1,8 @@
-import 'package:carousel_slider/carousel_slider.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
-// import 'package:markaj_gazetesi/screens/News_screens/News_detail_three.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
@@ -31,51 +30,154 @@ class HomeScreen extends StatelessWidget {
         children: [
           Column(
             children: [
+              SizedBox(
+                height: 160,
+                width: MediaQuery.of(context).size.width,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
 
-      CarouselSlider(
-      options: CarouselOptions(
-        height: 200.0,
-        scrollDirection: Axis.horizontal, // Yatay kaydırma
-        viewportFraction: 0.7, // Resimler arasında bir boşluk oluşturur
-        enableInfiniteScroll: true, // Sonsuz kaydırma
-        enlargeCenterPage: true, // Ortadaki resmin biraz büyük görünmesini sağlar
-      ),
-      items: [
-        Container(
-          width: MediaQuery.of(context).size.width * 0.7, // Resim genişliği
-          margin: EdgeInsets.symmetric(horizontal: 5.0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20), // Köşeleri yuvarlatma
-            image: DecorationImage(
-              image: AssetImage("assets/image/basketbolcategory.jpg"),
-              fit: BoxFit.cover, // Resmi düzgün bir şekilde doldurur
-            ),
-          ),
-        ),
-        Container(
-          width: MediaQuery.of(context).size.width * 0.7,
-          margin: EdgeInsets.symmetric(horizontal: 5.0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            image: DecorationImage(
-              image: AssetImage("assets/image/basketbolcategory.jpg"),
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
-        Container(
-          width: MediaQuery.of(context).size.width * 0.7,
-          margin: EdgeInsets.symmetric(horizontal: 5.0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            image: DecorationImage(
-              image: AssetImage("assets/image/basketbolcategory.jpg"),
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
-      ],
-    ),
+                    Container(
+                      margin: EdgeInsets.only(left: 16, right: 8),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                width: 3,
+                                color: Colors.black87,
+                              ),
+                            ),
+                            child: CircleAvatar(
+                              radius: 36,
+                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Text(
+                            "Gündem",
+                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                            color: Theme.of(context).colorScheme.onSecondary,
+                          ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(left: 16, right: 8),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                width: 3,
+                                color: Colors.black87,
+                              ),
+                            ),
+                            child: CircleAvatar(
+                              radius: 36,
+                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Text(
+                            "Basketbol",
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 8),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                width: 3,
+                                color: Colors.black87,
+                              ),
+                            ),
+                            child: CircleAvatar(
+                              radius: 36,
+                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Text(
+                            "Futbol",
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 8),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                width: 3,
+                                color: Colors.black87,
+                              ),
+                            ),
+                            child: CircleAvatar(
+                              radius: 36,
+                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Text(
+                            "Voleybol",
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(right: 16, left: 8),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                width: 3,
+                                color: Colors.black87,
+                              ),
+                            ),
+                            child: CircleAvatar(
+                              radius: 36,
+                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
+                            ),
+                          ),
+                          SizedBox(height: 8),
+                          Text(
+                            "Tenis",
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+
+
+
+
 
               Stack(
                 children: [

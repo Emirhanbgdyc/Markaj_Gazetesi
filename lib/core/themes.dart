@@ -8,7 +8,7 @@ const colors = {
   "primary": Color.fromARGB(255, 65, 159, 217),
   "onPrimary": Color.fromARGB(255, 255, 255, 255),
   "secondary": Color.fromARGB(255, 23, 26, 31), //Drawer için ve bazı yerler için kullanılacak siyah renk
-  "onSecondary": Color.fromARGB(80, 82, 86, 123), //İcon Rengimiz
+  "onSecondary": Colors.black, //İcon Rengimiz
   "surface": Color.fromARGB(255, 255, 255, 255),
   "onSurface": Color.fromARGB(255, 82, 76, 100),
   "success": Colors.green,
