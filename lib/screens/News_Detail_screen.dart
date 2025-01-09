@@ -1,131 +1,231 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 import '../widgets/BottomMenu.dart';
-
-class NewsDetailScreen extends StatelessWidget {
-  const NewsDetailScreen({super.key});
+import 'package:flutter/cupertino.dart';
+class SearchScreen extends StatelessWidget {
+  const SearchScreen({super.key});
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromRGBO(235, 236, 237, 1),
       appBar: AppBar(
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(11.0),
-            child: IconButton(onPressed: (){
-              Navigator.pop(context);
-            }, icon: const Icon(Icons.close)),
-          )
-        ],
         backgroundColor: Colors.white,
-        title: Text(
-          "MARKAJ",
-          style: Theme.of(context).textTheme.headlineSmall,
+        title:const Text("MARKAJ",
+          style: TextStyle(
+              fontWeight: FontWeight.w900,
+              fontSize: 24,
+              color: Color.fromRGBO(146, 35, 42, 1)
+          ),
         ),
         centerTitle: true,
       ),
-      body: ListView(
+      body:ListView(
+
         children: [
-          Container(
-            child: Center(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Divider(),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 16.0),
-                    child: Text(
-                      "",
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.left,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Haber Spor Veya Takım Ara...',
+                    prefixIcon: const Icon(Icons.search),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20.0),
                     ),
                   ),
-                  const SizedBox(height: 16.0),
-                  Center(
-                    child: Image.asset(
-                      "assets/image/rodri.jpg",
-                      height: 300,
-                      fit: BoxFit.cover,
+                ),
+                const SizedBox(height: 20),
 
-                    ),
-                  ),
-                  const SizedBox(height: 14.0),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 16.0),
-                    child: Column(
-                      children: [
-                        Text(
-                          "Haber Kaynağı: Star Spor",
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontStyle: FontStyle.italic, 
-                            color: Colors.grey, 
-                          ),
-                          textAlign: TextAlign.left, 
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                      ),
+                      width: 200,
+                      height: 150,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/futbolcategory.jpg'),
+                          fit: BoxFit.cover,
                         ),
-                        SizedBox(height: 8.0), 
-                        Text("Real Madrid Başkanı Florentino Perez, Ballon d'Or ödülünü kazanan Rodri hakkında konuştu",style: TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold
-                        ),),
-                      ],
-                    ),
-                  ),
-
-                  const SizedBox(height: 15.0),
-                  const SizedBox(height: 15.0), 
-                  const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("Ödülü Real Madridli bir oyuncunun alması gerektiğini söyleyen Perez, Rodri, Ballon d'Or'u Manchester City ile Şampiyonlar Ligi'ni kazandığı zaman almalıydı. Geçtiğimiz sezonun ödülünü kesinlikle bir Real Madrid oyuncusu kazanmalıydı.dedi",style:TextStyle(
-                          fontSize: 19
-                      ) ,)
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.all(17.5),
-                    child: Text("NE OLMUŞTU? ",style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold
-                    ),),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.only(
-                      left:17.5,
-
-                    ),
-                    child: Text("Real Madrid yönetimi, Ballon d'Or ödülünü kendi takımlarından bir oyuncunun kazanmadığını öğrendiklerinde ödül törenini protesto etmiş ve hiçbir ferdinin törene katılmayacağını açıklamıştı.",style: TextStyle(
-                      fontSize: 20,
-
-                    ),),
-                  ),
-                  Center(
-                    heightFactor: 3,
-                    child: ElevatedButton.icon(
-                      onPressed: () {
-                      },
-                      icon: const Icon(Icons.share, color: Colors.white), 
-                      label: const Text(
-                        "Paylaş",
-                        style: TextStyle(color: Colors.white),
                       ),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color.fromRGBO(21, 23, 26, 1), 
-                        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("FUTBOL",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
                       ),
                     ),
-                  ),
-                ],
-              ),
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                      ),
+                      width: 200,  // Resmin genişliği
+                      height: 150, // Resmin yüksekliği
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/basketbolcategory.jpg'),  // Resmin yolu
+                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("BASKETBOL",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                        top: 10,
+                      ),
+                      width: 200,  // Resmin genişliği
+                      height: 150, // Resmin yüksekliği
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/voleybolcategory.jpg'),  // Resmin yolu
+                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("VOLEYBOL",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                        top: 10,
+                      ),
+                      width: 200,  // Resmin genişliği
+                      height: 150, // Resmin yüksekliği
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/teniscategory.jpg'),  // Resmin yolu
+                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("TENIS",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                        top: 10,
+                      ),
+                      width: 200,
+                      height: 150,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/formulacategory.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("FORMULA",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 25,
+                        top: 10,
+                      ),
+                      width: 200,
+                      height: 150,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          image: AssetImage('assets/image/naimcategory.jpg'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 110,
+                            left:10,
+                            child: Text("OLIMPIYAT",style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
         ],
       ),
-
       drawer:DrawerMenu(context),
       drawerScrimColor: Colors.transparent,
       bottomNavigationBar: const BottomMenu(),
-
     );
   }
 }
