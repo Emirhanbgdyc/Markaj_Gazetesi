@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         title: Text(
           "MARKAJ",
-          style: Theme.of(context).textTheme.headlineSmall,
+          style: Theme.of(context).textTheme.headlineLarge,
         ),
         centerTitle: true,
       ),
