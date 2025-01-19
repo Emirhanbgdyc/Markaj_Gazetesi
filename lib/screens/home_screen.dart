@@ -36,7 +36,6 @@ class HomeScreen extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-
                     Container(
                       margin: EdgeInsets.only(left: 16, right: 8),
                       child: Column(
@@ -173,12 +172,6 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
               ),
-
-
-
-
-
-
               Stack(
                 children: [
                   GestureDetector(
