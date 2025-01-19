@@ -55,7 +55,7 @@ final lightTheme = ThemeData(
     titleLarge: GoogleFonts.roboto(),
     headlineSmall: GoogleFonts.aBeeZee(),
     headlineMedium: GoogleFonts.aBeeZee(),
-    headlineLarge: GoogleFonts.aBeeZee(),
+    headlineLarge: GoogleFonts.bebasNeue(),
     displaySmall: GoogleFonts.abrilFatface(),
     displayMedium: GoogleFonts.abrilFatface(),
     displayLarge: GoogleFonts.abrilFatface(),
