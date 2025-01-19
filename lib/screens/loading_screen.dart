@@ -77,7 +77,7 @@ class LoadingScreen extends StatelessWidget {
                     ),
                     width: double.infinity,
                     child: Center(
-                        child: Text("GET STARTED...",
+                        child: Text("GET STARTED",
                         style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           color: Theme.of(context).colorScheme.onPrimary,
                         ),
