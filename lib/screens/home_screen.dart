@@ -237,7 +237,7 @@ class HomeScreen extends StatelessWidget {
                                 fit: BoxFit.cover,
                               ),
                             ),
-                            height: 190,
+                            height: 200,
                             width: double.infinity,
                           ),
                           Container(
@@ -297,6 +297,96 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                ],
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const NewsDetailTwoScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            margin: EdgeInsets.all(8.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            height: 160,
+                            width: double.infinity,
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(
+                            left: 20,
+                          ),
+                          width: 250,
+                          child: Text(
+                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const NewsDetailOneScreen(),
+                          ),
+                        );
+                      },
+                      child: Column(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.all(8.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            height: 200,
+                            width: double.infinity,
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: Text(
+                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+
                 ],
               ),
               SizedBox(
