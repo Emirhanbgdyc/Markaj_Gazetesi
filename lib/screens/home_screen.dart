@@ -302,6 +302,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
+
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
