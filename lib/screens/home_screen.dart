@@ -246,9 +246,8 @@ class HomeScreen extends StatelessWidget {
                             ),
                             child: Text(
                               "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.bold,
+                              style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                                color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
                           ),
