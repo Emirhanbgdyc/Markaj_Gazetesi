@@ -287,9 +287,8 @@ class HomeScreen extends StatelessWidget {
                           width: 250,
                           child: Text(
                             "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
+                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                              color: Theme.of(context).colorScheme.onSecondary,
                             ),
                           ),
                         ),
