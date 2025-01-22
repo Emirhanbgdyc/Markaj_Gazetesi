@@ -446,9 +446,8 @@ class HomeScreen extends StatelessWidget {
                       height: 100,
                       child: Text(
                         "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                        style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                          color: Theme.of(context).colorScheme.onSecondary,
                         ),
 
                       ),
@@ -479,9 +478,8 @@ class HomeScreen extends StatelessWidget {
                       height: 100,
                       child: Text(
                         "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                        style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                          color: Theme.of(context).colorScheme.onSecondary,
                         ),
 
                       ),
