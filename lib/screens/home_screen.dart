@@ -1,5 +1,5 @@
 
-import 'package:flutter/cupertino.dart';
+ // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
@@ -18,14 +18,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).colorScheme.onError,
         title: Text(
           "MARKAJ",
           style: Theme.of(context).textTheme.headlineLarge,
         ),
         centerTitle: true,
       ),
-
+      backgroundColor: Theme.of(context).colorScheme.onError,
       body: ListView(
         children: [
           Column(
@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                               shape: BoxShape.circle,
                               border: Border.all(
                                 width: 3,
-                                color: Colors.black87,
+                                color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
                             child: CircleAvatar(
@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                               shape: BoxShape.circle,
                               border: Border.all(
                                 width: 3,
-                                color: Colors.black87,
+                                color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
                             child: CircleAvatar(
@@ -100,7 +100,7 @@ class HomeScreen extends StatelessWidget {
                               shape: BoxShape.circle,
                               border: Border.all(
                                 width: 3,
-                                color: Colors.black87,
+                                color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
                             child: CircleAvatar(
@@ -127,7 +127,7 @@ class HomeScreen extends StatelessWidget {
                               shape: BoxShape.circle,
                               border: Border.all(
                                 width: 3,
-                                color: Colors.black87,
+                                color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
                             child: CircleAvatar(
@@ -153,7 +153,7 @@ class HomeScreen extends StatelessWidget {
                               shape: BoxShape.circle,
                               border: Border.all(
                                 width: 3,
-                                color: Colors.black87,
+                                color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
                             child: CircleAvatar(
