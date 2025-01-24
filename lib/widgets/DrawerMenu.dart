@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 Drawer DrawerMenu(BuildContext context) {
   return Drawer(
-    backgroundColor: Theme.of(context).colorScheme.secondary,
+    backgroundColor: Theme.of(context).colorScheme.onError,
     width: 250,
     child: Column(
       children: [
@@ -11,7 +11,7 @@ Drawer DrawerMenu(BuildContext context) {
         ),
         Center(
           child: Container(
-              child: Image.asset("assets/image/markajblack.jpg")
+              child: Image.asset("assets/image/markaj.jpg")
           ),
         ),
         Expanded(
@@ -26,7 +26,7 @@ Drawer DrawerMenu(BuildContext context) {
                 title: Text(
                   'GÜNDEM',
                   style:Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: Theme.of(context).colorScheme.onPrimary,
+                    color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
               ),
@@ -36,7 +36,7 @@ Drawer DrawerMenu(BuildContext context) {
                 title:  Text(
                   'FUTBOL',
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: Theme.of(context).colorScheme.onPrimary,
+                    color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
                 onTap: () {
@@ -49,7 +49,7 @@ Drawer DrawerMenu(BuildContext context) {
                 title:  Text(
                   'BASKETBOL',
                   style:Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: Theme.of(context).colorScheme.onPrimary,
+                    color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
                 onTap: () {
@@ -62,7 +62,7 @@ Drawer DrawerMenu(BuildContext context) {
                 title:  Text(
                   'VOLEYBOL',
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: Theme.of(context).colorScheme.onPrimary,
+                    color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
                 onTap: () {
@@ -75,7 +75,7 @@ Drawer DrawerMenu(BuildContext context) {
                 title:  Text(
                   'TENİS',
                   style:Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: Theme.of(context).colorScheme.onPrimary,
+                    color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
                 onTap: () {
@@ -93,7 +93,7 @@ Drawer DrawerMenu(BuildContext context) {
                     child:  Text(
                       "Ayarlar & Destek",
                       style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                        color: Theme.of(context).colorScheme.onPrimary,
+                        color: Theme.of(context).colorScheme.onSecondary,
                       ),
                     ),
                   ),
