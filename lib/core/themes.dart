@@ -20,12 +20,12 @@ const darkColors = {
   "primary": Color.fromARGB(255, 43, 82, 120),
   "onPrimary": Color.fromARGB(255, 241, 241, 241),
   "secondary": Color.fromARGB(21, 23, 26, 1),
-  "onSecondary": Color.fromARGB(80, 82, 86, 123), //İcon Rengimiz
+  "onError":  Colors.black,
   "surface": Color.fromARGB(255, 23, 33, 43),
   "onSurface": Color.fromARGB(255, 245, 245, 245),
   "success": Colors.green,
   "error": Colors.red,
-  "onError": Colors.white,
+  "onSecondary": Colors.white,
 };
 
 final lightTheme = ThemeData(
