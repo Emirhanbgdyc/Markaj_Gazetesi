@@ -1,2 +1,0 @@
-//Renk için dursun gene
-

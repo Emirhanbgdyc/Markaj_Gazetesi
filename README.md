@@ -27,17 +27,37 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 2 - [https://github.com/Emirhanbgdyc] (Emirhanbgdyc)
 3 - [https://github.com/Emirbulutt] (Emirbulutt)
 
+## Ekip Üyelerinin yaptığı çalışmalar
+**Alperen KARADEMİR:**
+1-Loading sayfası (ortak yapıldı)
+2-Drawer logosunu yaptım
+3-
 
+**Emirhan BUĞDAYCI:**
+1-Loading sayfası (ortak yapıldı)
+2-About sayfası,haber sitemizin girişinde uygulamanın nasıl kullaıldığını gösteren bilgileri içeren bölüm kısmıdır.
+3-Home sayfası, haber sitemizin tüm haberlerin başlık,resim ve özet kısmının gösterildiği home sayfasıdır.
+4-Drawer yazı stilleri ve drawerın içine yazının hizalanmasını sağladım.
+
+**Emir BULUT:**
+1-Loading sayfası (ortak yapıldı)
+2-NewDetails sayfası,haberin başlık,resim,kaynak ve haberin yazısının tamamını içeren kısımdır.
+3-Notification sayfası,haberin başlık,saat,tarih,içerik,kategori kısmını gösteren bildirim sayfasıdır.
+4-Drawerın boyutu hizalanması rengi icons kısmını yaptım.
 
 ## Özellikler
 
-- [Yükleme Sayfası]
+- [Loading Sayfası]:
 
-- [Sıde Bar]
+- [About Sayfası]:
 
-- [Haber Arama Sayfası]
+- [Home Sayfası]:
 
+- [Search Sayfası]:
 
+- [New Details Sayfası]:
+
+- [Notification Sayfası]:
 
 ## Kullanılan Teknolojiler
 
