@@ -31,147 +31,123 @@ class HomeScreen extends StatelessWidget {
           Column(
             children: [
               SizedBox(
-                height: 160,
+                height: 60,
                 width: MediaQuery.of(context).size.width,
-                child: ListView(
+                child:ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(left: 16, right: 8),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      margin: EdgeInsets.symmetric(horizontal: 8),
+                      child: Row(
                         children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                width: 3,
+                          SizedBox(width: 12),
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => NewsDetailTwoScreen()),
+                              );
+                            },
+                            child: Text(
+                              "Tümü",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
-                            child: CircleAvatar(
-                              radius: 36,
-                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
-                            ),
-                          ),
-                          SizedBox(height: 8),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 8),
+                      child: Row(
+                        children: [
+                          SizedBox(width: 12),
                           Text(
                             "Gündem",
-                             style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                            color: Theme.of(context).colorScheme.onSecondary,
-                          ),
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Theme.of(context).colorScheme.onSecondary,
+                            ),
                           ),
                         ],
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: 16, right: 8),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      margin: EdgeInsets.symmetric(horizontal: 8),
+                      child: Row(
                         children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                width: 3,
-                                color: Theme.of(context).colorScheme.onSecondary,
-                              ),
-                            ),
-                            child: CircleAvatar(
-                              radius: 36,
-                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
-                            ),
-                          ),
-                          SizedBox(height: 8),
+
+                          SizedBox(width: 12),
                           Text(
                             "Basketbol",
-                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Theme.of(context).colorScheme.onSecondary,
+                            ),
                           ),
                         ],
                       ),
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      child: Row(
                         children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                width: 3,
-                                color: Theme.of(context).colorScheme.onSecondary,
-                              ),
-                            ),
-                            child: CircleAvatar(
-                              radius: 36,
-                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
-                            ),
-                          ),
-                          SizedBox(height: 8),
+
+                          SizedBox(width: 12),
                           Text(
                             "Futbol",
-                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Theme.of(context).colorScheme.onSecondary,
+                            ),
                           ),
                         ],
                       ),
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      child: Row(
                         children: [
-                          Container(
 
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                width: 3,
-                                color: Theme.of(context).colorScheme.onSecondary,
-                              ),
-                            ),
-                            child: CircleAvatar(
-                              radius: 36,
-                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
-                            ),
-                          ),
-                          SizedBox(height: 8),
+                          SizedBox(width: 12),
                           Text(
                             "Voleybol",
-                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Theme.of(context).colorScheme.onSecondary,
+                            ),
                           ),
                         ],
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(right: 16, left: 8),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
+                      margin: EdgeInsets.symmetric(horizontal: 8),
+                      child: Row(
                         children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                width: 3,
-                                color: Theme.of(context).colorScheme.onSecondary,
-                              ),
-                            ),
-                            child: CircleAvatar(
-                              radius: 36,
-                              backgroundImage: AssetImage("assets/image/basketbolcategory.jpg"),
-                            ),
-                          ),
-                          SizedBox(height: 8),
+                          SizedBox(width: 12),
                           Text(
                             "Tenis",
-                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Theme.of(context).colorScheme.onSecondary,
+                            ),
                           ),
                         ],
                       ),
                     ),
                   ],
-                ),
+                )
+
               ),
+
               Stack(
                 children: [
                   GestureDetector(
