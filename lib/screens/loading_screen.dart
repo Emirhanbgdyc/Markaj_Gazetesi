@@ -1,91 +1,175 @@
-
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 
-
-class LoadingScreen extends StatelessWidget {
+class LoadingScreen extends StatefulWidget {
   const LoadingScreen({super.key});
+
+  @override
+  State<LoadingScreen> createState() => _LoadingScreenState();
+}
+
+class _LoadingScreenState extends State<LoadingScreen> {
+  int _currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Theme.of(context).colorScheme.onError,
-      body: Column(
+      body: Stack(
         children: [
-          Expanded(
-            child: Container(
-              width: double.infinity,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Color.fromRGBO(146, 35, 42, 1),
-                    Color.fromRGBO(110, 25, 30, 0.8),
-                  ],
-                ),
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(32),
-                  bottomLeft: Radius.circular(32),
-                ),
-              ),
-              child: Column(
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text("MARKAJ",style:
-                        Theme.of(context).textTheme.displayMedium!.copyWith(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                        ),
-
-                        ),
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    flex: 5,
-                    child: Image.asset("assets/image/futbolcategory.jpg",width: 400,),
-                  ),
+          Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromRGBO(146, 35, 42, 1),
+                  Color.fromRGBO(110, 25, 30, 0.8),
                 ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
             ),
           ),
-          Container(
-            width: double.infinity,
-            height: 150,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                InkWell(
-                  onTap: () => context.go("/home"),
-                  child: Container(
-                    padding:EdgeInsets.only(
-                        top: 14,
-                        bottom: 14,
-                        left: 12,
-                        right: 12
+
+
+          PageView(
+            onPageChanged: (index) {
+              setState(() {
+                _currentIndex = index;
+              });
+            },
+            children: [
+
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("MARKAJ",style:
+                  Theme.of(context).textTheme.displayMedium!.copyWith(
+                    color: Theme.of(context).colorScheme.onPrimary,
+                  ),
+                  ),
+                  Image.asset("assets/image/futbolcategory.jpg", height: 250),
+                  const SizedBox(height: 24),
+                  const Text(
+                    "Hızlı Haber",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
                     ),
-                    margin: EdgeInsets.only(
-                      bottom: 10,
-                      right: 8,
-                      left: 8,
-                    ),
-                    decoration: BoxDecoration(
-                        color: Colors.black
-                    ),
-                    width: double.infinity,
-                    child: Center(
-                      child: Text("GET STARTED",
-                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                          color: Theme.of(context).colorScheme.onPrimary,
-                        ),
+                  ),
+                  const SizedBox(height: 12),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 24),
+                    child: Text(
+                      "Dünyanın dört bir yanından en güncel haberlere hızlı bir şekilde erişebilirsin",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 16,
                       ),
                     ),
                   ),
+                ],
+              ),
+
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset("assets/image/notification.jpg", height: 250),
+                  const SizedBox(height: 24),
+                  const Text(
+                    "Anlık Bildirimler",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 24),
+                    child: Text(
+                      "Önemli haberlerden ve gelişmelerden anında haberdar olun.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset("assets/image/settings.jpg", height: 250),
+                  const SizedBox(height: 24),
+                  const Text(
+                    "Kişisel Ayarlar",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 24),
+                    child: Text(
+                      "Tercihlerinize göre haberleri özelleştirin.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white70,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          Positioned(
+            bottom: 100,
+            left: 0,
+            right: 0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: List.generate(
+                3,
+                    (index) => AnimatedContainer(
+                  duration: const Duration(milliseconds: 300),
+                  margin: const EdgeInsets.symmetric(horizontal: 4),
+                  height: 8,
+                  width: _currentIndex == index ? 24 : 8,
+                  decoration: BoxDecoration(
+                    color:
+                    _currentIndex == index ? Colors.white : Colors.white38,
+                    borderRadius: BorderRadius.circular(4),
+                  ),
                 ),
-              ],
+              ),
+            ),
+          ),
+
+          Positioned(
+            bottom: 50,
+            right: 20,
+            child: TextButton(
+              onPressed: () {
+                context.go('/home');
+              },
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: const [
+                  Text(
+                    "Atla",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(width: 4),
+                  Icon(Icons.arrow_forward, color: Colors.white),
+                ],
+              ),
             ),
           ),
         ],
