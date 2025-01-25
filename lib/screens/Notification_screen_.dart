@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 import '../widgets/BottomMenu.dart';
 
@@ -11,6 +12,18 @@ class NotificationScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromRGBO(235, 236, 237, 1),
       appBar: AppBar(
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(11.0),
+            child: IconButton(
+              onPressed: () {
+                context.go('/home');
+              },
+              icon: const Icon(Icons.close),
+            )
+
+          )
+        ],
         backgroundColor: Colors.white,
         title: const Text(
           "MARKAJ",
