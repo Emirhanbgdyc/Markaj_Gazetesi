@@ -35,7 +35,9 @@ class BottomMenu extends StatelessWidget {
           ),
           Container(
             child:
-            IconButton(onPressed: (){}, icon:const Icon(CupertinoIcons.person,color: Colors.white)),
+            IconButton(onPressed: (){
+              context.go("/Notification");
+            }, icon:const Icon(CupertinoIcons.person,color: Colors.white)),
           ),
         ],
       ),
