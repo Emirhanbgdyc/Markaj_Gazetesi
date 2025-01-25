@@ -10,7 +10,7 @@ class NotificationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.onError,
+      backgroundColor: Theme.of(context).colorScheme.onError,
       appBar: AppBar(
         actions: [
           Padding(
@@ -20,8 +20,7 @@ class NotificationScreen extends StatelessWidget {
                 context.go('/home');
               },
               icon: const Icon(Icons.close),
-            )
-
+            ),
           )
         ],
         backgroundColor: Theme.of(context).colorScheme.onError,
@@ -33,45 +32,37 @@ class NotificationScreen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Divider(color: Colors.grey),
-                 Text(
-                  "BİLDİRİMLER",
-                  style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                    color: Theme.of(context).colorScheme.onSecondary,
-                  ),                ),
-                const SizedBox(height: 25.0),
-                NotificationCard(
-                  time: "14:47",
-                  source: "HABER BAŞLİGİ",
-                  title: "HABER İCERİK FUTBOL",
-                  category: "FUTBOL",
-                  date: "23 Ocak",
-                ),
-                NotificationCard(
-                  time: "14:43",
-                  source: "HABER BAŞLİGİ",
-                  title: "HABER İCERİK FUTBOL",
-                  category: "FUTBOL",
-                  date: "23 Ocak",
-                ),
-                NotificationCard(
-                  time: "14:28",
-                  source: "HABER BAŞLİGİ",
-                  title: "HABER İCERİK FUTBOL",
-                  category: "FUTBOL",
-                  date: "23 Ocak",
-                ),
-              ],
-            ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Divider(color: Colors.grey),
+              SizedBox(height: 20),
+              NotificationCard(
+                time: "14:47",
+                source: "HABER BAŞLİGİ",
+                title: "HABER İCERİK FUTBOL",
+                category: "FUTBOL",
+                date: "23 Ocak",
+              ),
+              NotificationCard(
+                time: "14:43",
+                source: "HABER BAŞLİGİ",
+                title: "HABER İCERİK FUTBOL",
+                category: "FUTBOL",
+                date: "23 Ocak",
+              ),
+              NotificationCard(
+                time: "14:28",
+                source: "HABER BAŞLİGİ",
+                title: "HABER İCERİK FUTBOL",
+                category: "FUTBOL",
+                date: "23 Ocak",
+              ),
+            ],
           ),
         ],
       ),
-      drawer:DrawerMenu(context),
+      drawer: DrawerMenu(context),
       drawerScrimColor: Colors.transparent,
       bottomNavigationBar: const BottomMenu(),
     );
@@ -96,54 +87,68 @@ class NotificationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.symmetric(vertical: 20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Text(
-                time,
-                style: Theme.of(context).textTheme.displayMedium!.copyWith(
-                  color: Theme.of(context).colorScheme.onSecondary,
+          // Sağdaki ve soldaki metinlere padding ekledik
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0), // Sol tarafa boşluk ekledik
+            child: Row(
+              children: [
+                Text(
+                  time,
+                  style: Theme.of(context).textTheme.displayMedium!.copyWith(
+                    color: Theme.of(context).colorScheme.onSecondary,
+                  ),
                 ),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                source,
-                style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                  color: Theme.of(context).colorScheme.onSecondary,
+                const SizedBox(width: 8),
+                Text(
+                  source,
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                    color: Theme.of(context).colorScheme.onSecondary,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           const SizedBox(height: 5),
-          Text(
-            title,
-            style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-              color: Theme.of(context).colorScheme.onSecondary,
-              fontSize: 30
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0), // Sol tarafa boşluk ekledik
+            child: Text(
+              title,
+              style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                color: Theme.of(context).colorScheme.onSecondary,
+                fontSize: 30,
+              ),
             ),
           ),
           const SizedBox(height: 4),
-          Row(
-            children: [
-              Text(
-                category,
-                style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                  color: Theme.of(context).colorScheme.onSecondary,
-                  fontSize: 30
+          Padding(
+            padding: const EdgeInsets.only(left: 16.0), // Sol tarafa boşluk ekledik
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  category,
+                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                    color: Theme.of(context).colorScheme.onSecondary,
+                    fontSize: 30,
+                  ),
                 ),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                date,
-                style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                  color: Theme.of(context).colorScheme.onSecondary,
+                Padding(
+                  padding: const EdgeInsets.only(right: 16.0), // Sağdan boşluk ekledik
+                  child: Text(
+                    date,
+                    style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                      color: Theme.of(context).colorScheme.onSecondary,
+                    ),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
+          const SizedBox(height: 10), // Divider'ı biraz daha aşağıya kaydırdık
           const Divider(color: Colors.grey),
         ],
       ),

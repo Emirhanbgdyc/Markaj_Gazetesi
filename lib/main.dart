@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Markaj Gazetesi',
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       theme: lightTheme,
       darkTheme: darkTheme,
       routerConfig: router,
