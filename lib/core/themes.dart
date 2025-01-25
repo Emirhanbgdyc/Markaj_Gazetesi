@@ -3,6 +3,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+class ThemeProvider with ChangeNotifier {
+  bool _isDark = false;
+  bool get isDark => _isDark;
+
+  void toggleTheme() {
+    _isDark = !_isDark;
+    notifyListeners();
+  }
+}
+
 
 const colors = {
   "primary": Color.fromARGB(255, 65, 159, 217),

@@ -1,4 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../core/themes.dart';
 
 Drawer DrawerMenu(BuildContext context) {
   return Drawer(
@@ -105,6 +109,13 @@ Drawer DrawerMenu(BuildContext context) {
                     ),
                   ),
                 ],
+              ),
+              Container( child: IconButton(
+                icon: Icon(CupertinoIcons.moon),
+                onPressed: () {
+                  context.read<ThemeProvider>().toggleTheme();
+                },
+              ),
               ),
             ],
           ),
