@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
+import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
+import '../widgets/BottomMenu.dart';
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});
@@ -64,6 +65,9 @@ class NotificationScreen extends StatelessWidget {
           ),
         ],
       ),
+      drawer:DrawerMenu(context),
+      drawerScrimColor: Colors.transparent,
+      bottomNavigationBar: const BottomMenu(),
     );
   }
 }
