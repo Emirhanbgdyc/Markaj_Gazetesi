@@ -131,13 +131,13 @@ class _AboutScreenState extends State<AboutScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(
-                3,
+                    3,
                     (index) => AnimatedContainer(
-                  duration: const Duration(milliseconds: 300),
-                  margin: const EdgeInsets.symmetric(horizontal: 4),
-                  height: 8,
-                  width: _currentIndex == index ? 24 : 8,
-                  decoration: BoxDecoration(
+                    duration: const Duration(milliseconds: 300),
+                    margin: const EdgeInsets.symmetric(horizontal: 4),
+                    height: 8,
+                    width: _currentIndex == index ? 24 : 8,
+                    decoration: BoxDecoration(
                     color:
                     _currentIndex == index ? Colors.white : Colors.white38,
                     borderRadius: BorderRadius.circular(4),
