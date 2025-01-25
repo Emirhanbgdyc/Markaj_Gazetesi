@@ -20,7 +20,6 @@ Drawer DrawerMenu(BuildContext context) {
         ),
         Expanded(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ListTile(
                 leading: Icon(
@@ -110,17 +109,25 @@ Drawer DrawerMenu(BuildContext context) {
                   ),
                 ],
               ),
-              Container( child: IconButton(
-                icon: Icon(CupertinoIcons.moon),
-                onPressed: () {
-                  context.read<ThemeProvider>().toggleTheme();
-                },
-              ),
-              ),
+              Container(
+                alignment: Alignment.centerLeft,
+                padding: EdgeInsets.only(
+                  left: 10,
+                ),
+                child:
+                IconButton(
+                  icon: Icon(CupertinoIcons.moon),
+                  onPressed: () {
+                    context.read<ThemeProvider>().toggleTheme();
+                  },
+                ),
+              )
             ],
           ),
         ),
+
       ],
+
     ),
   );
 }
