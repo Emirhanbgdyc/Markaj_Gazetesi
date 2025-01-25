@@ -36,7 +36,7 @@ class LoadingScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("MARKAJ",style:
-                          Theme.of(context).textTheme.displayMedium!.copyWith(
+                        Theme.of(context).textTheme.displayMedium!.copyWith(
                           color: Theme.of(context).colorScheme.onPrimary,
                         ),
 
@@ -62,10 +62,10 @@ class LoadingScreen extends StatelessWidget {
                   onTap: () => context.go("/home"),
                   child: Container(
                     padding:EdgeInsets.only(
-                    top: 14,
-                    bottom: 14,
-                    left: 12,
-                    right: 12
+                        top: 14,
+                        bottom: 14,
+                        left: 12,
+                        right: 12
                     ),
                     margin: EdgeInsets.only(
                       bottom: 10,
@@ -73,15 +73,15 @@ class LoadingScreen extends StatelessWidget {
                       left: 8,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.black
+                        color: Colors.black
                     ),
                     width: double.infinity,
                     child: Center(
-                        child: Text("GET STARTED",
+                      child: Text("GET STARTED",
                         style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           color: Theme.of(context).colorScheme.onPrimary,
                         ),
-                        ),
+                      ),
                     ),
                   ),
                 ),
