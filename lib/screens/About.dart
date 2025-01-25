@@ -155,13 +155,15 @@ class _AboutScreenState extends State<AboutScreen> {
               },
               child: Row(
                 mainAxisSize: MainAxisSize.min,
-                children: const [
+                children:  [
                   Text(
                     "Atla",
-                    style: TextStyle(color: Colors.white),
+                    style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                      color: Theme.of(context).colorScheme.onSecondary,
+                    ),
                   ),
                   SizedBox(width: 4),
-                  Icon(Icons.arrow_forward, color: Colors.white),
+                  Icon(Icons.arrow_forward, color: Colors.black),
                 ],
               ),
             ),
