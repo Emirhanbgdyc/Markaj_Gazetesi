@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: lightTheme,
       darkTheme: darkTheme,
-      routerConfig: router, // Router burada tanımlı
+      routerConfig: router,
       debugShowCheckedModeBanner: false,
     );
   }

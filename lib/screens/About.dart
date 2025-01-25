@@ -131,13 +131,13 @@ class _AboutScreenState extends State<AboutScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(
-                3,
+                    3,
                     (index) => AnimatedContainer(
-                  duration: const Duration(milliseconds: 300),
-                  margin: const EdgeInsets.symmetric(horizontal: 4),
-                  height: 8,
-                  width: _currentIndex == index ? 24 : 8,
-                  decoration: BoxDecoration(
+                    duration: const Duration(milliseconds: 300),
+                    margin: const EdgeInsets.symmetric(horizontal: 4),
+                    height: 8,
+                    width: _currentIndex == index ? 24 : 8,
+                    decoration: BoxDecoration(
                     color:
                     _currentIndex == index ? Colors.white : Colors.white38,
                     borderRadius: BorderRadius.circular(4),
@@ -155,13 +155,15 @@ class _AboutScreenState extends State<AboutScreen> {
               },
               child: Row(
                 mainAxisSize: MainAxisSize.min,
-                children: const [
+                children:  [
                   Text(
                     "Atla",
-                    style: TextStyle(color: Colors.white),
+                    style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                      color: Theme.of(context).colorScheme.onSecondary,
+                    ),
                   ),
                   SizedBox(width: 4),
-                  Icon(Icons.arrow_forward, color: Colors.white),
+                  Icon(Icons.arrow_forward, color: Colors.black),
                 ],
               ),
             ),
