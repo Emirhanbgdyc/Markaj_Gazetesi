@@ -147,7 +147,6 @@ class HomeScreen extends StatelessWidget {
                 )
 
               ),
-
               Stack(
                 children: [
                   GestureDetector(
@@ -363,101 +362,6 @@ class HomeScreen extends StatelessWidget {
               ),
               SizedBox(
                 height: 30,
-              ),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: EdgeInsets.all(8.0),
-                    width: 150,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(6),
-                      image: DecorationImage(
-                        image: AssetImage("assets/image/rodri.jpg"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      margin: EdgeInsets.all(8.0),
-                      alignment: Alignment.center,
-                      height: 100,
-                      child: Text(
-                        "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
-                        style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                          color: Theme.of(context).colorScheme.onSecondary,
-                        ),
-
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Divider(),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: EdgeInsets.all(8.0),
-                    width: 150,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      image: DecorationImage(
-                        image: AssetImage("assets/image/rodri.jpg"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      margin: EdgeInsets.all(8.0),
-                      alignment: Alignment.center,
-                      height: 100,
-                      child: Text(
-                        "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
-                        style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                          color: Theme.of(context).colorScheme.onSecondary,
-                        ),
-
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Divider(),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: EdgeInsets.all(8.0),
-                    width: 150,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      image: DecorationImage(
-                        image: AssetImage("assets/image/rodri.jpg"),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      margin: EdgeInsets.all(8.0),
-                      alignment: Alignment.center,
-                      height: 100,
-                      child: Text(
-                        "Florentino Perez'den Rodri ve Ballon d'Or açıklaması",
-                        style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                          color: Theme.of(context).colorScheme.onSecondary,
-                        ),
-
-                      ),
-                    ),
-                  ),
-                ],
               ),
             ],
           )
