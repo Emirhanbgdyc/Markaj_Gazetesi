@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
@@ -34,12 +35,9 @@ class futbolcategory extends StatelessWidget {
                         child: Row(
                           children: [
                             SizedBox(width: 12),
-                            InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => NewsDetailTwoScreen()),
-                                );
+                            GestureDetector(
+                              onTap: (){
+                                context.go('/home');
                               },
                               child: Text(
                                 "Tümü",
@@ -73,7 +71,6 @@ class futbolcategory extends StatelessWidget {
                         margin: EdgeInsets.symmetric(horizontal: 8),
                         child: Row(
                           children: [
-
                             SizedBox(width: 12),
                             Text(
                               "Basketbol",
@@ -86,22 +83,40 @@ class futbolcategory extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Container(
-                        margin: EdgeInsets.symmetric(horizontal: 8),
-                        child: Row(
-                          children: [
-
-                            SizedBox(width: 12),
-                            Text(
-                              "Futbol",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Center(
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                left: 10
+                              ),
+                              child: Text(
+                                "Futbol",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: Theme.of(context).colorScheme.onSecondary,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 4),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10
+                            ),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: Container(
+                                height: 2,
+                                width: 50,
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                       Container(
                         margin: EdgeInsets.symmetric(horizontal: 8),
