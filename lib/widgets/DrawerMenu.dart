@@ -122,12 +122,7 @@ Drawer DrawerMenu(BuildContext context) {
                   },
                 ),
               ),
-              IconButton(
-      icon: Icon(CupertinoIcons.moon),
-      onPressed: () {
-        context.read<ThemeProvider>().toggleTheme();
-      },
-    )
+
 
             ],
           ),
