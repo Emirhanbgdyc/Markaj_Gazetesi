@@ -72,12 +72,17 @@ class futbolcategory extends StatelessWidget {
                         child: Row(
                           children: [
                             SizedBox(width: 12),
-                            Text(
-                              "Basketbol",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: Theme.of(context).colorScheme.onSecondary,
+                            GestureDetector(
+                              onTap: (){
+                                context.go("/basketbolcategory");
+                              },
+                              child: Text(
+                                "Basketbol",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: Theme.of(context).colorScheme.onSecondary,
+                                ),
                               ),
                             ),
                           ],
