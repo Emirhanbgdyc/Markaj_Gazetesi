@@ -14,7 +14,7 @@ class futbolcategory extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.onError,
         title: Text(
-          "Futbol",
+          "MARKAJ",
           style: Theme.of(context).textTheme.headlineLarge,
         ),
         centerTitle: true,
@@ -121,10 +121,15 @@ class futbolcategory extends StatelessWidget {
                           children: [
 
                             SizedBox(width: 12),
-                            Text(
-                              "Voleybol",
-                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                                color: Theme.of(context).colorScheme.onSecondary,
+                            GestureDetector(
+                              onTap: (){
+                                context.go("/voleybolcategory");
+                              },
+                              child: Text(
+                                "Voleybol",
+                                style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                                  color: Theme.of(context).colorScheme.onSecondary,
+                                ),
                               ),
                             ),
                           ],
@@ -135,10 +140,15 @@ class futbolcategory extends StatelessWidget {
                         child: Row(
                           children: [
                             SizedBox(width: 12),
-                            Text(
-                              "Tenis",
-                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                                color: Theme.of(context).colorScheme.onSecondary,
+                            GestureDetector(
+                              onTap: (){
+                                context.go("/teniscategory");
+                              },
+                              child: Text(
+                                "Tenis",
+                                style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                                  color: Theme.of(context).colorScheme.onSecondary,
+                                ),
                               ),
                             ),
                           ],
