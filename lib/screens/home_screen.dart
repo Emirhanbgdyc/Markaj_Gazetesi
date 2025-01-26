@@ -48,9 +48,7 @@ class HomeScreen extends StatelessWidget {
                             ),
                             child: Text(
                               "Tümü",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -79,9 +77,7 @@ class HomeScreen extends StatelessWidget {
                           SizedBox(width: 12),
                           Text(
                             "Gündem",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
+                            style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),
                           ),
@@ -99,9 +95,7 @@ class HomeScreen extends StatelessWidget {
                             },
                             child: Text(
                               "Basketbol",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -120,9 +114,7 @@ class HomeScreen extends StatelessWidget {
                             },
                             child: Text(
                               "Futbol",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -138,9 +130,7 @@ class HomeScreen extends StatelessWidget {
                           SizedBox(width: 12),
                           Text(
                             "Voleybol",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
+                            style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),
                           ),
@@ -154,9 +144,7 @@ class HomeScreen extends StatelessWidget {
                           SizedBox(width: 12),
                           Text(
                             "Tenis",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
+                            style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),
                           ),
