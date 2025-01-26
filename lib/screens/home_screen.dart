@@ -37,18 +37,15 @@ class HomeScreen extends StatelessWidget {
                 child:ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Row(
-                        children: [
-                          SizedBox(width: 12),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => NewsDetailTwoScreen()),
-                              );
-                            },
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Center(
+                          child: Padding(
+                            padding: const EdgeInsets.only(
+                                left: 10
+                            ),
                             child: Text(
                               "Tümü",
                               style: TextStyle(
@@ -57,9 +54,23 @@ class HomeScreen extends StatelessWidget {
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
-                          )
-                        ],
-                      ),
+                          ),
+                        ),
+                        SizedBox(height: 4),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 10
+                          ),
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Container(
+                              height: 2,
+                              width: 50,
+                              color: Theme.of(context).colorScheme.onSecondary,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(horizontal: 8),
@@ -81,14 +92,18 @@ class HomeScreen extends StatelessWidget {
                       margin: EdgeInsets.symmetric(horizontal: 8),
                       child: Row(
                         children: [
-
                           SizedBox(width: 12),
-                          Text(
-                            "Basketbol",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Theme.of(context).colorScheme.onSecondary,
+                          GestureDetector(
+                            onTap: (){
+                              context.go("/basketbolcategory");
+                            },
+                            child: Text(
+                              "Basketbol",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Theme.of(context).colorScheme.onSecondary,
+                              ),
                             ),
                           ),
                         ],
