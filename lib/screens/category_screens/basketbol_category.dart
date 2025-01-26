@@ -41,9 +41,7 @@ class basketbolcategory extends StatelessWidget {
                               },
                               child: Text(
                                 "Tümü",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
+                                style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                   color: Theme.of(context).colorScheme.onSecondary,
                                 ),
                               ),
@@ -58,9 +56,7 @@ class basketbolcategory extends StatelessWidget {
                             SizedBox(width: 12),
                             Text(
                               "Gündem",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -74,19 +70,18 @@ class basketbolcategory extends StatelessWidget {
                           Center(
                             child: Padding(
                               padding: const EdgeInsets.only(
+                                top: 5,
                                   left: 10
                               ),
                               child: Text(
                                 "Basketbol",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
+                                style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                   color: Theme.of(context).colorScheme.onSecondary,
                                 ),
                               ),
                             ),
                           ),
-                          SizedBox(height: 4),
+                          SizedBox(height: 2),
                           Padding(
                             padding: const EdgeInsets.only(
                                 left: 10
@@ -95,7 +90,7 @@ class basketbolcategory extends StatelessWidget {
                               alignment: Alignment.center,
                               child: Container(
                                 height: 2,
-                                width: 50,
+                                width: 70,
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -113,9 +108,7 @@ class basketbolcategory extends StatelessWidget {
                               },
                               child: Text(
                                 "Futbol",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
+                                style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                   color: Theme.of(context).colorScheme.onSecondary,
                                 ),
                               ),
@@ -131,9 +124,7 @@ class basketbolcategory extends StatelessWidget {
                             SizedBox(width: 12),
                             Text(
                               "Voleybol",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -147,9 +138,7 @@ class basketbolcategory extends StatelessWidget {
                             SizedBox(width: 12),
                             Text(
                               "Tenis",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
+                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -330,6 +319,93 @@ class basketbolcategory extends StatelessWidget {
                     ),
                   ),
 
+                ],
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const NewsDetailTwoScreen(),
+                          ),
+                        );
+                      },
+                      child: Column(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.all(8.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            height: 200,
+                            width: double.infinity,
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(
+                              left: 10,
+                            ),
+                            child: Text(
+                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                                color: Theme.of(context).colorScheme.onSecondary,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const NewsDetailTwoScreen(),
+                              ),
+                            );
+                          },
+                          child: Container(
+                            margin: EdgeInsets.all(8.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            height: 160,
+                            width: double.infinity,
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(
+                            left: 20,
+                          ),
+                          width: 250,
+                          child: Text(
+                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                              color: Theme.of(context).colorScheme.onSecondary,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
               SizedBox(
