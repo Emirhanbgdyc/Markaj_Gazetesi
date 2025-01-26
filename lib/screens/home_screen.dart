@@ -1,6 +1,7 @@
 
  // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
@@ -97,14 +98,18 @@ class HomeScreen extends StatelessWidget {
                       margin: EdgeInsets.symmetric(horizontal: 8),
                       child: Row(
                         children: [
-
                           SizedBox(width: 12),
-                          Text(
-                            "Futbol",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Theme.of(context).colorScheme.onSecondary,
+                          GestureDetector(
+                            onTap: () {
+                              context.go('/futbolcategory');
+                            },
+                            child: Text(
+                              "Futbol",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Theme.of(context).colorScheme.onSecondary,
+                              ),
                             ),
                           ),
                         ],
