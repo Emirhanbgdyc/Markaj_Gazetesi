@@ -109,7 +109,6 @@ Drawer DrawerMenu(BuildContext context) {
                   ),
                 ],
               ),
-<<<<<<< Updated upstream
               Container(
                 alignment: Alignment.centerLeft,
                 padding: EdgeInsets.only(
@@ -122,15 +121,14 @@ Drawer DrawerMenu(BuildContext context) {
                     context.read<ThemeProvider>().toggleTheme();
                   },
                 ),
-              )
-=======
-    IconButton(
+              ),
+              IconButton(
       icon: Icon(CupertinoIcons.moon),
       onPressed: () {
         context.read<ThemeProvider>().toggleTheme();
       },
     )
->>>>>>> Stashed changes
+
             ],
           ),
         ),
