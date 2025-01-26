@@ -91,9 +91,8 @@ class NotificationCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Sağdaki ve soldaki metinlere padding ekledik
           Padding(
-            padding: const EdgeInsets.only(left: 16.0), // Sol tarafa boşluk ekledik
+            padding: const EdgeInsets.only(left: 16.0),
             child: Row(
               children: [
                 Text(
@@ -114,7 +113,7 @@ class NotificationCard extends StatelessWidget {
           ),
           const SizedBox(height: 5),
           Padding(
-            padding: const EdgeInsets.only(left: 16.0), // Sol tarafa boşluk ekledik
+            padding: const EdgeInsets.only(left: 16.0),
             child: Text(
               title,
               style: Theme.of(context).textTheme.headlineSmall!.copyWith(
@@ -125,7 +124,7 @@ class NotificationCard extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Padding(
-            padding: const EdgeInsets.only(left: 16.0), // Sol tarafa boşluk ekledik
+            padding: const EdgeInsets.only(left: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -137,7 +136,7 @@ class NotificationCard extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(right: 16.0), // Sağdan boşluk ekledik
+                  padding: const EdgeInsets.only(right: 16.0),
                   child: Text(
                     date,
                     style: Theme.of(context).textTheme.headlineSmall!.copyWith(
@@ -148,7 +147,7 @@ class NotificationCard extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 10), // Divider'ı biraz daha aşağıya kaydırdık
+          const SizedBox(height: 10),
           const Divider(color: Colors.grey),
         ],
       ),

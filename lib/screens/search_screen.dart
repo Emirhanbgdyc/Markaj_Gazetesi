@@ -73,13 +73,13 @@ class SearchScreen extends StatelessWidget {
                       margin: EdgeInsets.only(
                         left: 25,
                       ),
-                      width: 200,  // Resmin genişliği
-                      height: 150, // Resmin yüksekliği
+                      width: 200,
+                      height: 150,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
-                          image: AssetImage('assets/image/basketbolcategory.jpg'),  // Resmin yolu
-                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                          image: AssetImage('assets/image/basketbolcategory.jpg'),
+                          fit: BoxFit.cover,
                         ),
                       ),
                       child: Stack(
@@ -105,13 +105,13 @@ class SearchScreen extends StatelessWidget {
                         left: 25,
                         top: 10,
                       ),
-                      width: 200,  // Resmin genişliği
-                      height: 150, // Resmin yüksekliği
+                      width: 200,
+                      height: 150,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
-                          image: AssetImage('assets/image/voleybolcategory.jpg'),  // Resmin yolu
-                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                          image: AssetImage('assets/image/voleybolcategory.jpg'),
+                          fit: BoxFit.cover,
                         ),
                       ),
                       child: Stack(
@@ -133,13 +133,13 @@ class SearchScreen extends StatelessWidget {
                         left: 25,
                         top: 10,
                       ),
-                      width: 200,  // Resmin genişliği
-                      height: 150, // Resmin yüksekliği
+                      width: 200,
+                      height: 150,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),  // Köşe yuvarlama
+                        borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
-                          image: AssetImage('assets/image/teniscategory.jpg'),  // Resmin yolu
-                          fit: BoxFit.cover,  // Resmin boyutunu kapsayacak şekilde yerleştirir
+                          image: AssetImage('assets/image/teniscategory.jpg'),
+                          fit: BoxFit.cover,
                         ),
                       ),
                       child: Stack(
