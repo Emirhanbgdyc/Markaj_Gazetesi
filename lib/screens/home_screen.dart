@@ -1,5 +1,4 @@
-
- // import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
@@ -128,10 +127,15 @@ class HomeScreen extends StatelessWidget {
                         children: [
 
                           SizedBox(width: 12),
-                          Text(
-                            "Voleybol",
-                            style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                              color: Theme.of(context).colorScheme.onSecondary,
+                          GestureDetector(
+                            onTap: (){
+                              context.go("/voleybolcategory");
+                            },
+                            child: Text(
+                              "Voleybol",
+                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                                color: Theme.of(context).colorScheme.onSecondary,
+                              ),
                             ),
                           ),
                         ],
@@ -142,15 +146,21 @@ class HomeScreen extends StatelessWidget {
                       child: Row(
                         children: [
                           SizedBox(width: 12),
-                          Text(
-                            "Tenis",
-                            style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                              color: Theme.of(context).colorScheme.onSecondary,
+                          GestureDetector(
+                            onTap: (){
+                              context.go("/teniscategory");
+                            },
+                            child: Text(
+                              "Tenis",
+                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                                color: Theme.of(context).colorScheme.onSecondary,
+                              ),
                             ),
                           ),
                         ],
                       ),
                     ),
+
                   ],
                 )
 
