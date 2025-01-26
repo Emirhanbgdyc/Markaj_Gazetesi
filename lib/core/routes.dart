@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/screens/About.dart';
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/Notification_screen_.dart';
+import 'package:markaj_gazetesi/screens/category_screens/futbol_category.dart';
 import '../screens/loading_screen.dart';
 import '../screens/home_screen.dart';
 import '../screens/search_screen.dart';
@@ -36,6 +37,10 @@ final router = GoRouter(
     GoRoute(
 path: '/notification',
 builder: (context, state) => const NotificationScreen(),
+    ),
+    GoRoute(
+      path: '/futbolcategory',
+      builder: (context, state) => const futbolcategory(),
     ),
 ],
 );
