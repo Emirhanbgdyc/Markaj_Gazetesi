@@ -5,6 +5,8 @@ import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/Notification_screen_.dart';
 import 'package:markaj_gazetesi/screens/category_screens/basketbol_category.dart';
 import 'package:markaj_gazetesi/screens/category_screens/futbol_category.dart';
+import 'package:markaj_gazetesi/screens/category_screens/tenis_category.dart';
+import 'package:markaj_gazetesi/screens/category_screens/voleybol_category.dart';
 import '../screens/loading_screen.dart';
 import '../screens/home_screen.dart';
 import '../screens/search_screen.dart';
@@ -46,6 +48,14 @@ builder: (context, state) => const NotificationScreen(),
     GoRoute(
       path: '/basketbolcategory',
       builder: (context, state) => const basketbolcategory(),
+    ),
+    GoRoute(
+      path: '/voleybolcategory',
+      builder: (context, state) => const voleybolcategory(),
+    ),
+    GoRoute(
+      path: '/teniscategory',
+      builder: (context, state) => const TennisCategoryScreen(),
     ),
 ],
 );
