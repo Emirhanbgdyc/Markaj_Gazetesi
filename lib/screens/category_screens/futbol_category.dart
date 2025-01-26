@@ -1,19 +1,12 @@
-
- // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 
 
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-
+class futbolcategory extends StatelessWidget {
+  const futbolcategory({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,166 +25,135 @@ class HomeScreen extends StatelessWidget {
           Column(
             children: [
               SizedBox(
-                height: 60,
-                width: MediaQuery.of(context).size.width,
-                child:ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Row(
-                        children: [
-                          SizedBox(width: 12),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => NewsDetailTwoScreen()),
-                              );
-                            },
-                            child: Text(
-                              "Tümü",
+                  height: 60,
+                  width: MediaQuery.of(context).size.width,
+                  child:ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 8),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 12),
+                            GestureDetector(
+                              onTap: (){
+                                context.go('/home');
+                              },
+                              child: Text(
+                                "Tümü",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: Theme.of(context).colorScheme.onSecondary,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 8),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 12),
+                            Text(
+                              "Gündem",
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
-                          )
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Row(
-                        children: [
-                          SizedBox(width: 12),
-                          Text(
-                            "Gündem",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Theme.of(context).colorScheme.onSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Row(
-                        children: [
-
-                          SizedBox(width: 12),
-                          Text(
-                            "Basketbol",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Theme.of(context).colorScheme.onSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Row(
-                        children: [
-                          SizedBox(width: 12),
-                          GestureDetector(
-                            onTap: () {
-                              context.go('/futbolcategory');
-                            },
-                            child: Text(
-                              "Futbol",
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 8),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 12),
+                            Text(
+                              "Basketbol",
                               style: TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Row(
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-
-                          SizedBox(width: 12),
-                          Text(
-                            "Voleybol",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Theme.of(context).colorScheme.onSecondary,
+                          Center(
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                left: 10
+                              ),
+                              child: Text(
+                                "Futbol",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: Theme.of(context).colorScheme.onSecondary,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 4),
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 10
+                            ),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: Container(
+                                height: 2,
+                                width: 50,
+                                color: Theme.of(context).colorScheme.onSecondary,
+                              ),
                             ),
                           ),
                         ],
                       ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Row(
-                        children: [
-                          SizedBox(width: 12),
-                          Text(
-                            "Tenis",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                              color: Theme.of(context).colorScheme.onSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                )
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 8),
+                        child: Row(
+                          children: [
 
-              ),
-              Stack(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const NewsDetailScreen(),
-                        ),
-                      );
-                    },
-                    child: Container(
-                      width: double.infinity,
-                      child: Image.asset(
-                        "assets/image/futbolcategory.jpg",
-                        fit: BoxFit.cover,
-                        height: 400,
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    bottom: 20,
-                    left: 10,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
-                      width: 350,
-                      child: Text(
-                        "Fenerbahçe'nin ara transfer döneminde en büyük planı: Kevin De Bruyne.",
-                        style: TextStyle(
-                          fontSize: 24,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+                            SizedBox(width: 12),
+                            Text(
+                              "Voleybol",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Theme.of(context).colorScheme.onSecondary,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ),
-                  ),
-                ],
+                      Container(
+                        margin: EdgeInsets.symmetric(horizontal: 8),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 12),
+                            Text(
+                              "Tenis",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Theme.of(context).colorScheme.onSecondary,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+
               ),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -202,7 +164,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const NewsDetailOneScreen(),
+                            builder: (context) => const NewsDetailTwoScreen(),
                           ),
                         );
                       },
@@ -329,7 +291,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const NewsDetailOneScreen(),
+                            builder: (context) => const NewsDetailTwoScreen(),
                           ),
                         );
                       },
@@ -381,6 +343,4 @@ class HomeScreen extends StatelessWidget {
       bottomNavigationBar: const BottomMenu(),
     );
   }
-
-
 }
