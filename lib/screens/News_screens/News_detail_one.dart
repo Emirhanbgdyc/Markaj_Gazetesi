@@ -44,9 +44,10 @@ class NewsDetailOneScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 14.0),
-                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16.0),
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           "Haber Kaynağı: Star Spor",
@@ -56,24 +57,24 @@ class NewsDetailOneScreen extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Beşiktaş'ta stoper krizi baslik",
+                        Text("Beşiktaş'ta stoper krizi",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                            color: Theme.of(context).colorScheme.onSecondary,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20
-                        ),
+                              color: Theme.of(context).colorScheme.onSecondary,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20
+                          ),
                         ),
                       ],
                     ),
                   ),
                   const SizedBox(height: 15.0),
-                   Padding(
+                  Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
                       child: Text("Son 7 maçında sadece 1 galibiyet alabilen Beşiktaş, yarın Dolmabahçe'de Fenerbahçe ile oynayacağı derbiyi kazanıp hem moral bulmak hem de camiadaki kara bulutları bir nebze olsun dağıtmak istiyor.Ancak takımdaki eksikler zorlu karşılaşma öncesi can sıkıyor. Daha önce Necip Uysal'ın çapraz bağ sakatlığı sonrası sezonu kapatmasıyla eksilen savunma hattı, tendonundan operasyonu geçiren Gabriel Paulista'nın 3 ay sahalardan uzak kalacak olması büyük bir probleme dönüştü. Bunların üzerine Felix Uduokhai'nin sakatlığının gelmesi keyifleri iyice kaçırdı.Sabah'ın haberine göre geçen haftaki Hatayspor maçına Tayip Talha Sanuç ve Emirhan Topçu ikilisiyle çıkan siyah-beyazlılarda gözler Uduokhai'ye çevrildi.Dün idmana çıkmayan Nijerya asıllı Alman futbolcunun, bugün de antrenmana katılmaması durumunda derbide oynaması mümkün gözükmüyor. Teknik heyet, hafta boyunca yapılan idmanlarda Tayyip Talha ve Emirhan'la özel olarak ilgilendi.",
-                          style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                          color: Theme.of(context).colorScheme.onSecondary,
-                          fontSize: 16
-                      ),
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                            color: Theme.of(context).colorScheme.onSecondary,
+                            fontSize: 16
+                        ),
                       )
                   ),
                   Center(
