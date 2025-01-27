@@ -38,6 +38,7 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 2-About sayfası,haber sitemizin girişinde uygulamanın nasıl kullaıldığını gösteren bilgileri içeren bölüm kısmıdır.
 3-Home sayfası, haber sitemizin tüm haberlerin başlık,resim ve özet kısmının gösterildiği home sayfasıdır.
 4-Drawer yazı stilleri ve drawerın içine yazının hizalanmasını sağladım.
+5- Home sayfasında yer alan , Tümü , Gündem , futbol,basketbol ,voleybol ve tenis categorisini yaptım.Onları yönlendirme işlemleri yapıldı
 
 **Emir BULUT:**
 1-Loading sayfası (ortak yapıldı)
@@ -148,11 +149,7 @@ lib/
 ## Ekran Görüntüleri
 
 
-![Loading_ekrani](assets/image/loading.png)
-![Drawer](assets/image/drawer.png)
-![Home_Screen](assets/image/home.png)
-![News_Detail](assets/image/News_detail.png)
-![Search](assets/image/search.png)
+
 
 ## Projeye Katkı Sağlama
 

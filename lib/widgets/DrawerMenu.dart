@@ -116,7 +116,7 @@ Drawer DrawerMenu(BuildContext context) {
                 ),
                 child:
                 IconButton(
-                  icon: Icon(CupertinoIcons.moon),
+                  icon: Icon(CupertinoIcons.moon,),
                   onPressed: () {
                     context.read<ThemeProvider>().toggleTheme();
                   },

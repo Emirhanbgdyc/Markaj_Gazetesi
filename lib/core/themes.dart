@@ -15,7 +15,7 @@ class ThemeProvider with ChangeNotifier {
 
 
 const colors = {
-  "primary": Color.fromARGB(255, 65, 159, 217),
+  "primary": Color.fromRGBO(200, 0, 0, 1.0),
   "onPrimary": Color.fromARGB(255, 255, 255, 255),
   "secondary": Color.fromARGB(255, 23, 26, 31), //Drawer için ve bazı yerler için kullanılacak siyah renk
   "onSecondary": Colors.black, //İcon Rengimiz
@@ -27,7 +27,7 @@ const colors = {
 };
 
 const darkColors = {
-  "primary": Color.fromARGB(255, 43, 82, 120),
+  "primary": Color.fromRGBO(200, 0, 0, 1.0),
   "onPrimary": Color.fromARGB(255, 241, 241, 241),
   "secondary": Color.fromARGB(21, 23, 26, 1),
   "onError":  Colors.black,
