@@ -23,13 +23,9 @@ class NewsDetailTwoScreen extends StatelessWidget {
           )
         ],
         backgroundColor: Theme.of(context).colorScheme.onError,
-        title: const Text(
+        title: Text(
           "MARKAJ",
-          style: TextStyle(
-            fontWeight: FontWeight.w900,
-            fontSize: 24,
-            color: Color.fromRGBO(146, 35, 42, 1),
-          ),
+          style: Theme.of(context).textTheme.headlineLarge,
         ),
         centerTitle: true,
       ),
@@ -41,81 +37,59 @@ class NewsDetailTwoScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Divider(),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 16.0),
-                    child: Text(
-                      "",
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
-                  const SizedBox(height: 16.0), // Boşluk ekleme
                   Center(
                     child: Image.asset(
-                      "assets/image/newstwo.webp", // Resim dosyasını ekleyin
-                      height: 300, // Resim yüksekliği
-                      fit: BoxFit.cover, // Resmi sığdırma
+                      "assets/image/newstwo.webp",
+                      height: 300,
+                      fit: BoxFit.cover,
                     ),
                   ),
-                  const SizedBox(height: 14.0), // Resim ve metin arasında boşluk
-                  const Padding(
+                  const SizedBox(height: 14.0),
+                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 16.0),
                     child: Column(
                       children: [
                         Text(
-                          "Haber Kaynağı: Star Spor", // Kaynağınızı buraya yazın
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontStyle: FontStyle.italic, // İtalik stil
-                            color: Colors.grey, // Gri renk
+                          "Haber Kaynağı: Star Spor",
+                          style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                            color: Colors.grey,
                           ),
-                          textAlign: TextAlign.left, // Sola hizalama
+                          textAlign: TextAlign.left,
                         ),
-                        SizedBox(height: 8.0), // Kaynak ve başlık arasında boşluk
-                        Text("Şenol Güneş galibiyete odaklandı",style: TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold
-                        ),),
+                        SizedBox(height: 8.0),
+                        Text(
+                          "Şenol Güneş galibiyete odaklandı",
+                          style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                            color: Theme.of(context).colorScheme.onSecondary,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20
+                        ),
+                        ),
                       ],
                     ),
                   ),
-                  const SizedBox(height: 15.0), // Başlık ile haber arasında boşluk
-                  const Padding(
+                  const SizedBox(height: 15.0),
+                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("Süper Lig'e kötü bir başlangıç yapan Trabzonspor, bugün konuk edeceği Kasımpaşa karşısında galibiyetten başka bir şey düşünmüyor.Sabah'ta yer alan habere göre kadro dışı bırakılan Bardhi, Denswil, Umut Bozok ve Orsic'in yanı sıra sakatlıkları bulunan Savic, Okay ve Arif Boşluk'un forma giymesi beklenmiyor. Son idmana katılmayan Eren Elmalı dün kendini iyi hissedince takımla çalıştı.Teknik direktör Şenol Güneş, oyuncularına özellikle bulundukları konumdan bir an önce kurtulmak için sadece galibiyete ve plana odaklanmaları yönünde konuşmalar yaptı. Tecrübeli teknik adamın, hataları ekibiyle birlikte detaylı şekilde analiz ettiği, oyun içerisinde yaşanan kopmalar, basit top kayıpları ve yakalanan pozisyonları değerlendirme üzerine özel çalışmalar yaptığı öğrenildi.",style:TextStyle(
-                          fontSize: 19
-                      ) ,)
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.all(17.5),
-                    child: Text("",style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold
-                    ),),
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.only(
-                      left:17.5,
-
-                    ),
-                    child: Text("",style: TextStyle(
-                      fontSize: 20,
-
-                    ),),
+                      child: Text("Süper Lig'e kötü bir başlangıç yapan Trabzonspor, bugün konuk edeceği Kasımpaşa karşısında galibiyetten başka bir şey düşünmüyor.Sabah'ta yer alan habere göre kadro dışı bırakılan Bardhi, Denswil, Umut Bozok ve Orsic'in yanı sıra sakatlıkları bulunan Savic, Okay ve Arif Boşluk'un forma giymesi beklenmiyor. Son idmana katılmayan Eren Elmalı dün kendini iyi hissedince takımla çalıştı.Teknik direktör Şenol Güneş, oyuncularına özellikle bulundukları konumdan bir an önce kurtulmak için sadece galibiyete ve plana odaklanmaları yönünde konuşmalar yaptı. Tecrübeli teknik adamın, hataları ekibiyle birlikte detaylı şekilde analiz ettiği, oyun içerisinde yaşanan kopmalar, basit top kayıpları ve yakalanan pozisyonları değerlendirme üzerine özel çalışmalar yaptığı öğrenildi.",
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                            color: Theme.of(context).colorScheme.onSecondary,
+                            fontSize: 16
+                      ),
+                      )
                   ),
                   Center(
                     heightFactor: 3,
                     child: ElevatedButton.icon(
                       onPressed: () {
                       },
-                      icon: const Icon(Icons.share, color: Colors.white), // Paylaş simgesi
+                      icon: const Icon(Icons.share, color: Colors.white),
                       label: const Text(
                         "Paylaş",
                         style: TextStyle(color: Colors.white),
                       ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color.fromRGBO(21, 23, 26, 1), // Arka plan rengi
+                        backgroundColor: const Color.fromRGBO(21, 23, 26, 1),
                         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                       ),
                     ),
