@@ -10,17 +10,16 @@ Drawer DrawerMenu(BuildContext context) {
     width: 250,
     child: Column(
       children: [
-        const SizedBox(
-          height: 20,
-        ),
+        const SizedBox(height: 20),
         Center(
           child: Container(
-              child: Image.asset("assets/image/markaj.jpg")
+            child: Image.asset("assets/image/markaj.jpg"),
           ),
         ),
         Expanded(
-          child: Column(
+          child: ListView(
             children: [
+
               ListTile(
                 leading: Icon(
                   Icons.newspaper,
@@ -28,86 +27,125 @@ Drawer DrawerMenu(BuildContext context) {
                 ),
                 title: Text(
                   'GÜNDEM',
-                  style:Theme.of(context).textTheme.bodyMedium!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
               ),
-              const Divider(),
-              ListTile(
-                leading: Icon(Icons.sports_soccer,color: Theme.of(context).colorScheme.onSecondary,),
-                title:  Text(
+              ExpansionTile(
+                leading: Icon(Icons.sports_soccer,
+                    color: Theme.of(context).colorScheme.onSecondary),
+                title: Text(
                   'FUTBOL',
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
-                onTap: () {
-                  Navigator.pop(context);
-                },
+                children: [
+                  ListTile(
+                    title: const Text("Süper Lig"),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
+                    title: const Text("Premier Lig"),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
+                    title: const Text("La Liga"),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ],
               ),
-              const Divider(),
-              ListTile(
-                leading: Icon(Icons.sports_basketball, color: Theme.of(context).colorScheme.onSecondary,),
-                title:  Text(
+              ExpansionTile(
+                leading: Icon(Icons.sports_basketball,
+                    color: Theme.of(context).colorScheme.onSecondary),
+                title: Text(
                   'BASKETBOL',
-                  style:Theme.of(context).textTheme.bodyMedium!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
-                onTap: () {
-                  Navigator.pop(context);
-                },
+                children: [
+                  ListTile(
+                    title: const Text("NBA"),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
+                    title: const Text("EuroLeague"),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ],
               ),
-              const Divider(),
-              ListTile(
-                leading:  Icon(Icons.sports_volleyball, color:Theme.of(context).colorScheme.onSecondary,),
-                title:  Text(
+              ExpansionTile(
+                leading: Icon(Icons.sports_volleyball,
+                    color: Theme.of(context).colorScheme.onSecondary),
+                title: Text(
                   'VOLEYBOL',
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
-                onTap: () {
-                  Navigator.pop(context);
-                },
+                children: [
+                  ListTile(
+                    title: const Text("FIVB Dünya Ligi"),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
+                    title: const Text("CEV Şampiyonlar Ligi"),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ],
               ),
-              const Divider(),
-              ListTile(
-                leading:  Icon(Icons.sports_tennis, color: Theme.of(context).colorScheme.onSecondary),
-                title:  Text(
+              ExpansionTile(
+                leading: Icon(Icons.sports_tennis,
+                    color: Theme.of(context).colorScheme.onSecondary),
+                title: Text(
                   'TENİS',
-                  style:Theme.of(context).textTheme.bodyMedium!.copyWith(
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                    color: Theme.of(context).colorScheme.onSecondary,
+                  ),
+                ),
+                children: [
+                  ListTile(
+                    title: const Text("Wimbledon"),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  ListTile(
+                    title: const Text("Roland Garros"),
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ],
+              ),
+              const SizedBox(height: 30),
+              ListTile(
+                leading: Icon(Icons.settings,
+                    color: Theme.of(context).colorScheme.onSecondary),
+                title: Text(
+                  "Ayarlar & Destek",
+                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                     color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
                 onTap: () {
-                  Navigator.pop(context);
                 },
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    padding: const EdgeInsets.only(left: 20),
-                    child:  Text(
-                      "Ayarlar & Destek",
-                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                        color: Theme.of(context).colorScheme.onSecondary,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(right: 10),
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(Icons.arrow_drop_down_sharp),
-                    ),
-                  ),
-                ],
               ),
               Container(
                 alignment: Alignment.centerLeft,
@@ -122,6 +160,7 @@ Drawer DrawerMenu(BuildContext context) {
                   },
                 ),
               ),
+
             ],
           ),
         ),
