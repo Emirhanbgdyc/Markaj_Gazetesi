@@ -57,7 +57,7 @@ class NewsDetailOneScreen extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Beşiktaş'ta stoper krizi",
+                        Text("Suudi Arabistan ligi ekiplerinden Al Hilal, Brezilyalı yıldız Neymar'ın sözleşmesinin feshedildiğini duyurdu.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -70,7 +70,8 @@ class NewsDetailOneScreen extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("Son 7 maçında sadece 1 galibiyet alabilen Beşiktaş, yarın Dolmabahçe'de Fenerbahçe ile oynayacağı derbiyi kazanıp hem moral bulmak hem de camiadaki kara bulutları bir nebze olsun dağıtmak istiyor.Ancak takımdaki eksikler zorlu karşılaşma öncesi can sıkıyor. Daha önce Necip Uysal'ın çapraz bağ sakatlığı sonrası sezonu kapatmasıyla eksilen savunma hattı, tendonundan operasyonu geçiren Gabriel Paulista'nın 3 ay sahalardan uzak kalacak olması büyük bir probleme dönüştü. Bunların üzerine Felix Uduokhai'nin sakatlığının gelmesi keyifleri iyice kaçırdı.Sabah'ın haberine göre geçen haftaki Hatayspor maçına Tayip Talha Sanuç ve Emirhan Topçu ikilisiyle çıkan siyah-beyazlılarda gözler Uduokhai'ye çevrildi.Dün idmana çıkmayan Nijerya asıllı Alman futbolcunun, bugün de antrenmana katılmaması durumunda derbide oynaması mümkün gözükmüyor. Teknik heyet, hafta boyunca yapılan idmanlarda Tayyip Talha ve Emirhan'la özel olarak ilgilendi.",
+                      child: Text("Al-Hilal, Neymar'ın ayrılığını duyurdu. Suudi Arabistan ekibinden yapılan açıklamada Brezilyalı futbolcunun sözleşmesinin feshedildiği belirtildi.Kulüpten yapılan açıklamada, 'Al-Hilal ve Neymar, sözleşmenin feshi için karşılıklı olarak anlaşmaya vardı. Teşekkürler ve iyi şanslar Neymar.' denildi.Paris Saint Germain'den 2023/24 sezonunda ayrılıp Al-Hilal'e 90 milyon euro karşılığında imza atan Neymar'ın sözleşmesi sezon sonunda bitiyordu.Sakatlığı nedeniyle uzun süre forma giyemeyen Brezilyalı futbolcu, bu sezon sadece iki maçta sahaya çıktı. Neymar, Al-Hilal'e imza attığı sezon Brezilya Milli Takımı'nda çapraz bağlarını koparmış ve geçtiğimiz yıl takıma dönmüştü.Al-Hilal'de yedi maçta sahaya çıkan 32 yaşındaki Neymar, bir gol ve üç asistle oynadı.Serbest oyuncu statüsünde olan Neymar'ın altyapısından yetiştiği Santos'a imza atması bekleniyor. Neymar, 2009'da A takıma çıktığı Santos'ta 2013'e kadar forma giydi ve sonrasında Barcelona'ya transfer oldu.",
+
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
                             fontSize: 16
