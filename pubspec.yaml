@@ -28,6 +28,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/image/
+    - assets/image/futbol_img/
     - assets/icons/
     - assets/languages/
     - assets/motions/
