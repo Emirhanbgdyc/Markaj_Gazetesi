@@ -74,20 +74,6 @@ class HomeScreen extends StatelessWidget {
                       child: Row(
                         children: [
                           SizedBox(width: 12),
-                          Text(
-                            "Gündem",
-                            style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                              color: Theme.of(context).colorScheme.onSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8),
-                      child: Row(
-                        children: [
-                          SizedBox(width: 12),
                           GestureDetector(
                             onTap: (){
                               context.go("/basketbolcategory");
@@ -160,7 +146,6 @@ class HomeScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-
                   ],
                 )
 

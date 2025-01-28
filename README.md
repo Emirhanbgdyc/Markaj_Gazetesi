@@ -31,7 +31,7 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 **Alperen KARADEMİR:**
 1-Loading sayfası (ortak yapıldı)
 2-Drawer logosunu yaptım
-3-
+3-Search sayfasını yaptım
 
 **Emirhan BUĞDAYCI:**
 1-Loading sayfası (ortak yapıldı)
