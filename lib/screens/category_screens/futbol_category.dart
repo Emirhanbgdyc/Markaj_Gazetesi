@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail.five.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail.four.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail.six.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_three.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 
@@ -158,12 +152,7 @@ class futbolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailOneScreen(),
-                          ),
-                        );
+                      context.go("/f_one");
                       },
                       child: Column(
                         children: [
@@ -199,14 +188,6 @@ class futbolcategory extends StatelessWidget {
                     child: Column(
                       children: [
                         GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
-                          },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
                             decoration: BoxDecoration(
@@ -219,6 +200,9 @@ class futbolcategory extends StatelessWidget {
                             height: 160,
                             width: double.infinity,
                           ),
+                          onTap: () {
+                            context.go("/f_two");
+                          },
                         ),
                         Container(
                           margin: EdgeInsets.only(
@@ -248,12 +232,7 @@ class futbolcategory extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailThreeScreen(),
-                              ),
-                            );
+                            context.go("/f_tree");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
@@ -287,12 +266,7 @@ class futbolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailFourScreen(),
-                          ),
-                        );
+                        context.go("/f_four");
                       },
                       child: Column(
                         children: [
@@ -336,12 +310,7 @@ class futbolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailFiveScreen(),
-                          ),
-                        );
+                        context.go("/f_five");
                       },
                       child: Column(
                         children: [
@@ -378,12 +347,7 @@ class futbolcategory extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailSixScreen(),
-                              ),
-                            );
+                            context.go("/f_six");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
