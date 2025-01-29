@@ -39,13 +39,11 @@ class NewsDetailThreeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Center(
-                    child:Expanded(
-                    child: Image.asset(
+                    child:Image.asset(
                       "assets/image/futbol_img/f_img_3.jpg",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
-                  ),
                   ),
                   const SizedBox(height: 14.0),
                   Padding(
