@@ -1,5 +1,4 @@
 
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -58,8 +57,8 @@ final lightTheme = ThemeData(
     bodyMedium: GoogleFonts.roboto(),
     bodyLarge: GoogleFonts.roboto(),
     labelSmall: GoogleFonts.roboto(),
-    labelMedium: GoogleFonts.montserrat(),
-    labelLarge: GoogleFonts.roboto(),
+    labelMedium: GoogleFonts.roboto(),
+    labelLarge: GoogleFonts.oswald(),
     titleSmall: GoogleFonts.roboto(),
     titleMedium: GoogleFonts.alata(),
     titleLarge: GoogleFonts.spaceGrotesk(),
@@ -92,8 +91,8 @@ final darkTheme = ThemeData(
     bodyMedium: GoogleFonts.roboto(),
     bodyLarge: GoogleFonts.roboto(),
     labelSmall: GoogleFonts.roboto(),
-    labelMedium: GoogleFonts.montserrat(),
-    labelLarge: GoogleFonts.roboto(),
+    labelMedium: GoogleFonts.roboto(),
+    labelLarge: GoogleFonts.oswald(),
     titleSmall: GoogleFonts.roboto(),
     titleMedium: GoogleFonts.alata(),
     titleLarge: GoogleFonts.spaceGrotesk(),
