@@ -180,7 +180,7 @@ class futbolcategory extends StatelessWidget {
                             ),
                             child: Text(
                               "Beşiktaş'ta Twente mesaisi sürüyor.",
-                              style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                              style: Theme.of(context).textTheme.labelMedium!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -221,7 +221,7 @@ class futbolcategory extends StatelessWidget {
                           width: 250,
                           child: Text(
                             "Ve Hakan Çalhanoğlu müjdesi! Beklenen haber sonunda geldi.",
-                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                            style: Theme.of(context).textTheme.labelMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),
                           ),
@@ -269,7 +269,7 @@ class futbolcategory extends StatelessWidget {
                           width: 250,
                           child: Text(
                             "Neymar yeniden Santos'ta!.",
-                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                            style: Theme.of(context).textTheme.labelMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),
                           ),
@@ -294,7 +294,7 @@ class futbolcategory extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/futbol_img/f_img_4.jpg'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -306,8 +306,8 @@ class futbolcategory extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
-                              style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                              "Gaziantep FK, Muhammed Gümüşkaya'yı renklerine bağladı.",
+                              style: Theme.of(context).textTheme.labelMedium!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -342,7 +342,7 @@ class futbolcategory extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/futbol_img/f_img_5.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -354,8 +354,8 @@ class futbolcategory extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
-                              style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                              "Fenerbahçe, Anderson Talisca'yı İstanbul'a getirdi! Taraftardan coşkulu karşılama.",
+                              style: Theme.of(context).textTheme.labelMedium!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
                             ),
@@ -381,7 +381,7 @@ class futbolcategory extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                image: AssetImage('assets/image/futbol_img/f_img_6.jpg'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -395,9 +395,10 @@ class futbolcategory extends StatelessWidget {
                           ),
                           width: 250,
                           child: Text(
-                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
-                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                            "Vitor Pereira, Süper Lig'in yıldızı için devrede!.",
+                            style: Theme.of(context).textTheme.labelMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
+
                             ),
                           ),
                         ),
