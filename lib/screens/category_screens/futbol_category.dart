@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:markaj_gazetesi/screens/News_screens/News_detail.five.dart';
+import 'package:markaj_gazetesi/screens/News_screens/News_detail.four.dart';
+import 'package:markaj_gazetesi/screens/News_screens/News_detail.six.dart';
+import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
+import 'package:markaj_gazetesi/screens/News_screens/News_detail_three.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
@@ -156,7 +161,7 @@ class futbolcategory extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
+                            builder: (context) => const NewsDetailOneScreen(),
                           ),
                         );
                       },
@@ -246,7 +251,7 @@ class futbolcategory extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
+                                builder: (context) => const NewsDetailThreeScreen(),
                               ),
                             );
                           },
@@ -285,7 +290,7 @@ class futbolcategory extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
+                            builder: (context) => const NewsDetailFourScreen(),
                           ),
                         );
                       },
@@ -334,7 +339,7 @@ class futbolcategory extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
+                            builder: (context) => const NewsDetailFiveScreen(),
                           ),
                         );
                       },
@@ -376,7 +381,7 @@ class futbolcategory extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
+                                builder: (context) => const NewsDetailSixScreen(),
                               ),
                             );
                           },
