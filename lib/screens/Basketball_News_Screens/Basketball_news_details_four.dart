@@ -59,7 +59,7 @@ class BasketballNewsDetailsFour extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("SON DAKİKA HABERİ: Fenerbahçe Beko, THY EuroLeague'in 23. hafta maçında lider Olympiacos'u deplasmanda 77-87 mağlup etti. Fenerbahçe Beko böylece THY EuroLeague'deki son 5 maçını da kazanmış oldu.",
+                        Text("Fenerbahçe Beko, THY EuroLeague'in 23. hafta maçında lider Olympiacos'u deplasmanda 77-87 mağlup etti. Fenerbahçe Beko böylece THY EuroLeague'deki son 5 maçını da kazanmış oldu.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
