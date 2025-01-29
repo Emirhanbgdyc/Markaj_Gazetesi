@@ -47,15 +47,15 @@ class NotificationScreen extends StatelessWidget {
               NotificationCard(
                 time: "14:43",
                 source: "HABER BAŞLİGİ",
-                title: "HABER İCERİK FUTBOL",
-                category: "FUTBOL",
+                title: "Mersin Çukurova Basketbol Spor Kulübü'ne yeni isim sponsoru",
+                category: "BASKETBOL",
                 date: "23 Ocak",
               ),
               NotificationCard(
                 time: "14:28",
                 source: "HABER BAŞLİGİ",
                 title: "HABER İCERİK FUTBOL",
-                category: "FUTBOL",
+                category: "VOLEYBOL",
                 date: "23 Ocak",
               ),
             ],
@@ -101,10 +101,10 @@ class NotificationCard extends StatelessWidget {
                     color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 15),
                 Text(
                   source,
-                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                  style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                     color: Theme.of(context).colorScheme.onSecondary,
                   ),
                 ),
