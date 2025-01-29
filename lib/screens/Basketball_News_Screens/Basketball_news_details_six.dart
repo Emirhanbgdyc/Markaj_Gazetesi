@@ -39,12 +39,10 @@ class BasketballNewsDetailsSix extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Center(
-                    child:Expanded(
-                      child: Image.asset(
-                        "assets/image/basketbol_img/b_img_6.jpg",
-                        height: 350,
-                        fit: BoxFit.cover,
-                      ),
+                    child:Image.asset(
+                      "assets/image/basketbol_img/b_img_6.jpg",
+                      height: 350,
+                      fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(height: 14.0),
