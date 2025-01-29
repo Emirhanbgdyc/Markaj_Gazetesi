@@ -394,6 +394,7 @@ class basketbolcategory extends StatelessWidget {
                             width: double.infinity,
                           ),
                         ),
+
                         Container(
                           margin: EdgeInsets.only(
                             left: 20,
