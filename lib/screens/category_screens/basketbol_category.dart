@@ -30,6 +30,9 @@ class basketbolcategory extends StatelessWidget {
                   child:ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
+                      SizedBox(
+                        width: 46,
+                      ),
                       Container(
                         margin: EdgeInsets.symmetric(horizontal: 8),
                         child: Row(
@@ -46,20 +49,6 @@ class basketbolcategory extends StatelessWidget {
                                 ),
                               ),
                             )
-                          ],
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.symmetric(horizontal: 8),
-                        child: Row(
-                          children: [
-                            SizedBox(width: 12),
-                            Text(
-                              "Gündem",
-                              style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                                color: Theme.of(context).colorScheme.onSecondary,
-                              ),
-                            ),
                           ],
                         ),
                       ),
