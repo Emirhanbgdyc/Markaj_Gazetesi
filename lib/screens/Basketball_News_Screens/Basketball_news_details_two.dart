@@ -41,7 +41,7 @@ class BasketballNewsDetailsTwo extends StatelessWidget {
                   Center(
                     child:Expanded(
                       child: Image.asset(
-                        "assets/image/futbol_img/f_img_1.jpg",
+                        "assets/image/basketbol_img/b_img_2.jpg",
                         height: 350,
                         fit: BoxFit.cover,
                       ),
@@ -61,7 +61,7 @@ class BasketballNewsDetailsTwo extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("UEFA Avrupa Ligi'nin 8. haftasında Twente ile kritik bir maça çıkacak olan Beşiktaş'ta karşılaşmanın hazırlıkları devam ediyor.",
+                        Text("Kadın basketbolunun ilham verici takımlarından Mersin Çukurova Basketbol Spor Kulübü, Çimsa ile yeni isim sponsorluğu sözleşmesi imzaladı",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -74,7 +74,7 @@ class BasketballNewsDetailsTwo extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("UEFA Avrupa Ligi'nin 8. haftasında 30 Ocak Perşembe günü Hollanda ekibi Twente'yle deplasmanda karşılaşacak Beşiktaş, hazırlıklarına devam etti.Kulüpten yapılan açıklamaya göre BJK Nevzat Demir Tesisleri'ndeki idman, yaklaşık 1,5 saat sürdü.Isınma ve 5'e 2 çalışmalarıyla başlayan antrenmanın son bölümünde siyah-beyazlı ekip taktik idman gerçekleştirdi.Beşiktaş, yarın 15 dakikası basına açık yapacağı antrenmanın ardından özel uçakla Almanya'nın Münster kentine, daha sonra da kara yoluyla maçın oynanacağı Hollanda'nın Enschede şehrine gidecek.",
+                      child: Text("Konuyla ilgili değerlendirmelerde bulunan Çimsa CEO’su Umut Zenar, hayatın her alanında kadınların desteklenmesini şirket olarak en büyük önceliklerden biri olarak ele aldıklarının altını çizerken, “Çimento farklı malzemeleri, büyük yapıları bir arada tutma işlevi gören bir malzeme. Bir birleştirici, güçlendirici... Biz sporu da aynı bu şekilde görüyoruz. Sporun, ülkemizi ve insanımızı bir arada tutan çok önemli bir değer olduğuna inanıyoruz. Özellikle kadınlar sahada oldukça, onların temsil ettiği değerler ülkemizde yayılmaya devam edecek. Biz de bu yolculukta kadınlarımızın yanında olacağız. Sporun birleştirici gücünü, bir kez daha, bu toprakların kalkınması, sosyal gelişimi için kullanacağız” ifadelerini kullandı.Expand article logo  Okumaya devam et",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

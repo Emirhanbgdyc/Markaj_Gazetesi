@@ -41,7 +41,7 @@ class BasketballNewsDetails extends StatelessWidget {
                   Center(
                     child:Expanded(
                       child: Image.asset(
-                        "assets/image/futbol_img/f_img_1.jpg",
+                        "assets/image/basketbol_img/b_img_1.jpg",
                         height: 350,
                         fit: BoxFit.cover,
                       ),
@@ -74,7 +74,7 @@ class BasketballNewsDetails extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("UEFA Avrupa Ligi'nin 8. haftasında 30 Ocak Perşembe günü Hollanda ekibi Twente'yle deplasmanda karşılaşacak Beşiktaş, hazırlıklarına devam etti.Kulüpten yapılan açıklamaya göre BJK Nevzat Demir Tesisleri'ndeki idman, yaklaşık 1,5 saat sürdü.Isınma ve 5'e 2 çalışmalarıyla başlayan antrenmanın son bölümünde siyah-beyazlı ekip taktik idman gerçekleştirdi.Beşiktaş, yarın 15 dakikası basına açık yapacağı antrenmanın ardından özel uçakla Almanya'nın Münster kentine, daha sonra da kara yoluyla maçın oynanacağı Hollanda'nın Enschede şehrine gidecek.",
+                      child: Text("NBA'de 4 maç yapıldı. Hawks'a konuk olan Rockets'ta 29 dakika süre alan Alperen Şengün, 18 sayı, 10 ribauntla double-double yaptı. İstatistiklerine 2 asist ve 1 top çalma da ekleyen Alperen, 4. sezonunu geçirdiği NBA kariyerinde 4 bin 12 sayıya ulaştı.Batı Konferansı'nda 32 galibiyet, 14 mağlubiyetle ikinci sırada bulunan Rockets'ta Jalen Green 25 sayı, 7 ribaunt ve Jae'Sean Tate 16 sayı, 3 ribaunt üretti.Art arda 6 olmak üzere 25. yenilgisini yaşayan Hawks'ta ise Trae Young 21 sayı, 9 asist ve De'Andre Hunter 16 sayı, 5 ribauntluk katkı sağladı.",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

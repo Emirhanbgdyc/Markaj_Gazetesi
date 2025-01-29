@@ -41,7 +41,7 @@ class BasketballNewsDetailsSix extends StatelessWidget {
                   Center(
                     child:Expanded(
                       child: Image.asset(
-                        "assets/image/futbol_img/f_img_1.jpg",
+                        "assets/image/basketbol_img/b_img_6.jpg",
                         height: 350,
                         fit: BoxFit.cover,
                       ),
@@ -61,7 +61,7 @@ class BasketballNewsDetailsSix extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("UEFA Avrupa Ligi'nin 8. haftasında Twente ile kritik bir maça çıkacak olan Beşiktaş'ta karşılaşmanın hazırlıkları devam ediyor.",
+                        Text("NBA'de Batı Konferansı lideri Oklahoma City Thunder, deplasmanda Portland Trail Blazers'ı 118-108 mağlup etti. Thunder'da 35 sayı, 5 ribauntla oynayan Shai Gilgeous-Alexander galibiyette başrol oynadı.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -74,8 +74,7 @@ class BasketballNewsDetailsSix extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("UEFA Avrupa Ligi'nin 8. haftasında 30 Ocak Perşembe günü Hollanda ekibi Twente'yle deplasmanda karşılaşacak Beşiktaş, hazırlıklarına devam etti.Kulüpten yapılan açıklamaya göre BJK Nevzat Demir Tesisleri'ndeki idman, yaklaşık 1,5 saat sürdü.Isınma ve 5'e 2 çalışmalarıyla başlayan antrenmanın son bölümünde siyah-beyazlı ekip taktik idman gerçekleştirdi.Beşiktaş, yarın 15 dakikası basına açık yapacağı antrenmanın ardından özel uçakla Almanya'nın Münster kentine, daha sonra da kara yoluyla maçın oynanacağı Hollanda'nın Enschede şehrine gidecek.",
-
+                      child: Text("Amerikan Basketbol Ligi'nde (NBA) Oklahoma City Thunder, deplasmanda Portland Trail Blazers'ı 118-108 yendi.NBA'de tek maç yapıldı. Batı Konferansı lideri Thunder, konferans 13'üncüsü Portland Trail Blazers'a konuk oldu.İkinci çeyrekteki skorer oyunuyla kontrolü ele alan Thunder, boyalı alandaki etkili performansıyla mücadeleden 118-108 galip ayrıldı.",
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
                             fontSize: 16

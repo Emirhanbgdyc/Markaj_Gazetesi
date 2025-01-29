@@ -41,7 +41,7 @@ class BasketballNewsDetailsFive extends StatelessWidget {
                   Center(
                     child:Expanded(
                       child: Image.asset(
-                        "assets/image/futbol_img/f_img_1.jpg",
+                        "assets/image/basketbol_img/b_img_5.jpg",
                         height: 350,
                         fit: BoxFit.cover,
                       ),
@@ -61,7 +61,7 @@ class BasketballNewsDetailsFive extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("UEFA Avrupa Ligi'nin 8. haftasında Twente ile kritik bir maça çıkacak olan Beşiktaş'ta karşılaşmanın hazırlıkları devam ediyor.",
+                        Text("NBA'de Anthony Davis'in 42 sayı ve 23 ribauntla double-double yaptığı maçta Los Angeles Lakers, Charlotte Hornets'ı 112-107 mağlup etti. Houston Rockets ise deplasmanda Boston Celtics'i 114-112 yendi. Rockets'ta Alperen Şengün, galibiyete 11 sayılık katkı verdi..",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -74,7 +74,7 @@ class BasketballNewsDetailsFive extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("UEFA Avrupa Ligi'nin 8. haftasında 30 Ocak Perşembe günü Hollanda ekibi Twente'yle deplasmanda karşılaşacak Beşiktaş, hazırlıklarına devam etti.Kulüpten yapılan açıklamaya göre BJK Nevzat Demir Tesisleri'ndeki idman, yaklaşık 1,5 saat sürdü.Isınma ve 5'e 2 çalışmalarıyla başlayan antrenmanın son bölümünde siyah-beyazlı ekip taktik idman gerçekleştirdi.Beşiktaş, yarın 15 dakikası basına açık yapacağı antrenmanın ardından özel uçakla Almanya'nın Münster kentine, daha sonra da kara yoluyla maçın oynanacağı Hollanda'nın Enschede şehrine gidecek.",
+                      child: Text("NBA'de bu sabaha karşı oynanan maçta Los Angeles Lakers, deplasmanda Charlotte Hornets'ı mağlup etti.Lakers, Charlotte karşısında 117-112 kazanırken Anthony Davis galibiyete damga vurdu.Dört maçlık galibiyet serisine ulaşan Lakers'ta Anthony Davis, 42 sayı ve 23 ribaunt alırken LeBron James ise 22 sayı kaydetti. Hornets'ta ise Miles Bridges, 26 sayı attı.",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

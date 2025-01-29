@@ -41,7 +41,7 @@ class BasketballNewsDetailsThree extends StatelessWidget {
                   Center(
                     child:Expanded(
                       child: Image.asset(
-                        "assets/image/futbol_img/f_img_1.jpg",
+                        "assets/image/basketbol_img/b_img_3.jpg",
                         height: 350,
                         fit: BoxFit.cover,
                       ),
@@ -61,7 +61,7 @@ class BasketballNewsDetailsThree extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("UEFA Avrupa Ligi'nin 8. haftasında Twente ile kritik bir maça çıkacak olan Beşiktaş'ta karşılaşmanın hazırlıkları devam ediyor.",
+                        Text("Türkiye Sigorta Basketbol Süper Ligi'nin 16. haftasında Anadolu Efes, deplasmanda Yalovaspor Basketbol'u 110-83 yendi. Anadolu Efes 4 gün önce de EuroLeague maçında Milano'yu 110-66 mağlup etmişti.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -74,8 +74,7 @@ class BasketballNewsDetailsThree extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("UEFA Avrupa Ligi'nin 8. haftasında 30 Ocak Perşembe günü Hollanda ekibi Twente'yle deplasmanda karşılaşacak Beşiktaş, hazırlıklarına devam etti.Kulüpten yapılan açıklamaya göre BJK Nevzat Demir Tesisleri'ndeki idman, yaklaşık 1,5 saat sürdü.Isınma ve 5'e 2 çalışmalarıyla başlayan antrenmanın son bölümünde siyah-beyazlı ekip taktik idman gerçekleştirdi.Beşiktaş, yarın 15 dakikası basına açık yapacağı antrenmanın ardından özel uçakla Almanya'nın Münster kentine, daha sonra da kara yoluyla maçın oynanacağı Hollanda'nın Enschede şehrine gidecek.",
-
+                      child: Text("Türkiye Sigorta Basketbol Süper Ligi'nin 16. haftasında Anadolu Efes, deplasmanda Yalovaspor Basketbol'u 110-83 yendi.Karşılaşmanın ilk çeyreğini 25-13 önde geçen Anadolu Efes, devre arasına 54-33 üstün gitti.Üçüncü periyodu 89-56 önde bitiren Anadolu Efes, müsabakadan 110-83 galip ayrıldı.",
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
                             fontSize: 16

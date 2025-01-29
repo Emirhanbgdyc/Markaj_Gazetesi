@@ -41,7 +41,7 @@ class BasketballNewsDetailsFour extends StatelessWidget {
                   Center(
                     child:Expanded(
                       child: Image.asset(
-                        "assets/image/futbol_img/f_img_1.jpg",
+                        "assets/image/basketbol_img/b_img_4.jpg",
                         height: 350,
                         fit: BoxFit.cover,
                       ),
@@ -61,7 +61,7 @@ class BasketballNewsDetailsFour extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("UEFA Avrupa Ligi'nin 8. haftasında Twente ile kritik bir maça çıkacak olan Beşiktaş'ta karşılaşmanın hazırlıkları devam ediyor.",
+                        Text("SON DAKİKA HABERİ: Fenerbahçe Beko, THY EuroLeague'in 23. hafta maçında lider Olympiacos'u deplasmanda 77-87 mağlup etti. Fenerbahçe Beko böylece THY EuroLeague'deki son 5 maçını da kazanmış oldu.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -74,7 +74,7 @@ class BasketballNewsDetailsFour extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("UEFA Avrupa Ligi'nin 8. haftasında 30 Ocak Perşembe günü Hollanda ekibi Twente'yle deplasmanda karşılaşacak Beşiktaş, hazırlıklarına devam etti.Kulüpten yapılan açıklamaya göre BJK Nevzat Demir Tesisleri'ndeki idman, yaklaşık 1,5 saat sürdü.Isınma ve 5'e 2 çalışmalarıyla başlayan antrenmanın son bölümünde siyah-beyazlı ekip taktik idman gerçekleştirdi.Beşiktaş, yarın 15 dakikası basına açık yapacağı antrenmanın ardından özel uçakla Almanya'nın Münster kentine, daha sonra da kara yoluyla maçın oynanacağı Hollanda'nın Enschede şehrine gidecek.",
+                      child: Text("THY EuroLeague'in 23. haftasında Fenerbahçe Beko deplasmanda lider Olympiacos'u 77-87 yendi. Galibiyet serisini 5 maça çıkaran Fenerbahçe Beko'da Marko Guduric 21 sayıyla yıldızlaştı.Sarı-lacivertliler, THY EuroLeague'deki 22. maçında 15. galibiyetini alırken, Olympiacos'un 7 maçlık galibiyet serisi sona erdi.",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
