@@ -39,7 +39,7 @@ class NewsDetailOneScreen extends StatelessWidget {
                 children: [
                   Center(
                     child: Image.asset(
-                      "assets/image/futbol_img/f_img_1.jpg",
+                      "assets/image/futbol_img/f_img_4.jpg",
                       height: 300,
                       fit: BoxFit.cover,
                     ),
@@ -58,7 +58,7 @@ class NewsDetailOneScreen extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("UEFA Avrupa Ligi'nin 8. haftasında Twente ile kritik bir maça çıkacak olan Beşiktaş'ta karşılaşmanın hazırlıkları devam ediyor.",
+                        Text("Trendyol Süper Lig ekiplerinden Gaziantep FK, Belçika ekiplerinden Westerlo forması giyen orta saha oyuncusu Muhammed Gümüşkaya'yı sezon sonuna kadar kiralık olarak kadrosuna kattı.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -71,7 +71,7 @@ class NewsDetailOneScreen extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("UEFA Avrupa Ligi'nin 8. haftasında 30 Ocak Perşembe günü Hollanda ekibi Twente'yle deplasmanda karşılaşacak Beşiktaş, hazırlıklarına devam etti.Kulüpten yapılan açıklamaya göre BJK Nevzat Demir Tesisleri'ndeki idman, yaklaşık 1,5 saat sürdü.Isınma ve 5'e 2 çalışmalarıyla başlayan antrenmanın son bölümünde siyah-beyazlı ekip taktik idman gerçekleştirdi.Beşiktaş, yarın 15 dakikası basına açık yapacağı antrenmanın ardından özel uçakla Almanya'nın Münster kentine, daha sonra da kara yoluyla maçın oynanacağı Hollanda'nın Enschede şehrine gidecek.",
+                      child: Text("Kulüpten yapılan açıklamaya göre, Belçika ekibi Westerlo forması giyen 24 yaşındaki genç orta saha oyuncusu Muhammed Gümüşkaya'nın sezon sonuna kadar satın alma opsiyonlu olarak kiralandığı belirtilerek, ""Yeni transferimiz Muhammed Gümüşkaya, Kulüp Başkanı Memik Yılmaz, Başkan Yardımcısı Uğur Şireci ve Futbol Şube Sorumlusu Mustafa Kara'nın da katıldığı imza töreniyle resmi sözleşmeye imza attı. Muhammed Gümüşkaya'ya kulübümüze hoş geldin diyor, armamız altında üstün başarılar diliyoruz." "ifadelerine yer verildi.""",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

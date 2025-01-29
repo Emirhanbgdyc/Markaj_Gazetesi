@@ -39,7 +39,7 @@ class NewsDetailOneScreen extends StatelessWidget {
                 children: [
                   Center(
                     child: Image.asset(
-                      "assets/image/newsone.webp",
+                      "assets/image/futbol_img/f_img_3.jpg",
                       height: 300,
                       fit: BoxFit.cover,
                     ),
@@ -58,7 +58,7 @@ class NewsDetailOneScreen extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Fenerbahçe, Brezilyalı futbolcu Anderson Talisca ile 1,5 yıllık sözleşme imzaladı.",
+                        Text("Brezilyalı dünya yıldızı futbolcu Neymar, eski kulübü Santos'a geri döndü. Santos başkanı, anlaşmanın sağlandığını duyurdu.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -71,7 +71,7 @@ class NewsDetailOneScreen extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("Fenerbahçe, Anderson Talisca transferinde mutlu sona ulaştı. Sarı lacivertliler için İstanbul'a gelen Brezilyalı futbolcu, resmi sözleşmeye imza attı.Fenerbahçe, Anderson Talisca ile 1,5 yıllık sözleşme imzalandığını açıkladı.Yeni evine hoş geldin TaliscaKulübümüz, yıldız futbolcu Anderson Talisca ile bir buçuk yıllık sözleşme imzalamıştır.Talisca'ya yeni evine hoş geldin diyor;Sarı Lacivertli Çubuklu formamızla şampiyonluklarla taçlanan başarılı bir kariyer diliyoruz.",
+                      child: Text("Suudi Arabistan Ligi ekiplerinden Al-Hilal'e sansasyonel bir şekilde Transfer olan Neymar, uzun süreli sakatlıklar sonrasında formasından uzak kaldı.Neymar, Avrupa'ya açıldığı takım olan ülkesindeki kulüp Santos'a yeniden döndü.'",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

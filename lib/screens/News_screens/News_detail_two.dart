@@ -40,8 +40,8 @@ class NewsDetailTwoScreen extends StatelessWidget {
                 children: [
                   Center(
                     child: Image.asset(
-                      "assets/image/newstwo.webp",
-                      height: 300,
+                      "assets/image/futbol_img/f_img_2.jpg",
+                      height: 400,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -60,7 +60,7 @@ class NewsDetailTwoScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 8.0),
                     Text(
-                      "Şenol Güneş galibiyete odaklandı",
+                      "Hakan Çalhanoğlu için herkesin beklediği haberi sonunda duyurdu. A Milli Takım'ın yıldız futbolcusu geri dönmeye hazırlanıyor. İşte Inter'de yaşanan Hakan Çalhanoğlu gelişmesi...",
                       style: Theme.of(context).textTheme.titleMedium!.copyWith(
                         color: Theme.of(context).colorScheme.onSecondary,
                         fontWeight: FontWeight.bold,
@@ -74,7 +74,7 @@ class NewsDetailTwoScreen extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("Süper Lig'e kötü bir başlangıç yapan Trabzonspor, bugün konuk edeceği Kasımpaşa karşısında galibiyetten başka bir şey düşünmüyor.Sabah'ta yer alan habere göre kadro dışı bırakılan Bardhi, Denswil, Umut Bozok ve Orsic'in yanı sıra sakatlıkları bulunan Savic, Okay ve Arif Boşluk'un forma giymesi beklenmiyor. Son idmana katılmayan Eren Elmalı dün kendini iyi hissedince takımla çalıştı.Teknik direktör Şenol Güneş, oyuncularına özellikle bulundukları konumdan bir an önce kurtulmak için sadece galibiyete ve plana odaklanmaları yönünde konuşmalar yaptı. Tecrübeli teknik adamın, hataları ekibiyle birlikte detaylı şekilde analiz ettiği, oyun içerisinde yaşanan kopmalar, basit top kayıpları ve yakalanan pozisyonları değerlendirme üzerine özel çalışmalar yaptığı öğrenildi.",
+                      child: Text("UEFA Şampiyonlar Ligi'nde Monaco'yu konuk edecek olan Inter'in teknik direktörü Simone Inzaghi, açıklamalarda bulundu. Inzaghi, milli futbolcu Hakan Çalhanoğlu hakkında da konuştu.Şu ana kadar lig ve Şampiyonlar Ligi'nde gösterdikleri performansla ilgili olarak takımının doğru yolda olduğunu ve alınan sonuçlardan memnun olduklarını belirtten İnzaghi, Devler Ligi'nde ilk 8'e girme konusunda henüz son adımı atmadıklarını ifade etti.",
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
                             fontSize: 16,
