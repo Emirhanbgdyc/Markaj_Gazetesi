@@ -1,6 +1,12 @@
 // import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/screens/About.dart';
+import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details.dart';
+import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details_five.dart';
+import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details_four.dart';
+import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details_six.dart';
+import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details_three.dart';
+import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details_two.dart';
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail.five.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail.four.dart';
@@ -86,6 +92,31 @@ builder: (context, state) => const NotificationScreen(),
     GoRoute(
       path: '/f_six',
       builder: (context, state) => const NewsDetailSixScreen(),
+    ),
+
+    GoRoute(
+      path: '/b_details',
+      builder: (context, state) => const BasketballNewsDetails(),
+    ),
+    GoRoute(
+      path: '/b_two',
+      builder: (context, state) => const BasketballNewsDetailsTwo(),
+    ),
+    GoRoute(
+      path: '/b_three',
+      builder: (context, state) => const BasketballNewsDetailsThree(),
+    ),
+    GoRoute(
+      path: '/b_four',
+      builder: (context, state) => const BasketballNewsDetailsFour(),
+    ),
+    GoRoute(
+      path: '/b_five',
+      builder: (context, state) => const BasketballNewsDetailsFive(),
+    ),
+    GoRoute(
+      path: '/b_six',
+      builder: (context, state) => const BasketballNewsDetailsSix(),
     ),
 ],
 );

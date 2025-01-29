@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
+
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 
@@ -154,12 +154,7 @@ class basketbolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
-                          ),
-                        );
+                       context.go("/b_details");
                       },
                       child: Column(
                         children: [
@@ -196,12 +191,7 @@ class basketbolcategory extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                           context.go("/b_two");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
@@ -244,12 +234,7 @@ class basketbolcategory extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                           context.go("/b_three");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
@@ -283,12 +268,7 @@ class basketbolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
-                          ),
-                        );
+                       context.go("/b_four");
                       },
                       child: Column(
                         children: [
@@ -332,12 +312,7 @@ class basketbolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
-                          ),
-                        );
+                        context.go("/b_five");
                       },
                       child: Column(
                         children: [
@@ -373,13 +348,8 @@ class basketbolcategory extends StatelessWidget {
                     child: Column(
                       children: [
                         GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                          onTap: (){
+                            context.go("/b_six");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
