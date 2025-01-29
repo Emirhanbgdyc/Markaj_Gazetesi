@@ -77,7 +77,7 @@ class futbolcategory extends StatelessWidget {
                           Center(
                             child: Padding(
                               padding: const EdgeInsets.only(
-                                left: 10
+                                  left: 10
                               ),
                               child: Text(
                                 "Futbol",
@@ -90,7 +90,7 @@ class futbolcategory extends StatelessWidget {
                           SizedBox(height: 4),
                           Padding(
                             padding: const EdgeInsets.only(
-                              left: 10
+                                left: 10
                             ),
                             child: Align(
                               alignment: Alignment.center,
@@ -152,7 +152,7 @@ class futbolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                      context.go("/f_one");
+                        context.go("/f_one");
                       },
                       child: Column(
                         children: [

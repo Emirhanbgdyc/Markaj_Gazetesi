@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 
@@ -387,9 +386,6 @@ class basketbolcategory extends StatelessWidget {
               ),
             ],
           )
-
-
-
         ],
       ),
 

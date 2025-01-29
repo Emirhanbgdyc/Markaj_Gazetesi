@@ -61,6 +61,7 @@ class NewsDetailTwoScreen extends StatelessWidget {
                       ),
                       textAlign: TextAlign.left,
                     ),
+
                     SizedBox(height: 8.0),
                     Text(
                       "Hakan Çalhanoğlu için herkesin beklediği haberi sonunda duyurdu. A Milli Takım'ın yıldız futbolcusu geri dönmeye hazırlanıyor. İşte Inter'de yaşanan Hakan Çalhanoğlu gelişmesi...",
