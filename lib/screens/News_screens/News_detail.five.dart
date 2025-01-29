@@ -4,8 +4,6 @@ import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 import 'package:share_plus/share_plus.dart';
 
-
-
 class NewsDetailOneScreen extends StatelessWidget {
   const NewsDetailOneScreen({super.key});
 
