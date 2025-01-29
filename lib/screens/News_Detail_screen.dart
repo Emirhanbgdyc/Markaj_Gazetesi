@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 import '../widgets/BottomMenu.dart';
+import 'package:share_plus/share_plus.dart';
 
 class NewsDetailScreen extends StatelessWidget {
   const NewsDetailScreen({super.key});
@@ -99,7 +100,9 @@ class NewsDetailScreen extends StatelessWidget {
                   Center(
                     heightFactor: 3,
                     child: ElevatedButton.icon(
-                      onPressed: () {},
+                      onPressed: () {
+                        Share.share('Selam markaj gazetesinden sana bir haber gönderdim');
+                      },
                       icon: const Icon(Icons.share, color: Colors.white),
                       label: const Text(
                         "Paylaş",
