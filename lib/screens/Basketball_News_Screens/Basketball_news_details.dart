@@ -6,8 +6,8 @@ import 'package:share_plus/share_plus.dart';
 
 
 
-class NewsDetailOneScreen extends StatelessWidget {
-  const NewsDetailOneScreen({super.key});
+class BasketballNewsDetails extends StatelessWidget {
+  const BasketballNewsDetails({super.key});
 
 
   @override
@@ -60,7 +60,7 @@ class NewsDetailOneScreen extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("UEFA Avrupa Ligi'nin 8. haftasında Twente ile kritik bir maça çıkacak olan Beşiktaş'ta karşılaşmanın hazırlıkları devam ediyor.",
+                        Text("Milli basketbolcu Alperen Şengün, Houston Rockets'ın Atlanta Hawks'ı 100-96 yendiği mücadelede attığı 18 sayıyla Amerikan Basketbol Ligi (NBA) kariyerinde 4 bin sayı barajını aştı.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
