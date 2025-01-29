@@ -180,8 +180,9 @@ class futbolcategory extends StatelessWidget {
                             ),
                             child: Text(
                               "Beşiktaş'ta Twente mesaisi sürüyor.",
-                              style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                              style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
+                                fontSize: 16,
                               ),
                             ),
                           ),
@@ -221,7 +222,7 @@ class futbolcategory extends StatelessWidget {
                           width: 250,
                           child: Text(
                             "Ve Hakan Çalhanoğlu müjdesi! Beklenen haber sonunda geldi.",
-                            style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),
                           ),
@@ -269,8 +270,9 @@ class futbolcategory extends StatelessWidget {
                           width: 250,
                           child: Text(
                             "Neymar yeniden Santos'ta!.",
-                            style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
+                              fontSize: 16,
                             ),
                           ),
                         ),
@@ -307,8 +309,9 @@ class futbolcategory extends StatelessWidget {
                             ),
                             child: Text(
                               "Gaziantep FK, Muhammed Gümüşkaya'yı renklerine bağladı.",
-                              style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                              style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
+                                fontSize: 16,
                               ),
                             ),
                           ),
@@ -355,8 +358,9 @@ class futbolcategory extends StatelessWidget {
                             ),
                             child: Text(
                               "Fenerbahçe, Anderson Talisca'yı İstanbul'a getirdi! Taraftardan coşkulu karşılama.",
-                              style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                              style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
+                                fontSize: 16,
                               ),
                             ),
                           ),
@@ -396,9 +400,9 @@ class futbolcategory extends StatelessWidget {
                           width: 250,
                           child: Text(
                             "Vitor Pereira, Süper Lig'in yıldızı için devrede!.",
-                            style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
-
+                              fontSize: 16,
                             ),
                           ),
                         ),
