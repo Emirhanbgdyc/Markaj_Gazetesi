@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 import 'package:share_plus/share_plus.dart';
@@ -18,7 +19,7 @@ class BasketballNewsDetailsFour extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(11.0),
             child: IconButton(onPressed: (){
-              Navigator.pop(context);
+              context.go('/basketbolcategory');
             }, icon: const Icon(Icons.close)),
           )
         ],
