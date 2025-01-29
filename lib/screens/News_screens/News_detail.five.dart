@@ -37,7 +37,7 @@ class NewsDetailFiveScreen extends StatelessWidget {
                 children: [
                   Center(
                     child: Image.asset(
-                      "assets/image/futbol_img/f_img_5.jpg",
+                      "assets/image/futbol_img/f_img_5.webp",
                       height: 300,
                       fit: BoxFit.cover,
                     ),

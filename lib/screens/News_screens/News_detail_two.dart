@@ -39,10 +39,12 @@ class NewsDetailTwoScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Center(
-                    child: Image.asset(
-                      "assets/image/futbol_img/f_img_2.jpg",
-                      height: 400,
-                      fit: BoxFit.cover,
+                    child:Expanded(
+                      child: Image.asset(
+                        "assets/image/futbol_img/f_img_2.jpg",
+                        height: 350,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 14.0),
