@@ -11,6 +11,8 @@ dependencies:
   google_fonts: ^5.0.0
   cupertino_icons: ^1.0.8
   dotlottie_loader: ^0.0.4
+  share_plus: ^7.2.1
+
   flutter:
     sdk: flutter
   flutter_secure_storage: ^9.2.2
