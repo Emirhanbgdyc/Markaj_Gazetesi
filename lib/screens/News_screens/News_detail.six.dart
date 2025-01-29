@@ -38,10 +38,12 @@ class NewsDetailSixScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Center(
-                    child: Image.asset(
-                      "assets/image/futbol_img/f_img_6.jpg",
-                      height: 300,
-                      fit: BoxFit.cover,
+                    child:Expanded(
+                      child: Image.asset(
+                        "assets/image/futbol_img/f_img_6.jpg",
+                        height: 350,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 14.0),
