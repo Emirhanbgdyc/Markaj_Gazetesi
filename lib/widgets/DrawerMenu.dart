@@ -39,12 +39,6 @@ Drawer DrawerMenu(BuildContext context) {
                       context.go("/t_super");
                     },
                   ),
-                  ListTile(
-                    title: const Text("Premier Lig"),
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
                 ],
               ),
               ExpansionTile(
