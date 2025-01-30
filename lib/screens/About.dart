@@ -18,14 +18,7 @@ class _AboutScreenState extends State<AboutScreen> {
         children: [
           Container(
             decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color.fromRGBO(146, 35, 42, 1),
-                  Color.fromRGBO(110, 25, 30, 0.8),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
+              color: Colors.white,
             ),
           ),
           Column(
@@ -35,7 +28,7 @@ class _AboutScreenState extends State<AboutScreen> {
                 child: Text(
                   "MARKAJ",
                   style: Theme.of(context).textTheme.displayMedium!.copyWith(
-                    color: Theme.of(context).colorScheme.onPrimary,
+                    color: Colors.black,
                   ),
                 ),
               ),
@@ -50,12 +43,12 @@ class _AboutScreenState extends State<AboutScreen> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("assets/image/futbolcategory.jpg", height: 250),
+                        Image.asset("assets/image/about_sayfa.jpg", height: 250),
                         const SizedBox(height: 24),
                         const Text(
                           "Hızlı Haber",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
@@ -67,7 +60,7 @@ class _AboutScreenState extends State<AboutScreen> {
                             "Dünyanın dört bir yanından en güncel haberlere hızlı bir şekilde erişebilirsin",
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                              color: Colors.white70,
+                              color: Colors.black,
                               fontSize: 16,
                             ),
                           ),
@@ -77,12 +70,12 @@ class _AboutScreenState extends State<AboutScreen> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("assets/image/notification.jpg", height: 250),
+                        Image.asset("assets/image/about_two.webp", height: 250),
                         const SizedBox(height: 24),
                         const Text(
                           "Anlık Bildirimler",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
@@ -94,7 +87,7 @@ class _AboutScreenState extends State<AboutScreen> {
                             "Önemli haberlerden ve gelişmelerden anında haberdar olun.",
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                              color: Colors.white70,
+                              color: Colors.black,
                               fontSize: 16,
                             ),
                           ),
@@ -104,12 +97,12 @@ class _AboutScreenState extends State<AboutScreen> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("assets/image/settings.jpg", height: 250),
+                        Image.asset("assets/image/about_three.jpg", height: 250),
                         const SizedBox(height: 24),
                         const Text(
-                          "Kişisel Ayarlar",
+                          "Arama Butonu",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.black,
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                           ),
@@ -118,10 +111,10 @@ class _AboutScreenState extends State<AboutScreen> {
                         const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 24),
                           child: Text(
-                            "Tercihlerinize göre haberleri özelleştirin.",
+                            "Aradiginiza Hizlica Ulasin.",
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                              color: Colors.white70,
+                              color: Colors.black,
                               fontSize: 16,
                             ),
                           ),
@@ -146,7 +139,7 @@ class _AboutScreenState extends State<AboutScreen> {
                   height: 8,
                   width: _currentIndex == index ? 24 : 8,
                   decoration: BoxDecoration(
-                    color: _currentIndex == index ? Colors.white : Colors.white38,
+                    color: _currentIndex == index ? Colors.black : Colors.black12,
                     borderRadius: BorderRadius.circular(4),
                   ),
                 ),
