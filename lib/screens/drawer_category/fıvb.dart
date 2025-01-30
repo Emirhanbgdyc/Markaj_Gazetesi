@@ -267,7 +267,7 @@ class ffivb extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Avustralya Açık'ta Iga Swiatek hata yapmadı.",
+                              "Sultanlar Ligi'nde dengeleri değiştirecek transfer! Hande Baladın, Fenerbahçe'ye mi?.",
                               style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                                 fontSize: 18,
