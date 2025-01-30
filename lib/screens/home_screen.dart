@@ -163,7 +163,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    bottom: 20,
+                    bottom: 10,
                     left: 10,
                     child: Container(
                       decoration: BoxDecoration(
