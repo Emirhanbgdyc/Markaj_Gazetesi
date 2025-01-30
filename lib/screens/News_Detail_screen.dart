@@ -38,7 +38,7 @@ class NewsDetailScreen extends StatelessWidget {
                   const SizedBox(height: 16.0),
                   Center(
                     child:Image.asset(
-                      "assets/image/home_img/h_img_1.webp",
+                      "assets/image/home_img/bolu_takımlar.webp",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
@@ -58,7 +58,7 @@ class NewsDetailScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 16.0),
                     child: Text(
-                      "BOLU KARTALKAYA YANGINI ÖLÜ YARALI BİLGİSİ: Otel yangınında ölenlerin isimleri...",
+                      "Bolu’da Kartalkaya Kayak Merkezi’nde 12 katlı ahşap bir otelde çıkan yangında alevler kısa sürede tüm binayı sardı. Yaşanan olayda ölüler ve yararlıların olduğu bilgisi geldi. Spor kulüplerinden konuyla ilgili sosyal medya hesaplarından geçmiş olsun ve taziye mesajları geldi.",
                       style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           color: Theme.of(context).colorScheme.onSecondary,
                           fontWeight: FontWeight.bold,
@@ -70,7 +70,7 @@ class NewsDetailScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 16.0),
                     child: Text(
-                      "Bolu Kartalkaya Otel yangınına ilişkin son dakika gelişmeleri yakından takip ediliyor. Sabah saatlerinde Kartalkaya Kayak Merkezi'ndeki 12 katlı ahşap bir otelde çıkan yangına çok sayıda itfaiye ekibi müdahale ediyor. 234 civarında misafirin kaldığı otelde gece 03.21 sıralarında ilk belirlemelere göre, restoran katında yangın çıktığını bildirdi. Binanın ahşap yapı olması nedeniyle alevler kısa sürede tüm oteli sardı. Otelden tahliye edilen tatilciler, merkezde bulunan 4 otele yerleştirilirken otelle ilgili yeni detaylar ortaya çıktı. ",
+                      "Türkiye’nin önemli kayak merkezlerinden 2 bin 200 rakımlı Kartalkaya’da bir otelde saat 03.30 sıralarında yangın çıktı. 12 katlı ahşap otelde restoran bölümünde başladığı belirlenen yangında alevler hızla yayıldı. Sömestir tatili nedeniyle doluluk oranının yüzde 80-90 oranında olduğu belirtilen, 237 kişinin konakladığı otelde alevlerin fark edilmesiyle 112 Acil Çağrı Merkezi’ne haber verilirken, personel de konukların tahliye edilmesi için zamana karşı mücadele başlattı.Bolu’da Kartalkaya Kayak Merkezi’nde 12 katlı ahşap bir otelde çıkan yangında alevler kısa sürede tüm binayı sardı. Yaşanan olayda ölüler ve yararlıların olduğu bilgisi geldi.Spor kulüplerinden konuyla ilgili sosyal medya hesaplarından geçmiş olsun ve taziye mesajları geldi. ",
                       style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           color: Theme.of(context).colorScheme.onSecondary,
                           fontSize: 16

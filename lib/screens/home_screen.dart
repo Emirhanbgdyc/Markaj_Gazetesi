@@ -156,7 +156,7 @@ class HomeScreen extends StatelessWidget {
                     child: Container(
                       width: double.infinity,
                       child: Image.asset(
-                        "assets/image/home_img/h_img_1.webp",
+                        "assets/image/home_img/bolu_takımlar.webp",
                         fit: BoxFit.cover,
                         height: 400,
                       ),
@@ -172,7 +172,7 @@ class HomeScreen extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
                       width: 350,
                       child: Text(
-                        "BOLU KARTALKAYA YANGINI ÖLÜ YARALI BİLGİSİ: Otel yangınında ölenlerin isimleri",
+                        "Spor kulüplerinden Bolu'da yaşanan yangın faciası sonrası mesajlar",
                         style: TextStyle(
                           fontSize: 24,
                           color: Colors.white,
