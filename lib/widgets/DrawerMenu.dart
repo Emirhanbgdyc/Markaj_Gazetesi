@@ -13,7 +13,9 @@ Drawer DrawerMenu(BuildContext context) {
         const SizedBox(height: 20),
         Center(
           child: Container(
-            child: Image.asset("assets/image/markaj.jpg"),
+            child: Theme.of(context).brightness == Brightness.dark
+                ? Image.asset("assets/image/markajblack.jpg")
+                : Image.asset("assets/image/markaj.jpg"),
           ),
         ),
         Expanded(
@@ -123,18 +125,6 @@ Drawer DrawerMenu(BuildContext context) {
                 ],
               ),
               const SizedBox(height: 30),
-              ListTile(
-                leading: Icon(Icons.settings,
-                    color: Theme.of(context).colorScheme.onSecondary),
-                title: Text(
-                  "Ayarlar & Destek",
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: Theme.of(context).colorScheme.onSecondary,
-                  ),
-                ),
-                onTap: () {
-                },
-              ),
               Container(
                 alignment: Alignment.centerLeft,
                 padding: EdgeInsets.only(
