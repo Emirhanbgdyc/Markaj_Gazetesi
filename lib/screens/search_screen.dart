@@ -71,66 +71,76 @@ class SearchScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Container(
-                      margin: EdgeInsets.only(
-                        left: 25,
-                      ),
-                      width: 200,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                          image: AssetImage('assets/image/basketbolcategory.jpg'),
-                          fit: BoxFit.cover,
+                    GestureDetector(
+                      onTap: (){
+                        context.go("/basketbolcategory");
+                       },
+                      child: Container(
+                        margin: EdgeInsets.only(
+                          left: 25,
                         ),
-                      ),
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            top: 110,
-                            left:10,
-                            child: Text("BASKETBOL",style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),),
+                        width: 200,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            image: AssetImage('assets/image/basketbolcategory.jpg'),
+                            fit: BoxFit.cover,
                           ),
-                        ],
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              top: 110,
+                              left:10,
+                              child: Text("BASKETBOL",style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
                 ),
                 Row(
                   children: [
-                    Container(
-                      margin: EdgeInsets.only(
-                        left: 25,
-                        top: 10,
-                      ),
-                      width: 200,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                          image: AssetImage('assets/image/voleybolcategory.jpg'),
-                          fit: BoxFit.cover,
+                    GestureDetector(
+                      onTap: (){
+                        context.go("/voleybolcategory");
+                      },
+                      child: Container(
+                        margin: EdgeInsets.only(
+                          left: 25,
+                          top: 10,
+                        ),
+                        width: 200,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            image: AssetImage('assets/image/voleybolcategory.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              top: 110,
+                              left:10,
+                              child: Text("VOLEYBOL",style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),),
+                            ),
+                          ],
                         ),
                       ),
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            top: 110,
-                            left:10,
-                            child: Text("VOLEYBOL",style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),),
-                          ),
-                        ],
-                      ),
                     ),
-                    Container(
+                   Container(
                       margin: EdgeInsets.only(
                         left: 25,
                         top: 10,
