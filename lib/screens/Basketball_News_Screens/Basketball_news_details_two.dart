@@ -39,10 +39,19 @@ class BasketballNewsDetailsTwo extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Center(
+<<<<<<< Updated upstream
                     child:Image.asset(
                       "assets/image/basketbol_img/b_img_2.jpg",
                       height: 350,
                       fit: BoxFit.cover,
+=======
+                    child:Expanded(
+                      child: Image.asset(
+                        "assets/image/basketbol_img/b_img_2.jpg",
+                        height: 350,
+                        fit: BoxFit.cover,
+                      ),
+>>>>>>> Stashed changes
                     ),
                   ),
                   const SizedBox(height: 14.0),
@@ -59,7 +68,11 @@ class BasketballNewsDetailsTwo extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
+<<<<<<< Updated upstream
                         Text("Kadın basketbolunun ilham verici takımlarından Mersin Çukurova Basketbol Spor Kulübü, Çimsa ile yeni isim sponsorluğu sözleşmesi imzaladı",
+=======
+                        Text("Kadın basketbolunun ilham verici takımlarından Mersin Çukurova Basketbol Spor Kulübü, Çimsa ile yeni isim sponsorluğu sözleşmesi imzaladı.",
+>>>>>>> Stashed changes
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,7 +85,11 @@ class BasketballNewsDetailsTwo extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
+<<<<<<< Updated upstream
                       child: Text("Konuyla ilgili değerlendirmelerde bulunan Çimsa CEO’su Umut Zenar, hayatın her alanında kadınların desteklenmesini şirket olarak en büyük önceliklerden biri olarak ele aldıklarının altını çizerken, “Çimento farklı malzemeleri, büyük yapıları bir arada tutma işlevi gören bir malzeme. Bir birleştirici, güçlendirici... Biz sporu da aynı bu şekilde görüyoruz. Sporun, ülkemizi ve insanımızı bir arada tutan çok önemli bir değer olduğuna inanıyoruz. Özellikle kadınlar sahada oldukça, onların temsil ettiği değerler ülkemizde yayılmaya devam edecek. Biz de bu yolculukta kadınlarımızın yanında olacağız. Sporun birleştirici gücünü, bir kez daha, bu toprakların kalkınması, sosyal gelişimi için kullanacağız” ifadelerini kullandı.Expand article logo  Okumaya devam et",
+=======
+                      child: Text("Konuyla ilgili değerlendirmelerde bulunan Çimsa CEO’su Umut Zenar, hayatın her alanında kadınların desteklenmesini şirket olarak en büyük önceliklerden biri olarak ele aldıklarının altını çizerken, “Çimento farklı malzemeleri, büyük yapıları bir arada tutma işlevi gören bir malzeme. Bir birleştirici, güçlendirici... Biz sporu da aynı bu şekilde görüyoruz. Sporun, ülkemizi ve insanımızı bir arada tutan çok önemli bir değer olduğuna inanıyoruz. Özellikle kadınlar sahada oldukça, onların temsil ettiği değerler ülkemizde yayılmaya devam edecek. Biz de bu yolculukta kadınlarımızın yanında olacağız. Sporun birleştirici gücünü, bir kez daha, bu toprakların kalkınması, sosyal gelişimi için kullanacağız” ifadelerini kullandı.",
+>>>>>>> Stashed changes
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
