@@ -40,7 +40,7 @@ class TenisNewsDetailsfive extends StatelessWidget {
                 children: [
                   Center(
                     child:Image.asset(
-                      "assets/image/basketbol_img/b_img_1.jpg",
+                      "assets/image/tenis_img/t_img_5.webp",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
