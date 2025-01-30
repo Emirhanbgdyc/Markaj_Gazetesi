@@ -1,4 +1,5 @@
 import 'package:dotlottie_loader/dotlottie_loader.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
@@ -12,6 +13,7 @@ class AboutScreen extends StatefulWidget {
 
 class _AboutScreenState extends State<AboutScreen> {
   int _currentIndex = 0;
+  final PageController _pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +38,7 @@ class _AboutScreenState extends State<AboutScreen> {
               ),
               Expanded(
                 child: PageView(
+                  controller: _pageController,
                   onPageChanged: (index) {
                     setState(() {
                       _currentIndex = index;
@@ -142,27 +145,29 @@ class _AboutScreenState extends State<AboutScreen> {
             ],
           ),
           Positioned(
-            bottom: 100,
-            left: 0,
-            right: 0,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: List.generate(
-                3,(index) => AnimatedContainer(
-                  duration: const Duration(milliseconds: 300),
-                  margin: const EdgeInsets.symmetric(horizontal: 4),
-                  height: 8,
-                  width: _currentIndex == index ? 24 : 8,
-                  decoration: BoxDecoration(
-                    color: _currentIndex == index ? Colors.black : Colors.black12,
-                    borderRadius: BorderRadius.circular(4),
-                  ),
-                ),
+            bottom: 400,
+            left: 20,
+            child: IconButton(
+              icon: const Icon(CupertinoIcons.left_chevron, color: Colors.black),
+              onPressed: () => _pageController.previousPage(
+                duration: const Duration(milliseconds: 720),
+                curve: Curves.easeInOut,
               ),
             ),
           ),
           Positioned(
-            bottom: 50,
+            bottom: 400,
+            right: 20,
+            child: IconButton(
+              icon: const Icon(CupertinoIcons.right_chevron, color: Colors.black),
+              onPressed: () => _pageController.nextPage(
+                duration: const Duration(milliseconds: 720),
+                curve: Curves.easeInOut,
+              ),
+            ),
+          ),
+          Positioned(
+            bottom: 40,
             right: 20,
             child: TextButton(
               onPressed: () {
@@ -178,7 +183,7 @@ class _AboutScreenState extends State<AboutScreen> {
                     ),
                   ),
                   const SizedBox(width: 4),
-                  const Icon(Icons.arrow_forward, color: Colors.black),
+                  const Icon(CupertinoIcons.arrow_right_to_line_alt, color: Colors.black),
                 ],
               ),
             ),
