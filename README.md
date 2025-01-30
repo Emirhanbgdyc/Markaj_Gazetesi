@@ -92,9 +92,21 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 - Android Studio Code 
 
+## EKRAN GÖRÜNTÜSÜ
+
+![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa1.png)
+![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa2.png)
+![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa3.png)
+![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa4.png)
+![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa5.png)
+![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa6.png)
+![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa8.png)
+
+
+
 ## DEMO VIDEOSU
 
-[![Video Başlığı](https://img.youtube.com/vi/H2QRxDcnNMg/0.jpg)](https://youtu.be/H2QRxDcnNMg)
+[![Video Başlığı]](https://youtu.be/H2QRxDcnNMg)
 
 
 
@@ -171,10 +183,6 @@ lib/
 └── yardımcılar/ # Yardımcı fonksiyonlar  
   
 ```  
-
-
-
-## Ekran Görüntüleri
 
 
 
