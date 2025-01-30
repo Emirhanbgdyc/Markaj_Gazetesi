@@ -54,7 +54,7 @@ Drawer DrawerMenu(BuildContext context) {
                   ListTile(
                     title: const Text("NBA"),
                     onTap: () {
-                      context.go("t_nba");
+                      context.go("/t_nba");
                     },
                   ),
                 ],
