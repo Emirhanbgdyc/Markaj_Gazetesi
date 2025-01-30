@@ -45,12 +45,6 @@ Drawer DrawerMenu(BuildContext context) {
                       Navigator.pop(context);
                     },
                   ),
-                  ListTile(
-                    title: const Text("La Liga"),
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
                 ],
               ),
               ExpansionTile(
@@ -65,12 +59,6 @@ Drawer DrawerMenu(BuildContext context) {
                 children: [
                   ListTile(
                     title: const Text("NBA"),
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
-                  ListTile(
-                    title: const Text("EuroLeague"),
                     onTap: () {
                       Navigator.pop(context);
                     },
@@ -114,13 +102,7 @@ Drawer DrawerMenu(BuildContext context) {
                   ListTile(
                     title: const Text("Wimbledon"),
                     onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
-                  ListTile(
-                    title: const Text("Roland Garros"),
-                    onTap: () {
-                      Navigator.pop(context);
+                      context.go("/t_wimb");
                     },
                   ),
                 ],

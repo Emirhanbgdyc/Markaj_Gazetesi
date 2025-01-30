@@ -36,7 +36,7 @@ import 'package:markaj_gazetesi/screens/category_screens/futbol_category.dart';
 import 'package:markaj_gazetesi/screens/category_screens/tenis_category.dart';
 import 'package:markaj_gazetesi/screens/category_screens/voleybol_category.dart';
 import 'package:markaj_gazetesi/screens/drawer_category/superl%C4%B1g.dart';
-import 'package:markaj_gazetesi/screens/drawer_category/superlıg.dart';
+import 'package:markaj_gazetesi/screens/drawer_category/wimbledon.dart';
 import '../screens/loading_screen.dart';
 import '../screens/home_screen.dart';
 import '../screens/search_screen.dart';
@@ -211,6 +211,14 @@ builder: (context, state) => const NotificationScreen(),
     GoRoute(
       path: '/t_super',
       builder: (context, state) => const superlig(),
+    ),
+
+
+
+
+    GoRoute(
+      path: '/t_wimb',
+      builder: (context, state) => const wimbledon(),
     ),
 ],
 );
