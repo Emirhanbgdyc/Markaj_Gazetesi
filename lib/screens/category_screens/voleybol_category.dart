@@ -168,7 +168,7 @@ class voleybolcategory extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/voleybol_img/v_img_1.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -180,9 +180,10 @@ class voleybolcategory extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              "VakıfBank'tan transfer hamlesi!",
                               style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
+                                fontSize: 16,
                               ),
                             ),
                           ),
@@ -207,7 +208,7 @@ class voleybolcategory extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                image: AssetImage('assets/image/voleybol_img/v_img_2.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -221,9 +222,10 @@ class voleybolcategory extends StatelessWidget {
                           ),
                           width: 250,
                           child: Text(
-                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                            "Tuğba Şenoğlu İvegin'den flaş transfer kararı!",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
+                              fontSize: 16,
                             ),
                           ),
                         ),
@@ -255,7 +257,7 @@ class voleybolcategory extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                image: AssetImage('assets/image/voleybol_img/v_img_3.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -269,9 +271,10 @@ class voleybolcategory extends StatelessWidget {
                           ),
                           width: 250,
                           child: Text(
-                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                            "Sultanlar Ligi'nde dengeleri değiştirecek transfer! Hande Baladın, Fenerbahçe'ye mi?",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
+                              fontSize: 16,
                             ),
                           ),
                         ),
@@ -295,7 +298,7 @@ class voleybolcategory extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/voleybol_img/v_img_4.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -307,9 +310,10 @@ class voleybolcategory extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              "Saliha Şahin Beşiktaş'tan ayrılıyor! İşte yeni takımı.",
                               style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
+                                fontSize: 16,
                               ),
                             ),
                           ),
@@ -343,7 +347,7 @@ class voleybolcategory extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/voleybol_img/v_img_5.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -355,9 +359,10 @@ class voleybolcategory extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              "Paola Egonu'dan VakıfBank itirafı! 'Bugün bile beni öfkelendiren iki olay var'",
                               style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
+                                fontSize: 16,
                               ),
                             ),
                           ),
@@ -382,7 +387,7 @@ class voleybolcategory extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                image: AssetImage('assets/image/voleybol_img/v_img_6.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -396,9 +401,10 @@ class voleybolcategory extends StatelessWidget {
                           ),
                           width: 250,
                           child: Text(
-                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                            "Şampiyonlar Ligi'nde final gibi eşleşme! Fenerbahçe Medicana ve Vakıfbank kozlarını paylaşacak",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
+                              fontSize: 16,
                             ),
                           ),
                         ),
