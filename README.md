@@ -106,7 +106,7 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 ## DEMO VIDEOSU
 
-[![Video Başlığı]](https://youtu.be/H2QRxDcnNMg)
+[![https://youtu.be/H2QRxDcnNMg]](https://youtu.be/H2QRxDcnNMg)
 
 
 
