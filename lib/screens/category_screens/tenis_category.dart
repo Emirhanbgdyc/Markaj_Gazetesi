@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 
@@ -154,12 +153,7 @@ class TennisCategoryScreen extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
-                          ),
-                        );
+                        context.go("/t_details");
                       },
                       child: Column(
                         children: [
@@ -168,7 +162,7 @@ class TennisCategoryScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/tenis_img/t_img_1.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -180,7 +174,7 @@ class TennisCategoryScreen extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              "Avustralya Açık'ta Jannik Sinner şampiyon oldu",
                               style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
@@ -195,19 +189,14 @@ class TennisCategoryScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                            context.go("/t_two");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                image: AssetImage('assets/image/tenis_img/t_img_2.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -221,7 +210,7 @@ class TennisCategoryScreen extends StatelessWidget {
                           ),
                           width: 250,
                           child: Text(
-                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                            "Ahmet Kaplan Avustralya Açık’ta yarı finalde",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),
@@ -243,19 +232,14 @@ class TennisCategoryScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                           context.go("/t_three");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                image: AssetImage('assets/image/tenis_img/t_img_3.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -269,7 +253,7 @@ class TennisCategoryScreen extends StatelessWidget {
                           ),
                           width: 250,
                           child: Text(
-                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                            "Avustralya Açık'ta Iga Swiatek hata yapmadı",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),
@@ -281,12 +265,7 @@ class TennisCategoryScreen extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
-                          ),
-                        );
+                       context.go("/t_four");
                       },
                       child: Column(
                         children: [
@@ -295,7 +274,7 @@ class TennisCategoryScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/tenis_img/t_img_4.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -307,7 +286,7 @@ class TennisCategoryScreen extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              "Sabalenka, Avustralya Açık'ta yarı finalde.",
                               style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
@@ -329,12 +308,7 @@ class TennisCategoryScreen extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
-                          ),
-                        );
+                       context.go("/t_five");
                       },
                       child: Column(
                         children: [
@@ -343,7 +317,7 @@ class TennisCategoryScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/tenis_img/t_img_5.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -355,7 +329,7 @@ class TennisCategoryScreen extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              "Avustralya Açık'ta Jannik Sinner çeyrek finale yükseldi.",
                               style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
                               ),
@@ -370,19 +344,14 @@ class TennisCategoryScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                           context.go("/t_six");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                image: AssetImage('assets/image/tenis_img/t_img_6.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -396,7 +365,7 @@ class TennisCategoryScreen extends StatelessWidget {
                           ),
                           width: 250,
                           child: Text(
-                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                            "Zverev ve Gauff üçüncü turda.",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),

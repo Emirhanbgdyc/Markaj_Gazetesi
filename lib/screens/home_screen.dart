@@ -1,7 +1,5 @@
-// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
@@ -157,17 +155,12 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const NewsDetailScreen(),
-                        ),
-                      );
+                      context.go("/news");
                     },
                     child: Container(
                       width: double.infinity,
                       child: Image.asset(
-                        "assets/image/futbolcategory.jpg",
+                        "assets/image/home_img/h_img_1.webp",
                         fit: BoxFit.cover,
                         height: 400,
                       ),
@@ -183,7 +176,7 @@ class HomeScreen extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
                       width: 350,
                       child: Text(
-                        "Fenerbahçe'nin ara transfer döneminde en büyük planı: Kevin De Bruyne.",
+                        "BOLU KARTALKAYA YANGINI ÖLÜ YARALI BİLGİSİ: Otel yangınında ölenlerin isimleri",
                         style: TextStyle(
                           fontSize: 24,
                           color: Colors.white,

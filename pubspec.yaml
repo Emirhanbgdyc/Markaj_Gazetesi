@@ -31,6 +31,7 @@ flutter:
   assets:
     - assets/image/
     - assets/image/futbol_img/
+    - assets/image/home_img/
     - assets/image/voleybol_img/
     - assets/image/basketbol_img/
     - assets/image/tenis_img/

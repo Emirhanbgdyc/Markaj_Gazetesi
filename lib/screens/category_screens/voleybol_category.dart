@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 
@@ -154,12 +153,7 @@ class voleybolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
-                          ),
-                        );
+                         context.go("/v_details");
                       },
                       child: Column(
                         children: [
@@ -196,12 +190,7 @@ class voleybolcategory extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                            context.go("/v_two");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
@@ -245,12 +234,7 @@ class voleybolcategory extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                           context.go("/v_three");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
@@ -284,12 +268,7 @@ class voleybolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
-                          ),
-                        );
+                       context.go("/v_four");
                       },
                       child: Column(
                         children: [
@@ -333,12 +312,7 @@ class voleybolcategory extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailTwoScreen(),
-                          ),
-                        );
+                      context.go("/v_five");
                       },
                       child: Column(
                         children: [
@@ -375,12 +349,7 @@ class voleybolcategory extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                           context.go("/v_six");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
