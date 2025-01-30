@@ -20,18 +20,6 @@ Drawer DrawerMenu(BuildContext context) {
           child: ListView(
             children: [
 
-              ListTile(
-                leading: Icon(
-                  Icons.newspaper,
-                  color: Theme.of(context).colorScheme.onSecondary,
-                ),
-                title: Text(
-                  'GÜNDEM',
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: Theme.of(context).colorScheme.onSecondary,
-                  ),
-                ),
-              ),
               ExpansionTile(
                 leading: Icon(Icons.sports_soccer,
                     color: Theme.of(context).colorScheme.onSecondary),

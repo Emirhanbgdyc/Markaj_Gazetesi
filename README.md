@@ -92,6 +92,13 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 - Android Studio Code 
 
+## DEMO VIDEOSU
+
+git add assets/video/Proje_Deneme.mp4
+git commit -m "Demo vıdeosu"
+git push origin main
+
+
 
 ## Başlangıç
 
