@@ -244,6 +244,7 @@ class HomeScreen extends StatelessWidget {
                         Container(
                           margin: EdgeInsets.only(
                             left: 20,
+                            right: 20,
                           ),
                           width: 250,
                           child: Text(
