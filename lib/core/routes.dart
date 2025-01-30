@@ -35,6 +35,8 @@ import 'package:markaj_gazetesi/screens/category_screens/basketbol_category.dart
 import 'package:markaj_gazetesi/screens/category_screens/futbol_category.dart';
 import 'package:markaj_gazetesi/screens/category_screens/tenis_category.dart';
 import 'package:markaj_gazetesi/screens/category_screens/voleybol_category.dart';
+import 'package:markaj_gazetesi/screens/drawer_category/f%C4%B1vb.dart';
+import 'package:markaj_gazetesi/screens/drawer_category/nba.dart';
 import 'package:markaj_gazetesi/screens/drawer_category/superl%C4%B1g.dart';
 import 'package:markaj_gazetesi/screens/drawer_category/wimbledon.dart';
 import '../screens/loading_screen.dart';
@@ -212,16 +214,19 @@ builder: (context, state) => const NotificationScreen(),
       path: '/t_super',
       builder: (context, state) => const superlig(),
     ),
-
-
-
-
-
-
-
+    GoRoute(
+      path: '/t_nba',
+      builder: (context, state) => const nba(),
+    ),
     GoRoute(
       path: '/t_wimb',
       builder: (context, state) => const wimbledon(),
     ),
+
+    GoRoute(
+      path: '/t_ffivb',
+      builder: (context, state) => const ffivb(),
+    ),
+
 ],
 );

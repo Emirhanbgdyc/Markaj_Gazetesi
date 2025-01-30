@@ -54,7 +54,7 @@ Drawer DrawerMenu(BuildContext context) {
                   ListTile(
                     title: const Text("NBA"),
                     onTap: () {
-                      Navigator.pop(context);
+                      context.go("t_nba");
                     },
                   ),
                 ],
@@ -72,13 +72,7 @@ Drawer DrawerMenu(BuildContext context) {
                   ListTile(
                     title: const Text("FIVB Dünya Ligi"),
                     onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
-                  ListTile(
-                    title: const Text("CEV Şampiyonlar Ligi"),
-                    onTap: () {
-                      Navigator.pop(context);
+                      context.go("/t_ffivb");
                     },
                   ),
                 ],
