@@ -48,7 +48,7 @@ class SearchScreen extends StatelessWidget {
                           left: 25,
                         ),
                         width: 200,
-                        height: 150,
+                        height: 300,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           image: DecorationImage(
@@ -59,7 +59,7 @@ class SearchScreen extends StatelessWidget {
                         child: Stack(
                           children: [
                             Positioned(
-                              top: 110,
+                              top: 220,
                               left:10,
                               child: Text("FUTBOL",style: TextStyle(
                                 color: Colors.white,
@@ -80,7 +80,7 @@ class SearchScreen extends StatelessWidget {
                           left: 25,
                         ),
                         width: 200,
-                        height: 150,
+                        height: 300,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           image: DecorationImage(
@@ -91,7 +91,7 @@ class SearchScreen extends StatelessWidget {
                         child: Stack(
                           children: [
                             Positioned(
-                              top: 110,
+                              top: 220,
                               left:10,
                               child: Text("BASKETBOL",style: TextStyle(
                                 color: Colors.white,
@@ -117,7 +117,7 @@ class SearchScreen extends StatelessWidget {
                           top: 10,
                         ),
                         width: 200,
-                        height: 150,
+                        height: 300,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           image: DecorationImage(
@@ -128,7 +128,7 @@ class SearchScreen extends StatelessWidget {
                         child: Stack(
                           children: [
                             Positioned(
-                              top: 110,
+                              top: 220,
                               left:10,
                               child: Text("VOLEYBOL",style: TextStyle(
                                 color: Colors.white,
@@ -150,7 +150,7 @@ class SearchScreen extends StatelessWidget {
                           top: 10,
                         ),
                         width: 200,
-                        height: 150,
+                        height: 300,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           image: DecorationImage(
@@ -161,7 +161,7 @@ class SearchScreen extends StatelessWidget {
                         child: Stack(
                           children: [
                             Positioned(
-                              top: 110,
+                              top: 220,
                               left:10,
                               child: Text("TENIS",style: TextStyle(
                                 color: Colors.white,
@@ -175,70 +175,6 @@ class SearchScreen extends StatelessWidget {
                    ),
                   ],
                 ),
-                Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(
-                        left: 25,
-                        top: 10,
-                      ),
-                      width: 200,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                          image: AssetImage('assets/image/formulacategory.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            top: 110,
-                            left:10,
-                            child: Text("FORMULA",style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(
-                        left: 25,
-                        top: 10,
-                      ),
-                      width: 200,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                          image: AssetImage('assets/image/naimcategory.jpg'),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            top: 110,
-                            left:10,
-                            child: Text("OLIMPIYAT",style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-
-
-
-
               ],
             ),
           ),
