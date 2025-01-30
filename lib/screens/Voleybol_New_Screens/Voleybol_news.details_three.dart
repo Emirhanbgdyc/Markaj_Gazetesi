@@ -19,7 +19,7 @@ class VoleybolNewsDetailsthree extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(11.0),
             child: IconButton(onPressed: (){
-              context.go('/basketbolcategory');
+              context.go('/voleybolcategory');
             }, icon: const Icon(Icons.close)),
           )
         ],

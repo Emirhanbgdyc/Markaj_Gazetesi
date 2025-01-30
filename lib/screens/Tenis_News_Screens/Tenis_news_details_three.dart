@@ -19,7 +19,7 @@ class TenisNewsDetailsthree extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(11.0),
             child: IconButton(onPressed: (){
-              context.go('/basketbolcategory');
+              context.go('/teniscategory');
             }, icon: const Icon(Icons.close)),
           )
         ],

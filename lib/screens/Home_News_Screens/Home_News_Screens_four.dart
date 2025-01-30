@@ -7,8 +7,8 @@ import 'package:share_plus/share_plus.dart';
 
 
 
-class VoleybolNewsDetailsSix extends StatelessWidget {
-  const VoleybolNewsDetailsSix({super.key});
+class BasketballNewsDetailsSix extends StatelessWidget {
+  const BasketballNewsDetailsSix({super.key});
 
 
   @override
@@ -19,7 +19,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(11.0),
             child: IconButton(onPressed: (){
-              context.go('/voleybolcategory');
+              Navigator.pop(context);
             }, icon: const Icon(Icons.close)),
           )
         ],
@@ -40,7 +40,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                 children: [
                   Center(
                     child:Image.asset(
-                      "assets/image/voleybol_img/v_img_6.webp",
+                      "assets/image/basketbol_img/b_img_6.jpg",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
@@ -59,7 +59,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Şampiyonlar Ligi'nde final gibi eşleşme! Fenerbahçe Medicana ve Vakıfbank kozlarını paylaşacak",
+                        Text("NBA'de Batı Konferansı lideri Oklahoma City Thunder, deplasmanda Portland Trail Blazers'ı 118-108 mağlup etti. Thunder'da 35 sayı, 5 ribauntla oynayan Shai Gilgeous-Alexander galibiyette başrol oynadı.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,8 +72,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("2025 CEV Kadınlar Şampiyonlar Ligi’nde çeyrek final eşleşmeleri belli oldu. Temsilcilerimizden Eczacıbaşı Dynavit'in henüz belli olmazken, çeyrek finalde bir Türk derbisi oynanacak. Sultanlar Ligi'ni zirvede götüren Fenerbahçe Medicana ve Vakıfbank eşleşmesi, sporseverleri şimdiden heyecanlandırdı.",
-
+                      child: Text("Amerikan Basketbol Ligi'nde (NBA) Oklahoma City Thunder, deplasmanda Portland Trail Blazers'ı 118-108 yendi.NBA'de tek maç yapıldı. Batı Konferansı lideri Thunder, konferans 13'üncüsü Portland Trail Blazers'a konuk oldu.İkinci çeyrekteki skorer oyunuyla kontrolü ele alan Thunder, boyalı alandaki etkili performansıyla mücadeleden 118-108 galip ayrıldı.",
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
                             fontSize: 16

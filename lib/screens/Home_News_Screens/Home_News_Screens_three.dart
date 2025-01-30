@@ -5,10 +5,8 @@ import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 import 'package:share_plus/share_plus.dart';
 
-
-
-class VoleybolNewsDetailsSix extends StatelessWidget {
-  const VoleybolNewsDetailsSix({super.key});
+class NewsDetailFiveScreen extends StatelessWidget {
+  const NewsDetailFiveScreen({super.key});
 
 
   @override
@@ -19,7 +17,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(11.0),
             child: IconButton(onPressed: (){
-              context.go('/voleybolcategory');
+              Navigator.pop(context);
             }, icon: const Icon(Icons.close)),
           )
         ],
@@ -39,9 +37,9 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Center(
-                    child:Image.asset(
-                      "assets/image/voleybol_img/v_img_6.webp",
-                      height: 350,
+                    child: Image.asset(
+                      "assets/image/futbol_img/f_img_5.webp",
+                      height: 300,
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -59,7 +57,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Şampiyonlar Ligi'nde final gibi eşleşme! Fenerbahçe Medicana ve Vakıfbank kozlarını paylaşacak",
+                        Text("Fenerbahçe, uzun süren uğraşlar sonucunda Brezilyalı yıldız Anderson Talisca'yı renklerine bağladı.",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,7 +70,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("2025 CEV Kadınlar Şampiyonlar Ligi’nde çeyrek final eşleşmeleri belli oldu. Temsilcilerimizden Eczacıbaşı Dynavit'in henüz belli olmazken, çeyrek finalde bir Türk derbisi oynanacak. Sultanlar Ligi'ni zirvede götüren Fenerbahçe Medicana ve Vakıfbank eşleşmesi, sporseverleri şimdiden heyecanlandırdı.",
+                      child: Text("Fenerbahçe, ara transfer dönemine hızlı başlamış ve kadrosuna Diego Carlos ile Milan Skriniar gibi 2 yıldızı katmıştı. Sarı lacivertliler, bu transferlerin ardından Süper Lig'de bir dönem fırtına gibi esen Anderson Talisca'yı renklerine bağladı.Fenerbahçe, Talisca'ya ilişkin, ""Anderson Talisca İstanbul’da. Transferi konusunda anlaşmaya vardığımız Brezilyalı futbolcu Anderson Talisca, sağlık kontrolünden geçmek ve transfer görüşmelerini ilerletmek üzere İstanbul’a geldi." "açıklamasını yapmıştı.""",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

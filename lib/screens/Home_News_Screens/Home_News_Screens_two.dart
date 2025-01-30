@@ -7,8 +7,8 @@ import 'package:share_plus/share_plus.dart';
 
 
 
-class VoleybolNewsDetailsSix extends StatelessWidget {
-  const VoleybolNewsDetailsSix({super.key});
+class TenisNewsDetailsthree extends StatelessWidget {
+  const TenisNewsDetailsthree({super.key});
 
 
   @override
@@ -19,7 +19,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(11.0),
             child: IconButton(onPressed: (){
-              context.go('/voleybolcategory');
+              Navigator.pop(context);
             }, icon: const Icon(Icons.close)),
           )
         ],
@@ -40,7 +40,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                 children: [
                   Center(
                     child:Image.asset(
-                      "assets/image/voleybol_img/v_img_6.webp",
+                      "assets/image/tenis_img/t_img_3.webp",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
@@ -59,7 +59,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Şampiyonlar Ligi'nde final gibi eşleşme! Fenerbahçe Medicana ve Vakıfbank kozlarını paylaşacak",
+                        Text("Avustralya Açık'ta Iga Swiatek hata yapmadı",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("2025 CEV Kadınlar Şampiyonlar Ligi’nde çeyrek final eşleşmeleri belli oldu. Temsilcilerimizden Eczacıbaşı Dynavit'in henüz belli olmazken, çeyrek finalde bir Türk derbisi oynanacak. Sultanlar Ligi'ni zirvede götüren Fenerbahçe Medicana ve Vakıfbank eşleşmesi, sporseverleri şimdiden heyecanlandırdı.",
+                      child: Text("Sezonun ilk grand slam tenis turnuvası Avustralya Açık'ta Polonyalı Iga Swiatek, yarı finale yükseldi.Melbourne kentinde düzenlenen turnuvanın 11. gün sabah seansında çeyrek final maçlarına devam edildi.Beş kez grand slam şampiyonu tek kadınların 2 numaralı seribaşı Swiatek, ABD'li Emma Navarro'yu (8 numaralı seribaşı) 1 saat 29 dakika süren karşılaşmada 6-1 ve 6-2'lik setlerle 2-0 yenerek adını yarı finale yazdırdı.ABD'li 19 numaralı seribaşı Madison Keys ise Ukraynalı rakibi Elina Svitolina'yı (28) 3-6, 6-3 ve 6-4'lük setlerle 2-1 yenerek yarı finale yükseldi.Swiatek ile Keys, yarı finalde karşı karşıya gelecek.",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

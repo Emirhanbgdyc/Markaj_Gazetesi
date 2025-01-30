@@ -7,8 +7,8 @@ import 'package:share_plus/share_plus.dart';
 
 
 
-class VoleybolNewsDetailsSix extends StatelessWidget {
-  const VoleybolNewsDetailsSix({super.key});
+class VoleybolNewsDetails extends StatelessWidget {
+  const VoleybolNewsDetails({super.key});
 
 
   @override
@@ -19,7 +19,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(11.0),
             child: IconButton(onPressed: (){
-              context.go('/voleybolcategory');
+              Navigator.pop(context);
             }, icon: const Icon(Icons.close)),
           )
         ],
@@ -40,7 +40,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                 children: [
                   Center(
                     child:Image.asset(
-                      "assets/image/voleybol_img/v_img_6.webp",
+                      "assets/image/voleybol_img/v_img_1.webp",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
@@ -59,7 +59,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Şampiyonlar Ligi'nde final gibi eşleşme! Fenerbahçe Medicana ve Vakıfbank kozlarını paylaşacak",
+                        Text("VakıfBank'tan transfer hamlesi! Fransız yıldızla anlaşmaya varıldı",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class VoleybolNewsDetailsSix extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("2025 CEV Kadınlar Şampiyonlar Ligi’nde çeyrek final eşleşmeleri belli oldu. Temsilcilerimizden Eczacıbaşı Dynavit'in henüz belli olmazken, çeyrek finalde bir Türk derbisi oynanacak. Sultanlar Ligi'ni zirvede götüren Fenerbahçe Medicana ve Vakıfbank eşleşmesi, sporseverleri şimdiden heyecanlandırdı.",
+                      child: Text("Vodafone Sultanlar Ligi'nin güçlü ekiplerinden VakıfBank, transfer çalışmalarına hız kesmeden devam ediyor. Bu kapsamda sarı-siyahlı ekip, Fransız yıldızın transferi için el sıkıştı.",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

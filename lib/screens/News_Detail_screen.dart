@@ -37,7 +37,7 @@ class NewsDetailScreen extends StatelessWidget {
                   const SizedBox(height: 16.0),
                   Center(
                     child:Image.asset(
-                      "assets/image/rodri.jpg",
+                      "assets/home_img/h_img_1.webp",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
@@ -57,7 +57,7 @@ class NewsDetailScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 16.0),
                     child: Text(
-                      "Real Madrid Başkanı Florentino Perez, Ballon d'Or ödülünü kazanan Rodri hakkında konuştu",
+                      "BOLU KARTALKAYA YANGINI ÖLÜ YARALI BİLGİSİ: Otel yangınında ölenlerin isimleri...",
                       style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           color: Theme.of(context).colorScheme.onSecondary,
                           fontWeight: FontWeight.bold,
@@ -69,34 +69,14 @@ class NewsDetailScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 16.0),
                     child: Text(
-                      "Ödülü Real Madridli bir oyuncunun alması gerektiğini söyleyen Perez, Rodri, Ballon d'Or'u Manchester City ile Şampiyonlar Ligi'ni kazandığı zaman almalıydı. Geçtiğimiz sezonun ödülünü kesinlikle bir Real Madrid oyuncusu kazanmalıydı. dedi",
+                      "Bolu Kartalkaya Otel yangınına ilişkin son dakika gelişmeleri yakından takip ediliyor. Sabah saatlerinde Kartalkaya Kayak Merkezi'ndeki 12 katlı ahşap bir otelde çıkan yangına çok sayıda itfaiye ekibi müdahale ediyor. 234 civarında misafirin kaldığı otelde gece 03.21 sıralarında ilk belirlemelere göre, restoran katında yangın çıktığını bildirdi. Binanın ahşap yapı olması nedeniyle alevler kısa sürede tüm oteli sardı. Otelden tahliye edilen tatilciler, merkezde bulunan 4 otele yerleştirilirken otelle ilgili yeni detaylar ortaya çıktı. ",
                       style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                           color: Theme.of(context).colorScheme.onSecondary,
                           fontSize: 16
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(17.5),
-                    child: Text(
-                      "NE OLMUŞTU? ",
-                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                          color: Theme.of(context).colorScheme.onSecondary,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(left: 16.0),
-                    child: Text(
-                      "Real Madrid yönetimi, Ballon d'Or ödülünü kendi takımlarından bir oyuncunun kazanmadığını öğrendiklerinde ödül törenini protesto etmiş ve hiçbir ferdinin törene katılmayacağını açıklamıştı.",
-                      style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                          color: Theme.of(context).colorScheme.onSecondary,
-                          fontSize: 16
-                      ),
-                    ),
-                  ),
+
                   Center(
                     heightFactor: 3,
                     child: ElevatedButton.icon(
