@@ -5,8 +5,8 @@ import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 import 'package:share_plus/share_plus.dart';
 
-class NewsDetailFiveScreen extends StatelessWidget {
-  const NewsDetailFiveScreen({super.key});
+class HomeNewsDetailsScreensthree extends StatelessWidget {
+  const HomeNewsDetailsScreensthree({super.key});
 
 
   @override

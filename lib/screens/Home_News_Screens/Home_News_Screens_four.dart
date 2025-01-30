@@ -7,8 +7,8 @@ import 'package:share_plus/share_plus.dart';
 
 
 
-class BasketballNewsDetailsSix extends StatelessWidget {
-  const BasketballNewsDetailsSix({super.key});
+class HomeNewsDetailsScreensfour extends StatelessWidget {
+  const HomeNewsDetailsScreensfour({super.key});
 
 
   @override

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 import '../widgets/BottomMenu.dart';
 import 'package:share_plus/share_plus.dart';
@@ -15,7 +16,7 @@ class NewsDetailScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(11.0),
             child: IconButton(onPressed: () {
-              Navigator.pop(context);
+              context.go('/home');
             }, icon: const Icon(Icons.close)),
           )
         ],
@@ -37,7 +38,7 @@ class NewsDetailScreen extends StatelessWidget {
                   const SizedBox(height: 16.0),
                   Center(
                     child:Image.asset(
-                      "assets/home_img/h_img_1.webp",
+                      "assets/image/home_img/h_img_1.webp",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
