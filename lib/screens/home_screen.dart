@@ -8,8 +8,6 @@ import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -191,7 +189,7 @@ class HomeScreen extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        context.go("/v_details");
+                        context.go("/home_one");
                       },
                       child: Column(
                         children: [
@@ -228,7 +226,7 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            context.go("/t_three");
+                            context.go("/home_two");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
@@ -269,7 +267,7 @@ class HomeScreen extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        context.go("/f_five");
+                        context.go("/home_three");
                       },
                       child: Column(
                         children: [
@@ -306,7 +304,7 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: (){
-                            context.go("/b_six");
+                            context.go("/home_four");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),

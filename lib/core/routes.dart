@@ -1,4 +1,4 @@
-// import 'package:flutter/material.dart';
+
 import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/screens/About.dart';
 import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details.dart';
@@ -7,6 +7,10 @@ import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_
 import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details_six.dart';
 import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details_three.dart';
 import 'package:markaj_gazetesi/screens/Basketball_News_Screens/Basketball_news_details_two.dart';
+import 'package:markaj_gazetesi/screens/Home_News_Screens/Home_News_Screens.dart';
+import 'package:markaj_gazetesi/screens/Home_News_Screens/Home_News_Screens_four.dart';
+import 'package:markaj_gazetesi/screens/Home_News_Screens/Home_News_Screens_three.dart';
+import 'package:markaj_gazetesi/screens/Home_News_Screens/Home_News_Screens_two.dart';
 import 'package:markaj_gazetesi/screens/News_Detail_screen.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail.five.dart';
 import 'package:markaj_gazetesi/screens/News_screens/News_detail.four.dart';
@@ -53,6 +57,24 @@ final router = GoRouter(
       path: '/home',
       builder: (context, state) => const HomeScreen(),
     ),
+
+    GoRoute(
+      path: '/home_one',
+      builder: (context, state) => const HomeNewsDetailsScreens(),
+    ),
+    GoRoute(
+      path: '/home_two',
+      builder: (context, state) => const HomeNewsDetailsScreenstwo(),
+    ),
+    GoRoute(
+      path: '/home_three',
+      builder: (context, state) => const HomeNewsDetailsScreensthree(),
+    ),
+    GoRoute(
+      path: '/home_four',
+      builder: (context, state) => const  HomeNewsDetailsScreensfour(),
+    ),
+
     GoRoute(
       path: '/news',
       builder: (context, state) => const NewsDetailScreen(),

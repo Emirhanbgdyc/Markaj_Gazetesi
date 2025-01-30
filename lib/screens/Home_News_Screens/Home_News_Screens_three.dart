@@ -17,7 +17,7 @@ class HomeNewsDetailsScreensthree extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(11.0),
             child: IconButton(onPressed: (){
-              Navigator.pop(context);
+              context.go("/home");
             }, icon: const Icon(Icons.close)),
           )
         ],
