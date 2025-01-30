@@ -1,5 +1,7 @@
+import 'package:dotlottie_loader/dotlottie_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:lottie/lottie.dart';
 
 class AboutScreen extends StatefulWidget {
   const AboutScreen({super.key});
@@ -97,7 +99,20 @@ class _AboutScreenState extends State<AboutScreen> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("assets/image/about_three.jpg", height: 250),
+                        SizedBox(
+                          width: 300,
+                          height: 300,
+                          child: DotLottieLoader.fromAsset(
+                            "assets/motions/search.lottie",
+                            frameBuilder: (BuildContext ctx, DotLottie? dotlottie) {
+                              if (dotlottie != null) {
+                                return Lottie.memory(dotlottie.animations.values.single);
+                              } else {
+                                return Container();
+                              }
+                            },
+                          ),
+                        ),
                         const SizedBox(height: 24),
                         const Text(
                           "Arama Butonu",
