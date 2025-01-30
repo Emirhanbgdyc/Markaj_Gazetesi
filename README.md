@@ -94,7 +94,8 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 ## DEMO VIDEOSU
 
-![Vıdeo](https://youtu.be/H2QRxDcnNMg)
+[![Video Başlığı](https://img.youtube.com/vi/H2QRxDcnNMg/0.jpg)](https://youtu.be/H2QRxDcnNMg)
+
 
 
 
