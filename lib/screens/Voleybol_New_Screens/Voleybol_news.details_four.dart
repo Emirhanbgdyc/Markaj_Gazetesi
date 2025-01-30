@@ -40,7 +40,7 @@ class VoleybolNewsDetailsfour extends StatelessWidget {
                 children: [
                   Center(
                     child:Image.asset(
-                      "assets/image/basketbol_img/b_img_1.jpg",
+                      "assets/image/voleybol_img/v_img_4.webp",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
@@ -59,7 +59,7 @@ class VoleybolNewsDetailsfour extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Milli basketbolcu Alperen Şengün, Houston Rockets'ın Atlanta Hawks'ı 100-96 yendiği mücadelede attığı 18 sayıyla Amerikan Basketbol Ligi (NBA) kariyerinde 4 bin sayı barajını aştı.",
+                        Text("Saliha Şahin Beşiktaş'tan ayrılıyor! İşte yeni takımı",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class VoleybolNewsDetailsfour extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("NBA'de 4 maç yapıldı. Hawks'a konuk olan Rockets'ta 29 dakika süre alan Alperen Şengün, 18 sayı, 10 ribauntla double-double yaptı. İstatistiklerine 2 asist ve 1 top çalma da ekleyen Alperen, 4. sezonunu geçirdiği NBA kariyerinde 4 bin 12 sayıya ulaştı.Batı Konferansı'nda 32 galibiyet, 14 mağlubiyetle ikinci sırada bulunan Rockets'ta Jalen Green 25 sayı, 7 ribaunt ve Jae'Sean Tate 16 sayı, 3 ribaunt üretti.Art arda 6 olmak üzere 25. yenilgisini yaşayan Hawks'ta ise Trae Young 21 sayı, 9 asist ve De'Andre Hunter 16 sayı, 5 ribauntluk katkı sağladı.",
+                      child: Text("Sezon başında Beşiktaş'a transfer olan Saliha Şahin, siyah-beyazlı kulüpten ayrılıyor. Bir süredir adı pek çok kulüple anılan Şahin'in yeni takımı da belli oldu. İşte haberin ayrıntıları.Sultanlar Ligi'nde Beşiktaş forması giyen Saliha Şahin'in, siyah-beyazlı kulüpten ayrılacağı iddia ediliyor... Söz konusu iddiaya göre Şahin'in yeni kulübü, bu sezonun flaş ekibi Zeren Spor.",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

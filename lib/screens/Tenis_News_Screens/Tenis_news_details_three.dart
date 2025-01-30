@@ -40,7 +40,7 @@ class TenisNewsDetailsthree extends StatelessWidget {
                 children: [
                   Center(
                     child:Image.asset(
-                      "assets/image/basketbol_img/b_img_1.jpg",
+                      "assets/image/tenis_img/t_img_3.webp",
                       height: 350,
                       fit: BoxFit.cover,
                     ),
@@ -59,7 +59,7 @@ class TenisNewsDetailsthree extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Milli basketbolcu Alperen Şengün, Houston Rockets'ın Atlanta Hawks'ı 100-96 yendiği mücadelede attığı 18 sayıyla Amerikan Basketbol Ligi (NBA) kariyerinde 4 bin sayı barajını aştı.",
+                        Text("Avustralya Açık'ta Iga Swiatek hata yapmadı",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class TenisNewsDetailsthree extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("NBA'de 4 maç yapıldı. Hawks'a konuk olan Rockets'ta 29 dakika süre alan Alperen Şengün, 18 sayı, 10 ribauntla double-double yaptı. İstatistiklerine 2 asist ve 1 top çalma da ekleyen Alperen, 4. sezonunu geçirdiği NBA kariyerinde 4 bin 12 sayıya ulaştı.Batı Konferansı'nda 32 galibiyet, 14 mağlubiyetle ikinci sırada bulunan Rockets'ta Jalen Green 25 sayı, 7 ribaunt ve Jae'Sean Tate 16 sayı, 3 ribaunt üretti.Art arda 6 olmak üzere 25. yenilgisini yaşayan Hawks'ta ise Trae Young 21 sayı, 9 asist ve De'Andre Hunter 16 sayı, 5 ribauntluk katkı sağladı.",
+                      child: Text("Sezonun ilk grand slam tenis turnuvası Avustralya Açık'ta Polonyalı Iga Swiatek, yarı finale yükseldi.Melbourne kentinde düzenlenen turnuvanın 11. gün sabah seansında çeyrek final maçlarına devam edildi.Beş kez grand slam şampiyonu tek kadınların 2 numaralı seribaşı Swiatek, ABD'li Emma Navarro'yu (8 numaralı seribaşı) 1 saat 29 dakika süren karşılaşmada 6-1 ve 6-2'lik setlerle 2-0 yenerek adını yarı finale yazdırdı.ABD'li 19 numaralı seribaşı Madison Keys ise Ukraynalı rakibi Elina Svitolina'yı (28) 3-6, 6-3 ve 6-4'lük setlerle 2-1 yenerek yarı finale yükseldi.Swiatek ile Keys, yarı finalde karşı karşıya gelecek.",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
