@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_one.dart';
-import 'package:markaj_gazetesi/screens/News_screens/News_detail_two.dart';
 import 'package:markaj_gazetesi/widgets/BottomMenu.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 
@@ -193,12 +191,7 @@ class HomeScreen extends StatelessWidget {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailOneScreen(),
-                          ),
-                        );
+                        context.go("/v_details");
                       },
                       child: Column(
                         children: [
@@ -207,7 +200,7 @@ class HomeScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/voleybol_img/v_img_1.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -219,9 +212,10 @@ class HomeScreen extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              "VakıfBank'tan transfer hamlesi!",
                               style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
+                                fontSize: 16,
                               ),
                             ),
                           ),
@@ -234,19 +228,14 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
+                            context.go("/t_three");
                           },
                           child: Container(
                             margin: EdgeInsets.all(8.0),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/futbolcategory.jpg'),
+                                image: AssetImage('assets/image/tenis_img/t_img_3.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -260,7 +249,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           width: 250,
                           child: Text(
-                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
+                            "Avustralya Açık'ta Iga Swiatek hata yapmadı",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                             ),
@@ -278,54 +267,9 @@ class HomeScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
-                    child: Column(
-                      children: [
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const NewsDetailTwoScreen(),
-                              ),
-                            );
-                          },
-                          child: Container(
-                            margin: EdgeInsets.all(8.0),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(16),
-                              image: DecorationImage(
-                                image: AssetImage('assets/image/futbolcategory.jpg'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            height: 160,
-                            width: double.infinity,
-                          ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(
-                            left: 20,
-                          ),
-                          width: 250,
-                          child: Text(
-                            "Kanat rotasyonunu güçlendirmek isteyen Trabzonspor, Espanyol forması giyen Javi Puado ile ilgileniyor.",
-                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                              color: Theme.of(context).colorScheme.onSecondary,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NewsDetailOneScreen(),
-                          ),
-                        );
+                        context.go("/f_five");
                       },
                       child: Column(
                         children: [
@@ -334,7 +278,7 @@ class HomeScreen extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(16),
                               image: DecorationImage(
-                                image: AssetImage('assets/image/newsgsone.jpg'),
+                                image: AssetImage('assets/image/futbol_img/f_img_5.webp'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -346,14 +290,52 @@ class HomeScreen extends StatelessWidget {
                               left: 10,
                             ),
                             child: Text(
-                              "Peñarol, Haziran'da Fernando Muslera'yı ülkesine geri getiriyor.",
+                              "Fenerbahçe, Anderson Talisca'yı İstanbul'a getirdi! Taraftardan coşkulu karşılama.",
                               style: Theme.of(context).textTheme.labelLarge!.copyWith(
                                 color: Theme.of(context).colorScheme.onSecondary,
+                                fontSize: 16,
                               ),
                             ),
                           ),
                         ],
                       ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        GestureDetector(
+                          onTap: (){
+                            context.go("/b_six");
+                          },
+                          child: Container(
+                            margin: EdgeInsets.all(8.0),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: AssetImage('assets/image/basketbol_img/b_img_6.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            height: 160,
+                            width: double.infinity,
+                          ),
+                        ),
+
+                        Container(
+                          margin: EdgeInsets.only(
+                            left: 20,
+                          ),
+                          width: 250,
+                          child: Text(
+                            "Shai Gilgeous-Alexander'in üstün performansı Thunder'a galibiyeti getirdi.",
+                            style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                                color: Theme.of(context).colorScheme.onSecondary,
+                                fontSize: 16
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
 
