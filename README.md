@@ -29,29 +29,43 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 ## Ekip Üyelerinin yaptığı çalışmalar
 **Alperen KARADEMİR:**
-1-Loading sayfası (ortak yapıldı)
-2-Drawer logosunu yaptım
-3-Search sayfasını yaptım
-4- About sayfasinin fikrini verdim
+- Loading sayfası (ortak yapıldı)
+- Drawer logosunu yaptım
+- Search sayfasını yaptım
+- About sayfasinin fikrini verdim
 
 
 **Emirhan BUĞDAYCI:**
-1-Loading sayfası (ortak yapıldı)
-2-About sayfası,haber sitemizin girişinde uygulamanın nasıl kullaıldığını gösteren bilgileri içeren bölüm kısmıdır.
-3-Home sayfası, haber sitemizin tüm haberlerin başlık,resim ve özet kısmının gösterildiği home sayfasıdır.
-4-Drawer yazı stilleri ve drawerın içine yazının hizalanmasını sağladım.
-5- Home sayfasında yer alan , Tümü , Gündem , futbol,basketbol ,voleybol ve tenis categorisini yaptım.Onları yönlendirme işlemleri yapıldı
-6- Basketbol , futbol ,tenis ,voleybol sayfalarina yonlendirme yapildi hepsine resim ve yazi eklemesini yaptim
+- Loading sayfası (ortak yapıldı)
+- About sayfası,haber sitemizin girişinde uygulamanın nasıl kullaıldığını gösteren bilgileri içeren bölüm kısmıdır.
+- Home sayfası, haber sitemizin tüm haberlerin başlık,resim ve özet kısmının gösterildiği home sayfasıdır.
+- Drawer yazı stilleri ve drawerın içine yazının hizalanmasını sağladım.
+- Home sayfasında yer alan , Tümü , Gündem , futbol,basketbol ,voleybol ve tenis categorisini yaptım.Onları yönlendirme işlemleri yapıldı
+- Basketbol , futbol ,tenis ,voleybol sayfalarina yonlendirme yapildi hepsine resim ve yazi eklemesini yaptim
+
+
 7-Themes ve routes'ların yarısını yaptım
 
 
 **Emir BULUT:**
-1-Loading sayfası (ortak yapıldı)
-2-NewDetails sayfası,haberin başlık,resim,kaynak ve haberin yazısının tamamını içeren kısımdır.
-3-Notification sayfası,haberin başlık,saat,tarih,içerik,kategori kısmını gösteren bildirim sayfasıdır.
-4-Drawerın boyutu hizalanması rengi icons kısmını yaptım.
-5- Basketbol , futbol ,tenis ,voleybol sayfalarina basildiginda o haberlerin detayli icerik haberlerini sagladim.
-6- About sayfasi yardim yapildi
+- Loading sayfası (ortak yapıldı)
+
+
+- NewDetails sayfası,haberin başlık,resim,kaynak ve haberin yazısının tamamını içeren kısımdır.
+
+
+- Notification sayfası,haberin başlık,saat,tarih,içerik,kategori kısmını gösteren bildirim sayfasıdır.
+
+
+- Drawerın boyutu hizalanması rengi icons kısmını yaptım.
+
+
+- Basketbol , futbol ,tenis ,voleybol sayfalarina basildiginda o haberlerin detayli icerik haberlerini sagladim.
+
+
+- About sayfasi yardim yapildi
+
+
 7-Themes ve routes'ların yarısını yaptım
 
 ## Özellikler
