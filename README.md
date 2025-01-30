@@ -33,6 +33,7 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 - Drawer logosunu yaptım
 - Search sayfasını yaptım
 - About sayfasinin fikrini verdim
+- Drawer kategorileştirdim
 
 
 **Emirhan BUĞDAYCI:**
@@ -221,7 +222,4 @@ Bu proje [MIT Lisansı](./LICENSE) altında lisanslanmıştır. Daha fazla bilgi
 - İstinye Üniversitesi'ne destekleri için teşekkür ederiz
 
 
-  
-  
-  
   
