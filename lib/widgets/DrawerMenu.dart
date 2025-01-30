@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 import '../core/themes.dart';
@@ -35,7 +36,7 @@ Drawer DrawerMenu(BuildContext context) {
                   ListTile(
                     title: const Text("Süper Lig"),
                     onTap: () {
-                      Navigator.pop(context);
+                      context.go("/t_super");
                     },
                   ),
                   ListTile(
