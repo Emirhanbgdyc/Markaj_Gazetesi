@@ -214,6 +214,7 @@ class basketbolcategory extends StatelessWidget {
                             "Mersin Çukurova Basketbol Spor Kulübü'ne yeni isim sponsoru...",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
+                              fontSize: 16,
                             ),
                           ),
                         ),
@@ -373,6 +374,7 @@ class basketbolcategory extends StatelessWidget {
                             "Shai Gilgeous-Alexander'in üstün performansı Thunder'a galibiyeti getirdi.",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
+                              fontSize: 16
                             ),
                           ),
                         ),

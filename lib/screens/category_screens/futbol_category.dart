@@ -213,6 +213,7 @@ class futbolcategory extends StatelessWidget {
                             "Ve Hakan Çalhanoğlu müjdesi! Beklenen haber sonunda geldi.",
                             style: Theme.of(context).textTheme.labelLarge!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
+                              fontSize: 16
                             ),
                           ),
                         ),

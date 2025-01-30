@@ -36,12 +36,10 @@ class NewsDetailScreen extends StatelessWidget {
                 children: [
                   const SizedBox(height: 16.0),
                   Center(
-                    child:Expanded(
-                      child: Image.asset(
-                        "assets/image/rodri.jpg",
-                        height: 350,
-                        fit: BoxFit.cover,
-                      ),
+                    child:Image.asset(
+                      "assets/image/rodri.jpg",
+                      height: 350,
+                      fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(height: 14.0),
