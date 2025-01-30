@@ -34,6 +34,7 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 3-Search sayfasını yaptım
 4- About sayfasinin fikrini verdim
 
+
 **Emirhan BUĞDAYCI:**
 1-Loading sayfası (ortak yapıldı)
 2-About sayfası,haber sitemizin girişinde uygulamanın nasıl kullaıldığını gösteren bilgileri içeren bölüm kısmıdır.
@@ -42,6 +43,8 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 5- Home sayfasında yer alan , Tümü , Gündem , futbol,basketbol ,voleybol ve tenis categorisini yaptım.Onları yönlendirme işlemleri yapıldı
 6- Basketbol , futbol ,tenis ,voleybol sayfalarina yonlendirme yapildi hepsine resim ve yazi eklemesini yaptim
 7-Themes ve routes'ların yarısını yaptım
+
+
 **Emir BULUT:**
 1-Loading sayfası (ortak yapıldı)
 2-NewDetails sayfası,haberin başlık,resim,kaynak ve haberin yazısının tamamını içeren kısımdır.
