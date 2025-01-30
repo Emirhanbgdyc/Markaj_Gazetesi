@@ -59,7 +59,7 @@ class TenisNewsDetailsfour extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Milli basketbolcu Alperen Şengün, Houston Rockets'ın Atlanta Hawks'ı 100-96 yendiği mücadelede attığı 18 sayıyla Amerikan Basketbol Ligi (NBA) kariyerinde 4 bin sayı barajını aştı.",
+                        Text("Sabalenka, Avustralya Açık'ta yarı finalde",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,8 +72,7 @@ class TenisNewsDetailsfour extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("NBA'de 4 maç yapıldı. Hawks'a konuk olan Rockets'ta 29 dakika süre alan Alperen Şengün, 18 sayı, 10 ribauntla double-double yaptı. İstatistiklerine 2 asist ve 1 top çalma da ekleyen Alperen, 4. sezonunu geçirdiği NBA kariyerinde 4 bin 12 sayıya ulaştı.Batı Konferansı'nda 32 galibiyet, 14 mağlubiyetle ikinci sırada bulunan Rockets'ta Jalen Green 25 sayı, 7 ribaunt ve Jae'Sean Tate 16 sayı, 3 ribaunt üretti.Art arda 6 olmak üzere 25. yenilgisini yaşayan Hawks'ta ise Trae Young 21 sayı, 9 asist ve De'Andre Hunter 16 sayı, 5 ribauntluk katkı sağladı.",
-
+                      child: Text("Sezonun ilk grand slam tenis turnuvası Avustralya Açık'ta tek kadınların dünya 1 numarası Aryna Sabalenka yarı finale yükseldi.Turnuvada son iki yılın şampiyonu Sabalenka, rakibini bir saat 53 dakika süren maçta 6-2, 2-6 ve 6-3 sona eren setlerle 2-1 yenerek yarı finale kaldı.Belaruslu raket, üst üste 19. galibiyetini aldığı Avustralya Açık'ta art arda üçüncü kez yarı final bileti elde etti.Sabalenka, yarı finalde 11 numaralı seribaşı İspanyol Paula Badosa ile eşleşti.",
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
                             fontSize: 16

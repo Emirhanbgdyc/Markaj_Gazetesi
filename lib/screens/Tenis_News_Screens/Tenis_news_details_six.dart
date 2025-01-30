@@ -59,7 +59,7 @@ class TenisNewsDetailsSix extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Milli basketbolcu Alperen Şengün, Houston Rockets'ın Atlanta Hawks'ı 100-96 yendiği mücadelede attığı 18 sayıyla Amerikan Basketbol Ligi (NBA) kariyerinde 4 bin sayı barajını aştı.",
+                        Text("Alman Alexander Zverev ve ABD'li Coco Gauff, Avustralya Açık'ta adını üçüncü tura yazdırdı. İşte detaylar...",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class TenisNewsDetailsSix extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("NBA'de 4 maç yapıldı. Hawks'a konuk olan Rockets'ta 29 dakika süre alan Alperen Şengün, 18 sayı, 10 ribauntla double-double yaptı. İstatistiklerine 2 asist ve 1 top çalma da ekleyen Alperen, 4. sezonunu geçirdiği NBA kariyerinde 4 bin 12 sayıya ulaştı.Batı Konferansı'nda 32 galibiyet, 14 mağlubiyetle ikinci sırada bulunan Rockets'ta Jalen Green 25 sayı, 7 ribaunt ve Jae'Sean Tate 16 sayı, 3 ribaunt üretti.Art arda 6 olmak üzere 25. yenilgisini yaşayan Hawks'ta ise Trae Young 21 sayı, 9 asist ve De'Andre Hunter 16 sayı, 5 ribauntluk katkı sağladı.",
+                      child: Text("Melbourne kentinde düzenlenen turnuvanın dördüncü gün akşam seansında ikinci tur maçları oynandı.Tek erkeklerde dünya 2 numarası Alman raket Alexander Zverev, İspanyol rakibi Pedro Martinez'i 6-1, 6-4 ve 6-1'lik setlerle 3-0 yenerek üçüncü tura çıktı.Tek erkeklerde 6 numaralı seribaşı Norveçli raket Casper Ruud ise Çekyalı rakibi Jakub Mensik'e 2-6, 6-3, 1-6 ve 4-6'lık setlerle 3-1 mağlup olarak turnuvaya ikinci turda veda etti.Büyük Britanyalı Jack Draper (15 numaralı seribaşı), Avustralyalı Thanasi Kokkinakis'i 6-7, 6-3, 3-6, 7-5 ve 6-3'lük setlerle 3-2 yenerek adını bir üst tura yazdırdı. - Gauff, üçüncü turdaTek kadınlarda dünya 3 numarası ABD'li raket Coco Gauff, Büyük Britanyalı Jodie Burrage'i 6-3 ve 7-5'lik setlerle 2-0 yenerek üçüncü tura çıktı.",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,

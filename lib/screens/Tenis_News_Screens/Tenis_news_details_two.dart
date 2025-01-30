@@ -59,7 +59,7 @@ class TenisNewsDetailstwo extends StatelessWidget {
                           textAlign: TextAlign.left,
                         ),
                         SizedBox(height: 8.0),
-                        Text("Milli basketbolcu Alperen Şengün, Houston Rockets'ın Atlanta Hawks'ı 100-96 yendiği mücadelede attığı 18 sayıyla Amerikan Basketbol Ligi (NBA) kariyerinde 4 bin sayı barajını aştı.",
+                        Text("Ahmet Kaplan Avustralya Açık’ta yarı finalde",
                           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               color: Theme.of(context).colorScheme.onSecondary,
                               fontWeight: FontWeight.bold,
@@ -72,7 +72,7 @@ class TenisNewsDetailstwo extends StatelessWidget {
                   const SizedBox(height: 15.0),
                   Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text("NBA'de 4 maç yapıldı. Hawks'a konuk olan Rockets'ta 29 dakika süre alan Alperen Şengün, 18 sayı, 10 ribauntla double-double yaptı. İstatistiklerine 2 asist ve 1 top çalma da ekleyen Alperen, 4. sezonunu geçirdiği NBA kariyerinde 4 bin 12 sayıya ulaştı.Batı Konferansı'nda 32 galibiyet, 14 mağlubiyetle ikinci sırada bulunan Rockets'ta Jalen Green 25 sayı, 7 ribaunt ve Jae'Sean Tate 16 sayı, 3 ribaunt üretti.Art arda 6 olmak üzere 25. yenilgisini yaşayan Hawks'ta ise Trae Young 21 sayı, 9 asist ve De'Andre Hunter 16 sayı, 5 ribauntluk katkı sağladı.",
+                      child: Text("Paris 2024 Paralimpik Oyunları’nda 4. olan milli tenisçi Ahmet Kaplan, sezonun ilk grand slam turnuvası Avustralya Açık’ta yarı finale kaldı.Paris 2024 Paralimpik Oyunları’nda tekerlekli sandalye tenisinde ülkemizi temsil eden ve 4. sırada yer alarak Türkiye’nin paralimpik oyunlar tarihinde yarı final oynayan ilk sporcusu olan Ahmet Kaplan, sezonun ilk grand slam turnuvası Avustralya Açık’ta da son 4 oyuncu arasına girdi. Milli para tenisçi Ahmet Kaplan, Melbourne kentinde düzenlenen turnuvadaki quad tekerlekli sandalye çeyrek final maçında, ev sahibi ülkeden Jin Woodman ile karşılaştı. Dünya 4 numarası Ahmet, korttan 2-0 (6-2, 6-4) galip ayrılarak sonraki turda Hollanda’dan 1 numaralı seribaşı Sam Schroder’in rakibi oldu.",
 
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             color: Theme.of(context).colorScheme.onSecondary,
