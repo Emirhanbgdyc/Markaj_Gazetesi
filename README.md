@@ -94,13 +94,13 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 
 ## EKRAN GÖRÜNTÜSÜ
 
-![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa1.png)
-![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa2.png)
-![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa3.png)
-![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa4.png)
-![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa5.png)
-![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa6.png)
-![Ekran Görüntüsü] (assets/image/ekran_goruntuleri/sayfa8.png)
+![Markaj Gazatesı](assets/image/ekran_goruntulerı/sayfa1.png)
+![Markaj Gazatesı](assets/image/ekran_goruntulerı/sayfa2.png)
+![Markaj Gazatesı](assets/image/ekran_goruntulerı/sayfa3.png)
+![Markaj Gazatesı](assets/image/ekran_goruntulerı/sayfa4.png)
+![Markaj Gazatesı](assets/image/ekran_goruntulerı/sayfa5.png)
+![Markaj Gazatesı](assets/image/ekran_goruntulerı/sayfa6.png)
+![Markaj Gazatesı](assets/image/ekran_goruntulerı/sayfa8.png)
 
 
 
