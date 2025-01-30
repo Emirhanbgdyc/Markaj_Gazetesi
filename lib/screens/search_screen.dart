@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:markaj_gazetesi/widgets/DrawerMenu.dart';
 import '../widgets/BottomMenu.dart';
 import 'package:flutter/cupertino.dart';
@@ -38,31 +39,36 @@ class SearchScreen extends StatelessWidget {
 
                 Row(
                   children: [
-                    Container(
-                      margin: EdgeInsets.only(
-                        left: 25,
-                      ),
-                      width: 200,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                          image: AssetImage('assets/image/futbolcategory.jpg'),
-                          fit: BoxFit.cover,
+                    GestureDetector(
+                      onTap: (){
+                        context.go("/futbolcategory");
+                      },
+                      child: Container(
+                        margin: EdgeInsets.only(
+                          left: 25,
                         ),
-                      ),
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            top: 110,
-                            left:10,
-                            child: Text("FUTBOL",style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),),
+                        width: 200,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            image: AssetImage('assets/image/futbolcategory.jpg'),
+                            fit: BoxFit.cover,
                           ),
-                        ],
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              top: 110,
+                              left:10,
+                              child: Text("FUTBOL",style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     Container(
