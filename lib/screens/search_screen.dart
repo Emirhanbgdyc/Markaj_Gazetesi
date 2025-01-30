@@ -140,34 +140,39 @@ class SearchScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                   Container(
-                      margin: EdgeInsets.only(
-                        left: 25,
-                        top: 10,
-                      ),
-                      width: 200,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: DecorationImage(
-                          image: AssetImage('assets/image/teniscategory.jpg'),
-                          fit: BoxFit.cover,
+                    GestureDetector(
+                     onTap: (){
+                       context.go("/teniscategory");
+                     },
+                     child: Container(
+                        margin: EdgeInsets.only(
+                          left: 25,
+                          top: 10,
+                        ),
+                        width: 200,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: DecorationImage(
+                            image: AssetImage('assets/image/teniscategory.jpg'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              top: 110,
+                              left:10,
+                              child: Text("TENIS",style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),),
+                            ),
+                          ],
                         ),
                       ),
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            top: 110,
-                            left:10,
-                            child: Text("TENIS",style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
-                            ),),
-                          ),
-                        ],
-                      ),
-                    ),
+                   ),
                   ],
                 ),
                 Row(
