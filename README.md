@@ -44,7 +44,7 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 - Basketbol , futbol ,tenis ,voleybol sayfalarina yonlendirme yapildi hepsine resim ve yazi eklemesini yaptim
 
 
-7-Themes ve routes'ların yarısını yaptım
+- Themes ve routes'ların yarısını yaptım
 
 
 **Emir BULUT:**
@@ -66,7 +66,7 @@ Kullanıcılar bu uygulamayla farklı spor dallarını görüntüleyebilir ve bi
 - About sayfasi yardim yapildi
 
 
-7-Themes ve routes'ların yarısını yaptım
+- Themes ve routes'ların yarısını yaptım
 
 ## Özellikler
 
