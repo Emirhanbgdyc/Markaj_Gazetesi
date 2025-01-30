@@ -9,15 +9,11 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(235, 236, 237, 1),
+      backgroundColor: Theme.of(context).colorScheme.onError,
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        title:const Text("MARKAJ",
-          style: TextStyle(
-              fontWeight: FontWeight.w900,
-              fontSize: 24,
-              color: Color.fromRGBO(146, 35, 42, 1)
-          ),
+        backgroundColor: Theme.of(context).colorScheme.onError,
+        title: Text("MARKAJ",
+          style: Theme.of(context).textTheme.headlineLarge,
         ),
         centerTitle: true,
       ),
